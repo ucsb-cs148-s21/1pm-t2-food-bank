@@ -6,4 +6,4 @@ Ideas:
     * If food is unavailable, people can see when it will become available.\
     * People should be able to see the members in the food bank.\
     * People can see what kinds of food does the food bank have.\
-    * Create a discord bot that enable people to get the latest information.\
+    * Create a discord bot that enable people to get the latest information.
