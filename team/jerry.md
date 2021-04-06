@@ -6,7 +6,7 @@ Hello, this is Jerry Wang. I'm a third year CS Major, I can code in c++, java, p
 
 Since we do not have the data from the food bank, we need to simulate some data.Maybe we need some sort of database.
 
-We will use java, javascript + suroku to do this project.
+We will use java, javascript + heroku to do this project.
 
 In HW00, the professor introduces us the "Agile" way of programming. The three questions in Scrum can be useful, and we should use this kind of format during our weekly meeting.
 
