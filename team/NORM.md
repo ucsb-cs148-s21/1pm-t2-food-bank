@@ -9,6 +9,8 @@ Meeting ID: 831 7740 1889
 Passcode: 678461
 
 # Rules:
-Mutural respect: Respect the time and convenience of others. Don't be late for meetings.
-Communication: don't hesitate asking questions if you get stuck. If you can’t come to meeting, tell other early.
-Use when2meet.com to confirm other possible meeting time
+# Mutural respect: Respect the time and convenience of others. Don't be late for meetings.
+
+# Communication: don't hesitate asking questions if you get stuck. If you can’t come to meeting, tell other early.
+
+# Use when2meet.com to confirm other possible meeting time
