@@ -1,9 +1,8 @@
 Description:
     I'm a third year computer science major student. I'm from China and I'm living in LA right now.
 
-Ideas:
-    * People are able to see the current food left in food bank.\
-    * If food is unavailable, people can see when it will become available.\
-    * People should be able to see the members in the food bank.\
-    * People can see what kinds of food does the food bank have.\
-    * Create a discord bot that enable people to get the latest information.
+Ideas:\
+    * Everyone should attend the meeting on time.\
+    * If someone doesn't respond in 24 hour, other team members can make a decision without waiting for his response.\
+    * Always keep track of the progress.\
+    * Ask for help if you get stuck.
