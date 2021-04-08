@@ -10,3 +10,4 @@ Team: Kaiwen Li✓, Sunrise Gao✓, Liuhao Wu✓, Tianchen Wang✓, Orion Schwel
 
 - Initialize a README.md for the project
 - Set up team agreeements
+- Agree on not using Vanilla HTML/CSS/JavaScript 
