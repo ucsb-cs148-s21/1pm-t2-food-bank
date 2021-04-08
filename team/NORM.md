@@ -1,10 +1,8 @@
 # How do we meet?
 Lectures, TR 3:30PM:
-Tobias Hollerer is inviting you to a scheduled Zoom meeting.
+Discussion section, Friday 8:00AM:
 https://ucsb.zoom.us/j/83479739776?pwd=d3lPRUJnd1M4RVRoUjE5TzJNUVdNdz09
 
-
-Discussion section, Friday 8:00AM:
 
 # Mutural respect: 
 Respect the time and convenience of others. Don't be late for meetings.
