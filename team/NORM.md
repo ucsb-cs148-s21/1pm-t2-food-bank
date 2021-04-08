@@ -16,7 +16,4 @@ Don't hesitate asking questions if you get stuck. If you can’t come to meeting
 
 Use when2meet.com to confirm other possible meeting time
 
-Informal meetings, use this room:
-Tianchen Wang is inviting you to a scheduled Zoom meeting.
-
-https://ucsb.zoom.us/j/83177401889?pwd=c0pvS0M1M0VlWDB1MHU0VThpNnV3UT09
+Discord: https://discord.gg/xSjKj8Z4
