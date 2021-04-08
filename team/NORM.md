@@ -1,4 +1,4 @@
-# How do we meet?
+# Mandatory meet times:
 Lectures, TR 3:30PM:
 
 Discussion section, Friday 8:00AM:
