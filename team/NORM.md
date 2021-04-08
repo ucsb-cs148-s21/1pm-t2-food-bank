@@ -7,7 +7,9 @@ https://ucsb.zoom.us/j/83479739776?pwd=d3lPRUJnd1M4RVRoUjE5TzJNUVdNdz09
 Discussion section, Friday 8:00AM:
 
 # Mutural respect: 
-Respect the time and convenience of others. Don't be late for meetings./n
+Respect the time and convenience of others. Don't be late for meetings.
+
+
 Every member should do their part of the work, no free riders!
 
 # Communication: 
