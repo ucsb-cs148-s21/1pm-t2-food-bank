@@ -12,6 +12,6 @@ Passcode: 678461
 Respect the time and convenience of others. Don't be late for meetings.
 
 # Communication: 
-Don't hesitate asking questions if you get stuck. If you can’t come to meeting, tell other early.
+Don't hesitate asking questions if you get stuck. If you can’t come to meeting, tell others early.
 
 Use when2meet.com to confirm other possible meeting time
