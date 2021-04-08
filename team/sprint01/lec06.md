@@ -1,7 +1,7 @@
 Proejct: Food Banks
 Mentor: Shiran Wang
 
-Meeting Time: lec04
+Meeting Time: lec06
 
 Type of meeting: Daily Scrum
 
