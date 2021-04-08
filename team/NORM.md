@@ -8,6 +8,7 @@ Discussion section, Friday 8:00AM:
 
 # Mutural respect: 
 Respect the time and convenience of others. Don't be late for meetings.
+Every member should do their part of the work, no free riders!
 
 # Communication: 
 Don't hesitate asking questions if you get stuck. If you can’t come to meeting, tell others early.
