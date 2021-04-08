@@ -9,7 +9,6 @@ Discussion section, Friday 8:00AM:
 # Mutural respect: 
 Respect the time and convenience of others. Don't be late for meetings.
 
-
 Every member should do their part of the work, no free riders!
 
 # Communication: 
@@ -19,8 +18,5 @@ Use when2meet.com to confirm other possible meeting time
 
 Informal meetings, use this room:
 Tianchen Wang is inviting you to a scheduled Zoom meeting.
+
 https://ucsb.zoom.us/j/83177401889?pwd=c0pvS0M1M0VlWDB1MHU0VThpNnV3UT09
-
-Meeting ID: 831 7740 1889
-Passcode: 678461
-
