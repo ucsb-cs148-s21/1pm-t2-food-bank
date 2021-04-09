@@ -1,7 +1,7 @@
 # Mandatory meet times:
 Lectures, TR 3:30PM:
 
-Discussion section, Friday 8:00AM:
+Discussion section, Thur 8:00PM:
 
 https://ucsb.zoom.us/j/83479739776?pwd=d3lPRUJnd1M4RVRoUjE5TzJNUVdNdz09
 
