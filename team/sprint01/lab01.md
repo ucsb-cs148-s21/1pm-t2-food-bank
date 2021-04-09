@@ -4,7 +4,7 @@ Mentor: Shiran Wang
 
 Meeting Time: lab01
 
-Type of meeting: Lab Note
+Type of meeting: Lab
 
 Team: Kaiwen Li✓, Sunrise Gao✓, Liuhao Wu✓, Tianchen Wang✓, Orion Schwellenbach✓
 
