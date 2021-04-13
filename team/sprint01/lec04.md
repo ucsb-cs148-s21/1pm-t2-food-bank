@@ -20,4 +20,4 @@ ToDo List:
 - Liuhao is the permanent scribe. 
 - Jerry takes charge of the user story.
 - Everyone'd finish the deployment stuff by Thu 8PM section.
-- Kaiwen'd probly be charge of the deployment.
+- Kaiwen'd probly be in charge of the deployment.
