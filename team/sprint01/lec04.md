@@ -14,6 +14,8 @@ Lab01 Checkin:
 - Jerry: finished and hasnt deployed.
 - Orion: in progress.
 
+# Note: No Need to add server.js for the project.
+
 ToDo List: 
 - Liuhao is the permanent scribe. 
 - Jerry takes charge of the user story.
