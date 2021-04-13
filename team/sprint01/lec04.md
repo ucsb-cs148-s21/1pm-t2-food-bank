@@ -7,6 +7,7 @@ Type of meeting: Daily Scrum
 
 Team: Kaiwen Li✓, Sunrise Gao✓, Liuhao Wu✓, Tianchen Wang✓, Orion Schwellenbach✓
 
+Lab01 Checkin:
 - Kaiwen: finished and hasnt deployed.
 - Sunrise: finished and hasnt deployed.
 - Liuhao: finished locally.
