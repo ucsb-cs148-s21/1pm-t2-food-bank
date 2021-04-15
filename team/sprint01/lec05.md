@@ -6,3 +6,5 @@ Meeting Time: lec05
 Type of meeting: Daily Scrum
 
 Team: Kaiwen Li✓, Sunrise Gao✓, Liuhao Wu✓, Tianchen Wang✓, Orion Schwellenbach✓
+
+## ```Update branches to match the Main otherwise might lose files!```
