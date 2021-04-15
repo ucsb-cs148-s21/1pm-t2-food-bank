@@ -7,7 +7,7 @@ Type of meeting: Daily Scrum
 
 Team: Kaiwen Li✓, Sunrise Gao✓, Liuhao Wu✓, Tianchen Wang✓, Orion Schwellenbach✓
 
-## ```Update branches to match the Main otherwise might lose files!```
+## ``Update branches to match the Main otherwise might lose files!``
 
 Orion: Running via CSIL has problem; Demo before the section.
 Liuhao: can demo now
