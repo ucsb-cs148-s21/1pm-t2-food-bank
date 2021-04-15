@@ -1,4 +1,4 @@
-#Hello World React App
+Hello World React App
 
 Sunrise
 
