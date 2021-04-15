@@ -6,7 +6,7 @@ John, 20, UCSB undergrad student
 
 John wants to go to the food bank to grab some apples, but he is uncertain whether apples are available at the food bank today.
 
-John wants to check the avaliability and quantity of snacks at the food bank while he is in the San Nicolas dorm.
+John wants to check the availability and quantity of snacks at the food bank while he is in the San Nicolas dorm.
 
 ## Persona 2: Olivia
 
