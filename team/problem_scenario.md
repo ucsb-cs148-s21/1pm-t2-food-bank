@@ -10,7 +10,7 @@ John wants to check the availability and quantity of snacks at the food bank whi
 
 ## Persona 2: Olivia
 
-Olivia, 26, food bank staff
+Olivia, 26, UCSB food bank staff
 
 Olivia wants to know what kind and quantity of food are distributed today to better arrange tomorrow's orders.
 
