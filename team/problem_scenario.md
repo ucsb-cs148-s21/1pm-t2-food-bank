@@ -1,4 +1,4 @@
-# problem_scenario
+# Problem Scenario
 
 ## Persona 1: John
 
