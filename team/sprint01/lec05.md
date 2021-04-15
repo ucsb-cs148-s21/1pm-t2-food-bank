@@ -19,3 +19,4 @@ Sunrise: can demo now
 - github issue: all have admin permission.
 - Docker
 - for PR merging, we want at least two persons to take a look for that.
+- frontend: react, backend: node.js tools?
