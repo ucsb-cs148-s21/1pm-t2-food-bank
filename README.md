@@ -17,3 +17,9 @@ Know the availability and quantity of items at the food bank before physically b
 | Kaiwen Li | kaiwenli1   | 
 | Sunrise Gao | sunrise0stack    | 
 | Orion Schwellenbach | JamesSchwellenbach   |
+
+## Framework
+
+Frontend - React/Javascript/HTML/CSS
+Backend - SpringBoot
+Database - Mongo.db
