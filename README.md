@@ -20,7 +20,7 @@ Know the availability and quantity of items at the food bank before physically b
 | Sunrise Gao | sunrise0stack    | 
 | Orion Schwellenbach | JamesSchwellenbach   |
 
-## Framework
+## Tech Stack
 
 Frontend - React/Javascript/HTML/CSS
 
