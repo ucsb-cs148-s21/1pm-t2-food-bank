@@ -24,3 +24,6 @@ hs_err_pid*
 
 # Mac related files
 .DS_Store
+
+# react
+# node_modules
