@@ -5,7 +5,12 @@ export const MenuItems = [
         cName: 'nav-links'
     },
     {
-        title: 'Student Services',
+        title: 'Inventory',
+        url: '#',
+        cName: 'nav-links'
+    },
+    {
+        title: 'Staff Portal',
         url: '#',
         cName: 'nav-links'
     },
@@ -15,7 +20,7 @@ export const MenuItems = [
         cName: 'nav-links'
     },
     {
-        title: 'Staff Login',
+        title: 'Login',
         url: '#',
         cName: 'nav-links-mobile'
     }
