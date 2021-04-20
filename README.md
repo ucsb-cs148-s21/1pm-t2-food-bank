@@ -1,4 +1,4 @@
-# t2-food-banks
+# 8pm-t2-food-bank
 
 ## Links
 Heroku: https://t2-food-banks.herokuapp.com/
