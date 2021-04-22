@@ -6,21 +6,20 @@ Heroku: https://t2-food-banks.herokuapp.com/
 GitHub: https://github.com/ucsb-cs148-s21/t2-food-banks/
 
 ## Deploy instructions
-Run it on Heroku: https://t2-food-banks.herokuapp.com/
+### Run it on Heroku: https://t2-food-banks.herokuapp.com/
 
-Run it locally: 
+### Run it locally: 
 ```
 mvn spring-boot: run
 ```
 
-Run frontend only: 
+### Run frontend only: 
 ```
 cd React
 npm start
 ```
 
-Run frontend and backend separately(do this when you are only editing frontend to get realtime update on website):
-
+### Run frontend and backend separately(do this when you are only editing frontend to get realtime update on website):
 
 - First terminal:
 ```
