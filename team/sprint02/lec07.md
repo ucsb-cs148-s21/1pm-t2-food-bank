@@ -6,7 +6,7 @@ Meeting Time: lec07
 
 Type of meeting: daily scrum
 
-Team: Kaiwen Li✓, Sunrise Gao✓, Liuhao Wu✓, Tianchen Wangx, Orion Schwellenbach✓
+Team: Kaiwen Li✓, Sunrise Gao✓, Liuhao Wu✓, Tianchen Wang✓, Orion Schwellenbach✓
 
 Liuhao:
 - added user stories for all stuff on kanban
@@ -23,3 +23,12 @@ Orion:
 Sunrise:
 - set up a server on mongoDB
 - need emails to set up the project (TODO)
+
+Jerry:
+- filling content of the main page
+- blocker: 
+* main page hasnt been finished; 
+* add a footer;
+* create another page that links to the navbar; 
+
+## for next week
