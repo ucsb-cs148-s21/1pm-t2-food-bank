@@ -1,0 +1,21 @@
+# Date of Retrospective: 04/22/21
+
+* Led by: Orion schwellenbach
+* Present: name1, name2, ... , nameN
+* Absent: N/A
+
+## Action item
+
+* a goal: Work together/communicate more with other group members.
+* a change: Use the Kanban board for small tasks that can be individually completed.
+* a measurement: At each standup we look at the Kanban board.
+
+## Optional
+
+* Record anything else you think the team might want to remember from this retro
+* 
+## Retro Assessment
+
+* In lec05 we used start/stop/continue format for the retro. in this retro we set up a goal, a change to accomplish that goal and a measurement to quantify if we completed that goal.
+* The retro went well, we found a change to increase the productivity of the group and be connected better with what others are working towards.
+* Try to focus on making sure everyone can share their ideas during the retro, you aren't supposed to fill in the 'content' of the meeting.
