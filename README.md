@@ -5,6 +5,20 @@ Heroku: https://t2-food-banks.herokuapp.com/
 
 GitHub: https://github.com/ucsb-cs148-s21/t2-food-banks/
 
+## Deploy instructions
+Run it on Heroku: https://t2-food-banks.herokuapp.com/
+
+Run it locally: 
+```
+mvn spring-boot: run
+```
+
+Run frontend only: 
+```
+cd React
+npm start
+```
+
 ## UCent food bank
 This Webapp aims to provide students information about what items are available at the food bank, so students don't need to come to the food bank and leave empty handed because the food they want is unavailable.
 
