@@ -1,7 +1,7 @@
 # Date of Retrospective: 04/22/21
 
 * Led by: Orion schwellenbach
-* Present: name1, name2, ... , nameN
+* Present: Kaiwen Li✓, Sunrise Gao✓, Liuhao Wu✓, Tianchen Wang✓, Orion Schwellenbach✓
 * Absent: N/A
 
 ## Action item
