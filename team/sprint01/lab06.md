@@ -1,5 +1,7 @@
 # Retrospective 1
 
+- Leader: Orion
+
 ## what activites want to stop doing (because they aren’t helpful)
 - TBD 
 
