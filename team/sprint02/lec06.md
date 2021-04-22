@@ -1,4 +1,4 @@
-# Proejct: Food Banks
+# Project: Food Banks
 
 Mentor: Shiran Wang
 
