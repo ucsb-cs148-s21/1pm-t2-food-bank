@@ -2,7 +2,7 @@
 
 Mentor: Shiran Wang
 
-Meeting Time: lec07
+Meeting Time: lec06
 
 Type of meeting: daily scrum
 
