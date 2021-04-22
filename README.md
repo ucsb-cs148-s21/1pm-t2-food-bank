@@ -19,6 +19,19 @@ cd React
 npm start
 ```
 
+Run frontend and backend separately(do this when you are only editing frontend to get realtime update on website):
+
+
+- First terminal:
+```
+mvn spring-boot: run -Dskip.npm
+```
+- Second termial:
+```
+cd React
+npm start
+```
+
 ## UCent food bank
 This Webapp aims to provide students information about what items are available at the food bank, so students don't need to come to the food bank and leave empty handed because the food they want is unavailable.
 
