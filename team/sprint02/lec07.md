@@ -27,8 +27,8 @@ Sunrise:
 Jerry:
 - filling content of the main page
 - blocker: 
-* main page hasnt been finished; 
-* add a footer;
-* create another page that links to the navbar; 
+** main page hasnt been finished; 
+** add a footer;
+** create another page that links to the navbar; 
 
 ## for next week
