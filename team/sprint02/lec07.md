@@ -2,29 +2,24 @@
 
 Mentor: Shiran Wang
 
-Meeting Time: lec08
+Meeting Time: lec07
 
 Type of meeting: daily scrum
 
-Team: Kaiwen Li✓, Sunrise Gao✓, Liuhao Wu✓, Tianchen Wang✓, Orion Schwellenbach✓
+Team: Kaiwen Li✓, Sunrise Gao✓, Liuhao Wu✓, Tianchen Wangx, Orion Schwellenbach✓
 
 Liuhao:
-- navbar (will demo later)
-- tutorial
-- blocker: how should we assign work/github; lab02 instruction
-
-Jerry:
-- navbar (will demo later)
-- permimssion to merge?
+- added user stories for all stuff on kanban
+- added a `learning.md` (discuss)
 
 Kaiwen:
-- backend (ing)
+- created a backend;
+- new demo `.js` for fetching backend api (under `\pages` directory)
 
 Orion:
-- kanban board
-- split up assignment to smaller one with time frame
-- two navbar?
+- article about JS tutorials for footer
+- plans to complete footer
 
 Sunrise:
-- watch spring-boot tutorials
-- learn backend (with kaiwen)
+- set up a server on mongoDB
+- need emails to set up the project (TODO)
