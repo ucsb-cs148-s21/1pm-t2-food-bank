@@ -82,7 +82,9 @@ npm start
 - Go to our heroku website/`https://t2-food-banks.herokuapp.com/`, you can see a NavBar item called inventory, where you shall find the availability of food at the food bank.
 
 ## Known Problems
-- Connecting to database and updating our data in real time
+- Unable to Connect to database and update data in real time
+- Main page lack content
+- Inventory webpage not designed
 
 ## Contributing
 Fork it!
