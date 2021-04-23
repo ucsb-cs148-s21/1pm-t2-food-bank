@@ -79,7 +79,7 @@ npm start
 ```
 
 ## Functionality
-- Go to our heroku website/`localhost:8080`, you can see a NavBar item called inventory, where you shall find the availability of food at the food bank.
+- Go to our heroku website/`https://t2-food-banks.herokuapp.com/`, you can see a NavBar item called inventory, where you shall find the availability of food at the food bank.
 
 ## Known Problems
 - Connecting to database and updating our data in real time
