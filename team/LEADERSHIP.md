@@ -6,5 +6,5 @@
 | Thu 04/15 | Orion  | Led first retro for sprint01        | 
 | Thu 04/15 | Jerry       | Led MVP and sprint02 planning                                  |
 | Tue 04/20 | Liuhao      | Daily Scrum  | 
-| Thu 04/22 | Jerry      | Will lead retro (w/ given template) | 
-| Thu 04/22 | Kaiwen/Sunrise      | will lead daily scrum  | 
+| Thu 04/22 | Orion      | Redid first retro for sprint01 (w/ given template) | 
+| Thu 04/22 | Kaiwen      | led daily scrum  | 
