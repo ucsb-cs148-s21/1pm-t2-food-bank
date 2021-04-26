@@ -65,6 +65,15 @@
 						</configuration>
 					</execution>
 					<execution>
+						<id>npm install react-router-dom</id>
+						<goals>
+							<goal>npm</goal>
+						</goals>
+						<configuration>
+							<arguments>ci</arguments>
+						</configuration>
+					</execution>
+					<execution>
 						<id>npm run build</id>
 						<goals>
 							<goal>npm</goal>
