@@ -13,16 +13,7 @@ function App() {
         <Switch>
           <Route path="/login" component={Login} />
         </Switch>
-            </Router>
-        {/* <Container>
-          <Router>
-            <Switch>
-              <Route path="/login">
-                <Login />
-              </Route>
-            </Switch>
-          </Router>
-        </Container>  */}
+      </Router>
     </div>
   );
 }
