@@ -9,7 +9,7 @@ class fetchExample extends Component {
     async componentDidMount() {
         const response = await fetch('/api/t2');
         const body = await response.json();
-        this.setState({ groups: body, isLoading: false });
+        this.setState({ t2: body, isLoading: false });
     }
     render() {
         const {t2, isLoading} = this.state;
