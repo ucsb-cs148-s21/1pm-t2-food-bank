@@ -1,14 +1,20 @@
 import React, { Component } from 'react';
 import { MenuItems } from "./MenuItems"
 import { Button } from "../Button"
+import history from './../history'
+
 import './Navbar.css'
 
+
 class Navbar extends Component {
-    state = { clicked: false }
+
+    state = { clicked: false}
 
     handleClick = () => {
         this.setState({ clicked: !this.state.clicked })
     }
+
+    
 
     render() {
         return (
@@ -28,7 +34,7 @@ class Navbar extends Component {
                         )
                     })}
                 </ul>
-                <Button>Login</Button>
+                <Button onClick={() => history.push('/login')}>Login</Button>
             </nav>
         )
     }
