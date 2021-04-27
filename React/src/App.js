@@ -24,7 +24,7 @@ function App() {
         </Switch>
       </Container>
     </div>
-  );
+  )
 }
 
 export default App;

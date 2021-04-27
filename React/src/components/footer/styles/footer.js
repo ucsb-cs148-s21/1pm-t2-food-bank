@@ -44,7 +44,7 @@ export const Link = styled.a`
 
 export const Title = styled.p`
     font-size: 24px;
-    color: #fff;
+    color: #000;
     margin-bottom: 40px;
     font-weight: bold;
 `
