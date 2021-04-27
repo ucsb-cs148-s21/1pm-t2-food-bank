@@ -12,10 +12,10 @@ function App() {
     <div className="App">
       <Router history={history}>
         <Switch>
-          <Route path="/login" component={Login} />
+          <Route path="/" exact component={Home_Content} />
         </Switch>
         <Switch>
-          <Route path="" component={Home_Content} />
+          <Route path="/login" component={Login} />
         </Switch>
       </Router>
     </div>
