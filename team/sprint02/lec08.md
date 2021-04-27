@@ -27,5 +27,5 @@ Sunrise:
 
 Jerry:
 - mainpage
-- blockers: login isnt part of MVP; table for inventory page
+- blockers: login isnt part of MVP; table for inventory page; deployment
 - plan: make the MVP vid; footer
