@@ -70,7 +70,7 @@ npm start
 
 1. First terminal:
 ```
-mvn spring-boot: run -Dskip.npm
+mvn spring-boot:run -Dskip.npm
 ```
 2. Second termial:
 ```
