@@ -9,3 +9,4 @@
 | Thu 04/22 | Orion      | Redid first retro for sprint01 (w/ given template) | 
 | Thu 04/22 | Kaiwen      | led daily scrum  | 
 | Thu 04/22 | Liuhao      | led lab03 discussion on MVP sprint planning note  | 
+| Thu 04/27 | Sunrise      | led daily scrum  | 
