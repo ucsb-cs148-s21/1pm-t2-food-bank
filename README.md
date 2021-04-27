@@ -57,7 +57,7 @@ Database - Mongo.db
 
 - Run it locally: 
 ```
-mvn spring-boot: run
+mvn spring-boot:run
 ```
 
 - Run frontend only: 
