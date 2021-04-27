@@ -10,14 +10,33 @@ class Home_Content extends Component {
     render() {
         return (
             <div>
-                <h1 className="Homepage_title"> Welcome to UCSB Food Bank </h1>
-                <div className="img_AS-Food-bank"></div>
-                <ul>
-                    <li><div className="introduction_paragraph">This website will let you know what's in the food bank today</div></li>
-                    <li><center><iframe className="Introduction_YT" src="https://www.youtube.com/embed/GgJJRo5uT0c"></iframe></center></li>
-                    <li><div className="register_paragraph">Prior to your first visit, please&nbsp;<a href="http://tinyurl.com/asfbreg">register </a>first.</div></li>
-                </ul>
+                <div class="landing-page">
+                    <div class="page-content">
+                        <h1>UCSB Food Bank</h1>
+                        <p>
+                            Come and find out what's in our Inventory today!
+                        </p>
+                        <a href="#">Get Started</a>
+                    </div>
+                </div>
+                {/* <div class="text">
+                    <ul>
+                        <li><div className="introduction_paragraph">This website will let you know what's in the food bank today</div></li>
+                        <li><center><iframe className="Introduction_YT" src="https://www.youtube.com/embed/GgJJRo5uT0c"></iframe></center></li>
+                        <li><div className="register_paragraph">Prior to your first visit, please&nbsp;<a href="http://tinyurl.com/asfbreg">register </a>first.</div></li>
+                    </ul>
+                </div> */}
             </div>
+
+            // <div >
+            //     <h1 className="Homepage_title"> Welcome to UCSB Food Bank </h1>
+            //     <div className="img_AS-Food-bank"></div>
+            //     <ul>
+            //         <li><div className="introduction_paragraph">This website will let you know what's in the food bank today</div></li>
+            //         <li><center><iframe className="Introduction_YT" src="https://www.youtube.com/embed/GgJJRo5uT0c"></iframe></center></li>
+            //         <li><div className="register_paragraph">Prior to your first visit, please&nbsp;<a href="http://tinyurl.com/asfbreg">register </a>first.</div></li>
+            //     </ul>
+            // </div>
 
         )
     }
