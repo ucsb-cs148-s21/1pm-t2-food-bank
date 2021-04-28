@@ -5,6 +5,7 @@ import './App.css';
 import history from "./components/history"
 
 import { Router, Route, Switch } from "react-router";
+import Inventory from './components/Inventory/Inventory';
 
 
 function App() {
@@ -16,6 +17,9 @@ function App() {
         </Switch>
         <Switch>
           <Route path="/login" component={Login} />
+        </Switch>
+        <Switch>
+          <Route path="/inventory" component={Inventory} />
         </Switch>
       </Router>
     </div>
