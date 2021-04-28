@@ -12,6 +12,7 @@ import { Container } from 'react-bootstrap';
 function App() {
   return (
     <div className="App">
+<<<<<<< HEAD
       <Container>
         <Switch>
           <Route path="/" exact component={Home_Content} />
@@ -23,6 +24,11 @@ function App() {
           <Route path="/login"exact component={Login} />
         </Switch>
       </Container>
+=======
+      <Navbar />
+      <Home_Content />
+      <FooterContainer />
+>>>>>>> 4411c1fd (fixed padding issues)
     </div>
   );
 }
