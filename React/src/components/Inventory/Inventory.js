@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
+import './Inventory.css'
 
 class Inventory extends Component {
     state = {
@@ -29,8 +30,8 @@ class Inventory extends Component {
 
     render() {
         return (
-          <div className="table" >
-            <BootstrapTable  keyField='inventory' 
+          <div class="inventoryTable">
+            <BootstrapTable keyField='inventory' 
             data={ this.state.products } 
             columns={ this.state.columns } />
           </div>
