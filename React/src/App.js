@@ -2,26 +2,26 @@ import React from 'react';
 import Login from './components/Login/Login';
 import Home_Content from "./components/Home_Content/Home_Content"
 import './App.css';
-import history from "./components/history"
 
-import { Router, Route, Switch } from "react-router";
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Inventory from './components/Inventory/Inventory';
+import { Container } from 'react-bootstrap';
 
 
 function App() {
   return (
     <div className="App">
-      <Router history={history}>
+      <Container>
         <Switch>
           <Route path="/" exact component={Home_Content} />
         </Switch>
         <Switch>
-          <Route path="/login" component={Login} />
+          <Route path="/inventory"exact component={Inventory} />
         </Switch>
         <Switch>
-          <Route path="/inventory" component={Inventory} />
+          <Route path="/login"exact component={Login} />
         </Switch>
-      </Router>
+      </Container>
     </div>
   );
 }

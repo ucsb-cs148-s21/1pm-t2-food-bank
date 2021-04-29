@@ -47,7 +47,12 @@
 }
 
 .nav-links-mobile {
-    display: none;
+    background-color: #4ad9e4;
+    color: white;
+    font-size: large;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;   
+    
 }
 
 .menu-icon {
@@ -58,6 +63,7 @@
     .NavbarItems {
         position: relative;
         font-size: 1.3rem;
+        z-index: 999;
     }
 
     .nav-menu {
