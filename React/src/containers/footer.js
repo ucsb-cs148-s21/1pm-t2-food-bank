@@ -7,31 +7,18 @@ export function FooterContainer(){
             <Footer.Wrapper>
                 <Footer.Row>
                     <Footer.Column>
-                        <Footer.Title>About Us</Footer.Title>
-                        <Footer.Link href="#">Story</Footer.Link>
-                        <Footer.Link href="#">Clients</Footer.Link>
-                        <Footer.Link href="#">Testimonials</Footer.Link>
-                    </Footer.Column>
-                    <Footer.Column>
-                        <Footer.Title>About Us</Footer.Title>
-                        <Footer.Link href="#">Story</Footer.Link>
-                        <Footer.Link href="#">Clients</Footer.Link>
-                        <Footer.Link href="#">Testimonials</Footer.Link>
-                        <Footer.Link href="#">Testimonials</Footer.Link>
-                    </Footer.Column>
-                    <Footer.Column>
-                        <Footer.Title>About Us</Footer.Title>
-                        <Footer.Link href="#">Story</Footer.Link>
-                        <Footer.Link href="#">Clients</Footer.Link>
-                        <Footer.Link href="#">Testimonials</Footer.Link>
-                        <Footer.Link href="#">Testimonials</Footer.Link>
-                    </Footer.Column>
-                    <Footer.Column>
                         <Footer.Title>Social</Footer.Title>
-                        <Footer.Link href="#">Facebook</Footer.Link>
-                        <Footer.Link href="#">Instagram</Footer.Link>
-                        <Footer.Link href="#">Youtube</Footer.Link>
-                        <Footer.Link href="#">Twitter</Footer.Link>
+                        <Footer.Link href="https://www.facebook.com/ucsbasfoodbank">Facebook</Footer.Link>
+                        <Footer.Link href="https://www.instagram.com/ucsbasfoodbank/">Instagram</Footer.Link>
+                    </Footer.Column>
+                    <Footer.Column>
+                        <Footer.Title>Where</Footer.Title>
+                        <Footer.Link>Outside the Ortega side of the University Center, facing the lagoon.</Footer.Link>
+                    </Footer.Column>
+                    <Footer.Column>
+                        <Footer.Title>Email us at</Footer.Title>
+                        <Footer.Link>ucsbasfoodbank@as.ucsb.edu</Footer.Link>
+                        <Footer.Link>cindyl@as.ucsb.edu.</Footer.Link>
                     </Footer.Column>
                 </Footer.Row>
             </Footer.Wrapper>
