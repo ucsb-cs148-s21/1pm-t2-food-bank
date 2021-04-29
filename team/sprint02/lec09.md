@@ -14,17 +14,17 @@ Liuhao:
 - blocker: N/A
 
 Kaiwen:
--  
-- blockers:
+- added an inventory page and debugged - navbar always in front of the background; links can redirect pages correctly
+- blockers: N/A
 
 Orion:
 - updated footer
 - blockers:rebase problem
 
 Sunrise:
--  
-- blockers:
+- sabrina's vids
+- blockers: database issues (check w/ sabrina)
 
 Jerry:
--  
-- blockers:
+- mvp vids
+- blockers: hasnt done script yet
