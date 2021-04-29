@@ -55,34 +55,34 @@ Database - Mongo.db
 
 - **Run on Heroku**: 
 
-https://t2-food-banks.herokuapp.com/
+    https://t2-food-banks.herokuapp.com/
 
 - **Run locally** via `localhost:8080`: 
-```
-mvn spring-boot:run
-```
+    ```
+    mvn spring-boot:run
+    ```
 
 - **Run frontend only** via `localhost:3000`: 
 
-Make sure you have React installed (`npm install`) before doing:
-```
-cd React
-npm start
-```
+    Make sure you have React installed (`npm install`) before doing:
+    ```
+    cd React
+    npm start
+    ```
 
 - **Run frontend and backend separately** w/ 2 terminals
 
-Run in this way when only editing frontend to get realtime update on website:
+    Run in this way when only editing frontend to get realtime update on website:
 
-1. First terminal:
-```
-mvn spring-boot:run -Dskip.npm
-```
-2. Second termial:
-```
-cd React
-npm start
-```
+    1. First terminal:
+    ```
+    mvn spring-boot:run -Dskip.npm
+    ```
+    2. Second termial:
+    ```
+    cd React
+    npm start
+    ```
 
 ## Functionality
 - Go to our [heroku website](https://t2-food-banks.herokuapp.com/), you can see a NavBar item called inventory, where you shall find the availability of food at the food bank.
