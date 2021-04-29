@@ -5,7 +5,7 @@ Heroku: https://t2-food-banks.herokuapp.com/
 
 GitHub: https://github.com/ucsb-cs148-s21/t2-food-banks/
 
-## UCent food bank
+## UCent Food Bank
 This Webapp aims to provide students information about what items are available at the food bank, so students don't need to come to the food bank and leave empty handed because the food they want is unavailable.
 
 ## Grand Vision
@@ -92,3 +92,6 @@ Fork it!
 2. Commit your changes: `git commit -am 'Add some feature'`
 3. Push to the branch: `git push origin my-new-feature`
 4. Submit a pull request :D
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
