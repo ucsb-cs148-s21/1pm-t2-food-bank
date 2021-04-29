@@ -53,14 +53,16 @@ Database - Mongo.db
 
 ### Installation Steps
 
-- Run it on Heroku: https://t2-food-banks.herokuapp.com/
+- **Run on Heroku**: 
 
-- Run it locally via `localhost:8080`: 
+https://t2-food-banks.herokuapp.com/
+
+- **Run locally** via `localhost:8080`: 
 ```
 mvn spring-boot:run
 ```
 
-- Run frontend only via `localhost:3000`: 
+- **Run frontend only** via `localhost:3000`: 
 
 Make sure you have React installed (`npm install`) before doing:
 ```
@@ -68,7 +70,7 @@ cd React
 npm start
 ```
 
-- Run frontend and backend separately w/ 2 terminals
+- **Run frontend and backend separately** w/ 2 terminals
 
 Run in this way when only editing frontend to get realtime update on website:
 
