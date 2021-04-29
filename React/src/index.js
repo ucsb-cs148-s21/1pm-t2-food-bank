@@ -5,6 +5,7 @@ import './index.css';
 import { GlobalStyles } from './global-styles'
 import App from './App';
 import Navbar from "./components/Navbar/Navbar"
+import { FooterContainer } from "./containers/footer"
 
 
 ReactDOM.render(
