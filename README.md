@@ -79,11 +79,11 @@ npm start
 ```
 
 ## Functionality
-- Go to our heroku website/`https://t2-food-banks.herokuapp.com/`, you can see a NavBar item called inventory, where you shall find the availability of food at the food bank.
+- Go to our heroku website`https://t2-food-banks.herokuapp.com/`, you can see a NavBar item called inventory, where you shall find the availability of food at the food bank.
+- Go to [login page](`https://t2-food-banks.herokuapp.com/login`), staff can login (currently the login credentials havent been connected to our database)
 
 ## Known Problems
-- Unable to Connect to database and update data in real time
-- Main page lack content
+- Unable to Connect to database (i.e. login, inventory) and update data in real time
 - Inventory webpage not designed
 
 ## Contributing
