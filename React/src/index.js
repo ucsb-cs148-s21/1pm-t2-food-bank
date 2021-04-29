@@ -7,13 +7,12 @@ import Navbar from "./components/Navbar/Navbar"
 
 
 ReactDOM.render(
-    <Router>
-        <div className="App">
-            <Navbar />
-            <App />
-        </div>
-    </Router>,
-    
-     
-    
+    <React.StrictMode>
+        <Router>
+            <div className="App">
+                <Navbar />
+                <App />
+            </div>
+        </Router>
+    </React.StrictMode>,
 document.getElementById('root'));

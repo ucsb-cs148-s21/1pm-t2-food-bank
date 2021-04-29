@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import { MenuItems } from "./MenuItems"
-import { Button } from "../Button"
-import history from './../history'
 
 import './Navbar.css'
+import { Link } from 'react-router-dom';
 
 
 class Navbar extends Component {
@@ -27,17 +26,16 @@ class Navbar extends Component {
                     {MenuItems.map((item, index) => {
                         return (
                             <li key={index}>
-                                <a className={item.cName} href={item.url}>
+                                <Link to={"/"+item.url} className={item.cName}>
                                 {item.title}
-                                </a>
+                                </Link>
                             </li>
                         )
                     })}
                 </ul>
-                <Button onClick={() => history.push('/login')}>Login</Button>
             </nav>
         )
     }
 }
 
-export default Navbar
+export default Navbar;
