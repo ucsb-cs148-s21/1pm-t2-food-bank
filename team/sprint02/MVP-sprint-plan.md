@@ -9,7 +9,8 @@ At the current stage, our focuses are on services related to the student body.
 5. Create a page for the inventory of the food bank: As a student, I want to access the inventory webpage so that I can check the availability of the items at the food bank.
 
 Cound't finish in the current page and push to next sprint:
-6. Populate the inventory page: As a team member, I can get the inventory data from the back end as to the quantities of the different food items so that I can populate the inventory page.
+
+`6. Populate the inventory page: As a team member, I can get the inventory data from the back end as to the quantities of the different food items so that I can populate the inventory page.`
 
 ## Planned pages and functionalities
 - Homepage (navbar, footer, etc.)
