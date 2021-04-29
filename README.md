@@ -57,7 +57,7 @@ Database - Mongo.db
 
     https://t2-food-banks.herokuapp.com/
 
-- **Run locally** via `localhost:8080`
+- **Run full-stack locally** via `localhost:8080`
     ```
     mvn spring-boot:run
     ```
