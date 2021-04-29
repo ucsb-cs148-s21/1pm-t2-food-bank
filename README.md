@@ -70,7 +70,7 @@ Database - Mongo.db
     npm start
     ```
 
-- **Run frontend and backend separately** w/ 2 terminals
+- **Run frontend and backend separately** (Developer Mode)
 
     Run in this way when only editing frontend to get realtime update on website:
 
