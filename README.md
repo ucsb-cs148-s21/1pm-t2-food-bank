@@ -64,7 +64,7 @@ Database - Mongo.db
 
 - **Run frontend only** via `localhost:3000` 
 
-    Make sure you have React installed (`npm install`) before doing:
+    Make sure you have run full-stack at least once before doing:
     ```
     cd React
     npm start
