@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import './Home_Content.css'
 
 class Home_Content extends Component {
@@ -16,7 +17,7 @@ class Home_Content extends Component {
                         <p>
                             Come and find out what's in our Inventory today!
                         </p>
-                        <a href="https://t2-food-banks.herokuapp.com/inventory">Get Started</a>
+                        <Link to={"/inventory"}>Get Started</Link>
                     </div>
                 </div>
             </div>
