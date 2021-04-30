@@ -16,7 +16,7 @@ class Home_Content extends Component {
                         <p>
                             Come and find out what's in our Inventory today!
                         </p>
-                        <a href="">Get Started</a>
+                        <a href="https://t2-food-banks.herokuapp.com/inventory">Get Started</a>
                     </div>
                 </div>
             </div>
