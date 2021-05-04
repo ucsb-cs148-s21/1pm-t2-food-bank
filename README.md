@@ -26,7 +26,7 @@ Frontend - React/Javascript/HTML/CSS
 
 Backend - Spring Node.js
 
-Database - Mongo.db
+Database - Firebase
 
 ## User Roles
 
@@ -48,7 +48,7 @@ Database - Mongo.db
 
 ### Dependencies
 - React
-- MongoDB
+- Firebase
 - Spring
 
 ### Installation Steps
