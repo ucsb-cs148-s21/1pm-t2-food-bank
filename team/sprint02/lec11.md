@@ -1,4 +1,4 @@
-# Project: Food Banks
+# Proejct: Food Banks
 
 Mentor: Shiran Wang
 
@@ -10,7 +10,7 @@ Team: Kaiwen Li✓, Sunrise Gao✓, Liuhao Wu✓, Tianchen Wang✓, Orion Schwel
 
 Sunrise:
 - switched database to firebase
-- blocker: 
+- blocker: mapping issue in homecontroller.java for loading database
 
 Kaiwen:
 - suggests to test the homecontroller
