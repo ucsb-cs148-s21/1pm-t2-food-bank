@@ -8,7 +8,8 @@ Type of meeting: Lab
 
 Team: Kaiwen Li✓, Sunrise Gao✓, Liuhao Wu✓, Tianchen Wang✓, Orion Schwellenbachx
 
-Next week's plan:
+## Next week's plan
+
 Liuhao:
 - contact us page
 - possiblely story book (?orion?)
@@ -22,3 +23,7 @@ Sunrise:
 
 kaiwen:
 - backend feeature for login page (retrive user name and password)
+
+## TODO for next Tue
+- Retro next tue
+- Orion's work assignment for next week
