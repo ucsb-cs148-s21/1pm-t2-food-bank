@@ -15,3 +15,8 @@ Sunrise:
 Kaiwen:
 - suggests to test the homecontroller
 
+Liuhao:
+- Finished the test for home controller msg function
+
+Orion & Jerry:
+- Finished the acceptance criteria on kanban as a part of lab04
