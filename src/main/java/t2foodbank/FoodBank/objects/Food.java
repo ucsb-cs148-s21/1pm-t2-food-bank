@@ -1,16 +1,19 @@
 package t2foodbank.FoodBank.objects;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Food {
 
    private String name;
 
-   private String amount;
+   private int amount;
 
    public Food (){
        super();
    }
 
-   public Food(String name, String amount) {
+   public Food(String name, int amount) {
       super();
       this.name = name;
       this.amount = amount;
@@ -24,11 +27,11 @@ public class Food {
       this.name = name;
    }
 
-   public String getAmount() {
+   public int getAmount() {
       return amount;
    }
 
-   public void setAmount(String amount) {
+   public void setAmount(int amount) {
       this.amount = amount;
    }
 
