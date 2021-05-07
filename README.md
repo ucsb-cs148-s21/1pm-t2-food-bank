@@ -12,13 +12,13 @@ This Webapp aims to provide students information about what items are available 
 Know the availability and quantity of items at the food bank before physically being there
 
 ## Team Members
-| Name              | GitHub ID   |
-|-------------------|-------------|
-| Jerry Wang      | missmiss20    | 
-| Liuhao Wu  | lwu5        | 
-| Kaiwen Li | kaiwenli1   | 
-| Sunrise Gao | sunrise0stack    | 
-| Orion Schwellenbach | JamesSchwellenbach   |
+| Name              | GitHub ID   | Email                         |
+|-------------------|-------------|-------------------------------|
+| Jerry Wang      | missmiss20    | tianchenwang@ucsb.edu         |
+| Liuhao Wu  | lwu5        | liuhao.w5@gmail.com           | 
+| Kaiwen Li | kaiwenli1   | kaiwen_li@ucsb.edu            |
+| Sunrise Gao | sunrise0stack    | xu_gao@ucsb.edu               |
+| Orion Schwellenbach | JamesSchwellenbach   | jamesschwellenbach@ucsb.edu   |
 
 ## Tech Stack
 
