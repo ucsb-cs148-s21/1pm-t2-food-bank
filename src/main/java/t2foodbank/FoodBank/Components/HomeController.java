@@ -67,6 +67,4 @@ public class HomeController {
         return "Delete inventory "+name;
     }
 
-    
-
 }
