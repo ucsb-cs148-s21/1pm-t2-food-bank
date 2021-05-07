@@ -26,4 +26,4 @@ kaiwen:
 
 ## TODO for next Tue
 - Retro next tue
-- Orion's work assignment for next week
+- Orion's work assignment for next week (testing?)
