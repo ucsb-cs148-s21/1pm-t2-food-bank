@@ -1,23 +1,28 @@
-# Retro #2 05/06/21 or 05/07/21
+# Date of Retrospective: 04/22/21
 
-* Led by: name-goes-here
-* Present: name1, name2, ... , nameN
-* Absent: name1, name2, ...
+* Led by: Orion schwellenbach
+* Present: Kaiwen Li✓, Sunrise Gao✓, Liuhao Wu✓, Tianchen Wang✓, Orion Schwellenbach✓
+* Absent: N/A
 
 ## Action item
 
-* a goal: identify something the team wants to get better at
-* a change: identify one thing that the team will change about how it works together
-* a measurement: identify at least one way to measure whether the change helped the team acheive the goal, or move closer to it.
+* a goal: Work together/communicate more with other group members.
+* a change: Use the Kanban board for small tasks that can be individually completed.
+* a measurement: At each standup we look at the Kanban board.
 
 ## Optional
 
-* Record anything else you think the team might want to remember from this retro。
-
+* Record anything else you think the team might want to remember from this retro
 
 ## Retro Assessment
 
-* A brief description of what retro outline or process you used.
-* A brief assessment of how it went.
-* What advice would you give to the next person leading a retro
-  based on what you learned today?
+* In lec05 we used start/stop/continue format for the retro. in this retro we set up a goal, a change to accomplish that goal and a measurement to quantify if we completed that goal.
+* The retro went well, we found a change to increase the productivity of the group and be connected better with what others are working towards.
+* Try to focus on making sure everyone can share their ideas during the retro, you aren't supposed to fill in the 'content' of the meeting.
+
+## Retro Outcome
+* Update: 4/29/2021 (outcome of retro during the MVP)
+* We've successfully met our goal set during the first Retro.
+* We've been frequently communicating through Discord and updating our Kanban board in a timely manner.
+* We've been breaking down large tasks to smaller one (i.e. footer, debug, fill-in homepage content) so individuals who were assigned to the tasks were able to complete them without overlapping duties.
+* We've created a new channel named "resources" on discord for sharing recourses.
