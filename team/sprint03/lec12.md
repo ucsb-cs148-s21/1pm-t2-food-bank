@@ -18,6 +18,7 @@ Orion:
 
 Jerry:
 - inventory page w/ kaiwen
+- stop implementing new
 - blocker: tutorials/functions
 
 Sunrise:
