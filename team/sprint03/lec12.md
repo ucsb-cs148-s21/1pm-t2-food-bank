@@ -29,5 +29,3 @@ kaiwen:
 - add user name/password, retrive data (backend)
 - inventory is working but user data haven been pushed.
 - blocker: frontend hasnt been implemented and coundnt test with backend
-
-## TODO for next Tue
