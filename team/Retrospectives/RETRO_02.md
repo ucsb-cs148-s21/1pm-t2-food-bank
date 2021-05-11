@@ -1,4 +1,4 @@
-# Date of Retrospective: 04/22/21
+# Date of Retrospective: 05/11/21
 
 * Led by: Orion schwellenbach
 * Present: Kaiwen Li✓, Sunrise Gao✓, Liuhao Wu✓, Tianchen Wang✓, Orion Schwellenbach✓
@@ -6,9 +6,9 @@
 
 ## Action item
 
-* a goal: Work together/communicate more with other group members.
-* a change: Use the Kanban board for small tasks that can be individually completed.
-* a measurement: At each standup we look at the Kanban board.
+* a goal: Distributing clear work assignments
+* a change: Communicate during class, but also out of class when we have questions about what we should be working on.
+* a measurement: Make sure that each memember has at least one in-progress goal on Kanban board.
 
 ## Optional
 
@@ -16,13 +16,8 @@
 
 ## Retro Assessment
 
-* In lec05 we used start/stop/continue format for the retro. in this retro we set up a goal, a change to accomplish that goal and a measurement to quantify if we completed that goal.
 * The retro went well, we found a change to increase the productivity of the group and be connected better with what others are working towards.
 * Try to focus on making sure everyone can share their ideas during the retro, you aren't supposed to fill in the 'content' of the meeting.
 
 ## Retro Outcome
-* Update: 4/29/2021 (outcome of retro during the MVP)
-* We've successfully met our goal set during the first Retro.
-* We've been frequently communicating through Discord and updating our Kanban board in a timely manner.
-* We've been breaking down large tasks to smaller one (i.e. footer, debug, fill-in homepage content) so individuals who were assigned to the tasks were able to complete them without overlapping duties.
-* We've created a new channel named "resources" on discord for sharing recourses.
+* 
