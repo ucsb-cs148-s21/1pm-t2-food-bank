@@ -12,6 +12,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.concurrent.ExecutionException;
+import java.util.Set;
 
 import com.google.api.core.ApiFuture;
 import com.google.cloud.firestore.CollectionReference;
@@ -26,8 +27,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 import t2foodbank.FoodBank.database.FirebaseInitializer;
 import t2foodbank.FoodBank.objects.Food;
-//import org.springframework.http.HttpStatus;
-//import org.springframework.http.ResponseEntity;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.PathVariable;
 
 //import java.util.concurrent.ExecutionException;
 
@@ -57,14 +59,28 @@ public class HomeController {
     }
 
     //to do
-    @PutMapping("/api/updateInventory")
-    public String updateInventory(@RequestBody Food food){
-        return "Update inventory "+food.getName();
+    @PostMapping("/api/updateInventory")
+    public int updateInventory(@RequestBody Food food){
+        CollectionReference foodDocumentReference = db.getFirebase().collection("inventory");
+        foodDocumentReference.document(String.valueOf(food.getAmount())).set(food);
+        return food.getAmount();
     }
 
-    @DeleteMapping("/deleteInventory")
-    public String deleteInventory(@RequestHeader String name){
-        return "Delete inventory "+name;
-    }
+    //@DeleteMapping("/deleteInventory")
+   // public String deleteInventory(@RequestHeader String name){
+    //    return "Delete inventory "+name;
+   // }
+    
+   @DeleteMapping("/deleteInventory")
+   public ResponseEntity<Long> deletePost(@PathVariable Long inventory) {
+   
+       var isRemoved = Food.delete(inventory);
+   
+       if (!isRemoved) {
+           return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+       }
+   
+       return new ResponseEntity<>(inventory, HttpStatus.OK);
+   }
 
 }
