@@ -11,5 +11,5 @@
 | Thu 04/22 | Liuhao      | led lab03 discussion on MVP sprint planning note  | 
 | Thu 04/27 | Sunrise      | led daily scrum  | 
 | Thu 04/29 | Liuhao      | lab final check  | 
-| Thu 05/06 | Orion      | lab final check & sprint03 | 
-| Thu 05/11 | Liuhao      | retro  | 
+| Thu 05/06 | Liuhao      | lab final check & sprint03 | 
+| Thu 05/11 | Orion      | retro  | 
