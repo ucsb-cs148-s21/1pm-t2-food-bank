@@ -20,4 +20,4 @@
 * Try to focus on making sure everyone can share their ideas during the retro, you aren't supposed to fill in the 'content' of the meeting.
 
 ## Retro Outcome
-* 
+* TBD
