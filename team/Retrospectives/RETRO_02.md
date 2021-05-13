@@ -16,8 +16,9 @@
 
 ## Retro Assessment
 
+* We used Stop/Continue/Start outline in this retro.
 * The retro went well, we found a change to increase the productivity of the group and be connected better with what others are working towards.
 * Try to focus on making sure everyone can share their ideas during the retro, you aren't supposed to fill in the 'content' of the meeting.
 
 ## Retro Outcome
-* TBD
+* TBD (will check back after one week, aka 5/21)
