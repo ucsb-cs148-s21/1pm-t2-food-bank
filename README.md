@@ -28,6 +28,8 @@ Backend - Spring Node.js
 
 Database - Firebase
 
+Test - React Testing Library + JUnit
+
 ## User Roles
 
 1. If I am a student, I can check the app so that I know what is in the food bank.
