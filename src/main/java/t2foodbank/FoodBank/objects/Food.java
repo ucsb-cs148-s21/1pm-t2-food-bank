@@ -7,18 +7,10 @@ public class Food {
 
    private String name;
    private int limit;
-
-   public int getLimit() {
-      return this.limit;
-   }
-
-   public void setLimit(int limit) {
-      this.limit = limit;
-   }
    private int amount;
 
-   public Food (){
-       super();
+   public Food() {
+      super();
    }
 
    public Food(String name, int amount, int limit) {
@@ -28,9 +20,17 @@ public class Food {
       this.limit = limit;
    }
 
+   public int getLimit() {
+      return this.limit;
+   }
+
+   public void setLimit(int limit) {
+      this.limit = limit;
+   }
+
    public String getName() {
       return name;
-   }  
+   }
 
    public void setName(String name) {
       this.name = name;
@@ -44,9 +44,4 @@ public class Food {
       this.amount = amount;
    }
 
- 
-   
-
-   
 }
-

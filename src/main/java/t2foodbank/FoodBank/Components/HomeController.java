@@ -24,6 +24,7 @@ import org.springframework.web.bind.annotation.RestController;
 //import org.springframework.web.bind.annotation.RequestBody;
 
 import t2foodbank.FoodBank.database.FirebaseInitializer;
+import t2foodbank.FoodBank.objects.Admin;
 import t2foodbank.FoodBank.objects.Food;
 import org.springframework.web.bind.annotation.PathVariable;
 
@@ -52,6 +53,17 @@ public class HomeController {
             foodList.add(f);
         }
         return foodList;
+    }
+
+    @GetMapping("/api/getAdmin")
+    public Admin getAdmin() throws InterruptedException, ExecutionException {
+        Iterable<DocumentReference> documentReference = db.getFirebase().collection("admin").listDocuments();
+        Iterator<DocumentReference> it = documentReference.iterator();
+        DocumentReference documentReference1 = it.next();
+        ApiFuture<DocumentSnapshot> future = documentReference1.get();
+        DocumentSnapshot document = future.get();
+        Admin ad = document.toObject(Admin.class);
+        return ad;
     }
 
 }
