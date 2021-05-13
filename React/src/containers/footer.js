@@ -18,8 +18,8 @@ export function FooterContainer(){
                     </Footer.Column>
                     <Footer.Column>
                         <Footer.Title>Email us at</Footer.Title>
-                        <Footer.Link>ucsbasfoodbank@as.ucsb.edu</Footer.Link>
-                        <Footer.Link>cindyl@as.ucsb.edu.</Footer.Link>
+                        <Footer.Link href="mailto: ucsbasfoodbank@as.ucsb.edu">ucsbasfoodbank@as.ucsb.edu</Footer.Link> 
+                        <Footer.Link href="mailto: cindyl@as.ucsb.edu">cindyl@as.ucsb.edu</Footer.Link>
                     </Footer.Column>
                 </Footer.Row>
             </Footer.Wrapper>
