@@ -58,7 +58,15 @@ public class HomeController {
         return foodList;
     }
 
-    //to do
+    @PutMapping("/api/addInventory")
+    public int adInventory(@RequestBody Food food){
+        CollectionReference foodDocumentReference = db.getFirebase().collection("inventory");
+        foodDocumentReference.document(String.valueOf(food.getAmount())).set(food);
+        return food.getAmount();
+
+    }
+
+
     @PostMapping("/api/updateInventory")
     public int updateInventory(@RequestBody Food food){
         CollectionReference foodDocumentReference = db.getFirebase().collection("inventory");
