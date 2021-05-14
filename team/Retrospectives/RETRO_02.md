@@ -22,3 +22,7 @@
 
 ## Retro Outcome
 * TBD (will check back after one week, aka 5/21)
+* A brief description of what your retro 2 experiment was 
+* A brief recap of the metric you planned on using 
+* The outcome according to the metric now that the next Sprint is done (maybe already for a while).
+* Your conclusions based on this outcome. You can decide to cement this change going forward, to modify it (start a new experiment), or to discard it and go back to previous procedures.    
