@@ -13,3 +13,18 @@
 | Thu 04/29 | Liuhao      | lab final check  | 
 | Thu 05/06 | Liuhao      | lab final check & sprint03 | 
 | Thu 05/11 | Orion      | Led second retro  for sprint02 | 
+
+
+# Roles to assign
+
+| Role         | Name                                               |
+|-------------------|--------------------------------------------------------|
+| Product Owner       | Jerry | 
+| Scrum Master  | Liuhao      | 
+| Testing/QA        | Orion  |
+| Retro 3 leader    | Jerry  | 
+| UX Coordinator      | Liuhao | 
+| Design Document Coordinator      | Kaiwen  | 
+| Deployment Document Coordinator      |Kaiwen| 
+| User Manual Coordinator      | Sunrise  | 
+| Final presentation leader (week 9/10)      | Jerry  | 
