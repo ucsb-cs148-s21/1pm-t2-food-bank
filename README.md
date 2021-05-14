@@ -28,7 +28,7 @@ Backend - Spring Node.js
 
 Database - Firebase
 
-Test - React Testing Library + JUnit
+Testing - React Testing Library/JEST + JUnit
 
 ## User Roles
 
