@@ -21,7 +21,7 @@
 |-------------------|--------------------------------------------------------|
 | Product Owner       | Jerry | 
 | Scrum Master  | Liuhao      | 
-| Testing/QA        | Orion  |
+| Testing/QA Coordinator       | Orion  |
 | Retro 3 leader    | Jerry  | 
 | UX Coordinator      | Liuhao | 
 | Design Document Coordinator      | Kaiwen  | 
