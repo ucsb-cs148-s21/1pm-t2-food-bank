@@ -13,7 +13,7 @@
 | Thu 04/29 | Liuhao      | lab03 final check  | 
 | Thu 05/06 | Liuhao      | lab04 final check & sprint03 | 
 | Thu 05/11 | Orion      | Led second retro  for sprint02 |
-| Thu 05/13 | Liuhao      | lab05 final check & roundmap/prototype|
+| Thu 05/13 | Liuhao      | lab05 final check & roadmap/prototype|
 
 
 # Roles to assign
