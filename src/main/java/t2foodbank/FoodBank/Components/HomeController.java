@@ -38,7 +38,6 @@ public class HomeController {
     public String hello() {
         return "T2 food bank is here";
     }
-
     @GetMapping("/api/getInventory")
     public List<Food> getAllInventory() throws InterruptedException, ExecutionException {
         List<Food> foodList = new ArrayList<Food>();
@@ -53,5 +52,4 @@ public class HomeController {
         }
         return foodList;
     }
-
 }
