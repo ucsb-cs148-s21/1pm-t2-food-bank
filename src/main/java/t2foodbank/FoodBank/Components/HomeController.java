@@ -23,7 +23,7 @@ import com.google.cloud.firestore.QuerySnapshot;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.RestController;
-//import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestBody;
 
 import t2foodbank.FoodBank.database.FirebaseInitializer;
 import t2foodbank.FoodBank.objects.Food;
@@ -66,6 +66,13 @@ public class HomeController {
 
     }
 
+    @PutMapping("/api/addInventory")
+    public int addInventory(@RequestBody Food food){
+        CollectionReference foodCR = db.getFirebase().collection("inventory");
+        foodCR.document(String.valueOf(food.getAmount())).set(food);
+        return food.getAmount();
+
+    }
 
     @PostMapping("/api/updateInventory")
     public int updateInventory(@RequestBody Food food){
@@ -74,10 +81,6 @@ public class HomeController {
         return food.getAmount();
     }
 
-    //@DeleteMapping("/deleteInventory")
-   // public String deleteInventory(@RequestHeader String name){
-    //    return "Delete inventory "+name;
-   // }
     
    @DeleteMapping("/deleteInventory")
    public ResponseEntity<Long> deletePost(@PathVariable Long inventory) {
@@ -90,5 +93,6 @@ public class HomeController {
    
        return new ResponseEntity<>(inventory, HttpStatus.OK);
    }
+   
 
 }
