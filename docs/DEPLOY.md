@@ -16,6 +16,8 @@ Deployment Document Coordinator. This person is responsible for the deployment d
     ```
 
 - **Run full-stack locally** via `localhost:8080`
+
+    After downloading the project to local machine, change directory to the 1pm-t2-food-bank folder
     ```
     mvn spring-boot:run
     ```
