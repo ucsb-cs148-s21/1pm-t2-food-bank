@@ -2,7 +2,23 @@ import React, { Component, useState, useEffect } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 import './Inventory.css'
 
-import Datatable from "./datatable"
+const columns = [{
+  dataField: 'category',
+  text: 'Category'
+  
+},
+{
+  dataField: 'name',
+  text: 'Inventory'
+},
+{
+  dataField: 'amount',
+  text: 'Quantity'
+},
+{  
+  dataField: 'limit',
+  text: 'Limit'
+}];
 
 // https://www.youtube.com/watch?v=d1r0aK5awWk
 // require("es6-promise").polyfill();

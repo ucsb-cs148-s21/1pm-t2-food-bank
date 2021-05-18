@@ -11,7 +11,7 @@ export const MenuItems = [
     },
     {
         title: 'Staff Portal',
-        url: '',
+        url: 'staff',
         cName: 'nav-links'
     },
     {
