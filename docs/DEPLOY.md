@@ -9,7 +9,7 @@ Deployment Document Coordinator. This person is responsible for the deployment d
 
     [https://t2-food-banks.herokuapp.com/](https://t2-food-banks.herokuapp.com/)
 
-- **Download the project from github page** 
+- **Download the project from github to local** 
 
     ```
     git clone git@github.com:ucsb-cs148-s21/1pm-t2-food-bank.git
