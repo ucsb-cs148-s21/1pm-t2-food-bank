@@ -1,6 +1,8 @@
 # UCSB Food Bank Architecture 
 
-- Contribution: modified based on [https://capstone.cs.ucsb.edu/team_docs_20/prd1/alcon.pdf](https://capstone.cs.ucsb.edu/team_docs_20/prd1/alcon.pdf)
+```
+Contribution: modified based on [https://capstone.cs.ucsb.edu/team_docs_20/prd1/alcon.pdf](https://capstone.cs.ucsb.edu/team_docs_20/prd1/alcon.pdf)
+```
 
 - Frontend:
   - We implemented a login page. Staff need to have an account they can log in to so they will have easy access to staff portal and modify the inventory.
