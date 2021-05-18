@@ -2,97 +2,55 @@ import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 import './Inventory.css'
 
-class Inventory extends Component {
-    state = {
-        products: [
-          {
-            'inventory': 'Banana',
-            'quantity': 1,
-          },
-          {
-            'inventory': 'Apple',
-            'quantity': 3,
-          },
-          {
-            'inventory': 'Orange',
-            'quantity': 3,
-          },
-          {
-            'inventory': 'Kiwi',
-            'quantity': 3,
-          },
-          {
-            'inventory': 'Potato',
-            'quantity': 3,
-          },
-          {
-            'inventory': 'Sweet Potato',
-            'quantity': 3,
-          },
-          {
-            'inventory': 'Beef',
-            'quantity': 3,
-          },
-          {
-            'inventory': 'Pork',
-            'quantity': 2,
-          },
-          {
-            'inventory': 'Chicken',
-            'quantity': 3,
-          },
-          {
-            'inventory': 'Orange Juice',
-            'quantity': 3,
-          },
-          {
-            'inventory': 'Apple Juice',
-            'quantity': 3,
-          },
-          {
-            'inventory': 'Milk',
-            'quantity': 3,
-          },
-          {
-            'inventory': 'Rice',
-            'quantity': 3,
-          },
-          {
-            'inventory': 'Refried Beans',
-            'quantity': 3,
-          },
-          {
-            'inventory': 'Black Beans',
-            'quantity': 3,
-          },
-          {
-            'inventory': 'Cheese',
-            'quantity': 3,
-          },
-          {
-            'inventory': 'Toilet Paper',
-            'quantity': 3,
-          },
-        ],
-        columns: [{
-          dataField: 'inventory',
-          text: 'Inventory'
-        },
-        {
-          dataField: 'quantity',
-          text: 'Quantity'
-        }]
-    }
+const columns = [{
+  dataField: 'catagory',
+  text: 'Catagory'
+  
+},
+{
+  dataField: 'name',
+  text: 'Inventory'
+},
+{
+  dataField: 'amount',
+  text: 'Quantity'
+},
+{  
+  dataField: 'limit',
+  text: 'Limit'
+}];
 
-    render() {
-        return (
-          <div class="inventoryTable">
-            <BootstrapTable keyField='inventory' 
-            data={ this.state.products } 
-            columns={ this.state.columns } />
-          </div>
-        );
+
+export default class Inventory extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      inventory: null,
+      loading: true,
+      error: null
+    };
+  }
+
+  async componentDidMount() {
+    const API = "/api/getInventory";
+    const response = await fetch(API);
+    try {
+      const data = await response.json();
+      this.setState({ inventory: data, loading: false });
+    } catch (e) { this.setState({ error: e }) }
+  }
+
+  render() {
+    if (this.state.error) {
+      return <p>{this.state.error.message}</p>;
     }
+    if (this.state.loading) {
+      return <p>Loading ...</p>;
+    }
+    return (
+      <div className='inventoryTable'>
+          <BootstrapTable  keyField='catagory' data={this.state.inventory || []} columns={columns} />
+      </div>
+    );
+  }
 }
-
-export default Inventory;

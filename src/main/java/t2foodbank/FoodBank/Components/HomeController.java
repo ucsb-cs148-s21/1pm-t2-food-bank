@@ -1,6 +1,5 @@
 package t2foodbank.FoodBank.Components;
 
-
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -11,9 +10,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 
 import java.util.concurrent.ExecutionException;
-//import java.util.ArrayList;
 import java.util.List;
-//import java.util.Iterator;
+
 
 /*
 import com.google.api.core.ApiFuture;
@@ -30,9 +28,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import t2foodbank.FoodBank.database.FirebaseInitializer;
 import t2foodbank.FoodBank.database.FirebaseService;
+
 import t2foodbank.FoodBank.objects.Food;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PathVariable;
 //import t2foodbank.FoodBank.objects.Admin;
 
