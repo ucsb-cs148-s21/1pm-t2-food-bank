@@ -1,7 +1,7 @@
 # UCSB Food Bank Architecture 
 
 ```
-Contribution: modified based on [https://capstone.cs.ucsb.edu/team_docs_20/prd1/alcon.pdf](https://capstone.cs.ucsb.edu/team_docs_20/prd1/alcon.pdf)
+Contribution: modified based on https://capstone.cs.ucsb.edu/team_docs_20/prd1/alcon.pdf
 ```
 
 - Frontend:
