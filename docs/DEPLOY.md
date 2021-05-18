@@ -2,13 +2,11 @@ Deployment Document Coordinator. This person is responsible for the deployment d
 
 
 ### Installation Steps
-
-
-    
-- **Run on Heroku**
+  
+- **The running app on Heroku**
 
     [https://t2-food-banks.herokuapp.com/](https://t2-food-banks.herokuapp.com/)
-
+    
 - **Download the project from github to local** 
 
     ```
@@ -17,7 +15,12 @@ Deployment Document Coordinator. This person is responsible for the deployment d
 
 - **Run full-stack locally** via `localhost:8080`
 
-    After downloading the project to local machine, change directory to the 1pm-t2-food-bank folder
+    After downloading the project to local machine, change directory to 1pm-t2-food-bank folder,
+    ```
+    cd 1pm-t2-food-bank
+    ```
+    
+    then run the following command.
     ```
     mvn spring-boot:run
     ```
