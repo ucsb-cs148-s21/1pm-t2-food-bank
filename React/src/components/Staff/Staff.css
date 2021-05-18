@@ -1,0 +1,21 @@
+.inventoryTable{
+    margin-top:30px;
+    margin-bottom:30px;
+    margin-left: 30%;
+}
+table{
+    text-align: left;
+    width:50%;
+    border: 2px solid;
+    border-radius: 1%;
+}
+
+table th{
+    font-size: xx-large;
+    font-weight: 300;
+    font-family:Arial, Helvetica, sans-serif;
+    
+}
+table tr{
+    font-size: x-large;
+}
