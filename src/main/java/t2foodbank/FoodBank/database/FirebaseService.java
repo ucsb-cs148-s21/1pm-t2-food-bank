@@ -20,7 +20,6 @@ import org.springframework.stereotype.Service;
 public class FirebaseService {
 
     private static final String COLLECTION_NAME = "inventory";
-    FirebaseInitializer db;
 
 //get single inventory
 
@@ -47,16 +46,16 @@ public class FirebaseService {
 //get all invenotry
     public List<Food> getAllInventory() throws InterruptedException, ExecutionException {
 
-        //Firestore dbFirestore = FirestoreClient.getFirestore();
+        Firestore dbFirestore = FirestoreClient.getFirestore();
         
-        Iterable<DocumentReference> documentReference=db.getFirebase().collection(COLLECTION_NAME).listDocuments();
-        Iterator<DocumentReference> it = documentReference.iterator();
+        Iterable<DocumentReference> documentReference=dbFirestore.collection(COLLECTION_NAME).listDocuments();
+        Iterator<DocumentReference> iterator = documentReference.iterator();
 
         List<Food> foodList = new ArrayList<Food>();
         Food food=null;
 
-        while(it.hasNext()){
-            DocumentReference documentReference1 = it.next();
+        while(iterator.hasNext()){
+            DocumentReference documentReference1 = iterator.next();
             ApiFuture<DocumentSnapshot> future = documentReference1.get();
             DocumentSnapshot document = future.get();
             food = document.toObject(Food.class);

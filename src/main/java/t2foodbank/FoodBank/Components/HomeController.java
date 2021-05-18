@@ -47,7 +47,7 @@ public class HomeController {
 
 
     @GetMapping("/getInventory/{name}")
-    public Food getInventory(@PathVariable String name) throws ExecutionException, InterruptedException{
+    public Food getInventorybyname(@PathVariable String name) throws ExecutionException, InterruptedException{
 
         return firebaseService.getInventorybyname(name);
 
