@@ -5,7 +5,7 @@ Contribution: modified based on https://capstone.cs.ucsb.edu/team_docs_20/prd1/a
 ```
 
 - Frontend:
-  - We implemented a login page. Staff need to have an account they can log in to so they will have easy access to staff portal and modify the inventory.
+  - We implemented a login page and staff portal page. Staff need to have an account they can log in to so they will have easy access to staff portal and modify the inventory.
   - We implemented an interface that displays the inventory of the food bank.
   - These tasks can be implemented with React Frontend Library.
 - Backend:
