@@ -32,4 +32,5 @@ public class Admin {
     public void setPassword(String passsword) {
         this.password = passsword;
     }
+    
 }
