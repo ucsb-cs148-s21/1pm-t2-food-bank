@@ -82,37 +82,3 @@
 .text div{
     margin-bottom: 6px;
 }
-
-.ContactForm{
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left:auto;
-    max-width:540px
-}
-
-@media (min-width: 576px) {
-    .ContactForm {
-        max-width:540px
-    }
-}
-
-@media (min-width: 768px) {
-    .ContactForm {
-        max-width:720px
-    }
-}
-
-
-@media (min-width: 992px) {
-    .ContactForm {
-        max-width:960px
-    }
-}
-
-@media (min-width: 1200px) {
-    .ContactForm {
-        max-width:1140px
-    }
-}
