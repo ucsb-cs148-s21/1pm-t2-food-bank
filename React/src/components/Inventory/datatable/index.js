@@ -1,6 +1,6 @@
 import React from "react";
 import { CardColumns } from "react-bootstrap";
-import { Column } from "../../footer/styles/footer";
+import { Column } from "../../footer/footer_style";
 
 export default function Datatable({data})
 {
