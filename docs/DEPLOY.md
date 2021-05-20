@@ -37,11 +37,11 @@
 
     Run in this way when only editing frontend to get realtime update on website:
 
-    1. First terminal:
+    1. First terminal, run in 1pm-t2-food-bank directory:
     ```
     mvn spring-boot:run -Dskip.npm
     ```
-    2. Second termial:
+    2. Second termial, run in React directory:
     ```
     cd React
     npm start
