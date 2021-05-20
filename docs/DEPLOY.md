@@ -31,7 +31,7 @@
 
     Make sure you have run full-stack at least once before doing:
     ```
-    cd React
+    cd 1pm-t2-food-bank/React
     npm start
     ```
 
