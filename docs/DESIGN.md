@@ -1,10 +1,10 @@
 # UCSB Food Bank Design Docuement
 
-## Diagram
+## Architecture Diagram
 
 ![t2-food-bank](https://user-images.githubusercontent.com/72473351/118924482-02975280-b8f2-11eb-8153-485814650541.jpg)
 
-## Architecture 
+## Architecture Description
 
 - Frontend:
   - We implemented a login page and staff portal page. Staff need to have an account they can log in to so they will have easy access to staff portal and modify the inventory.
