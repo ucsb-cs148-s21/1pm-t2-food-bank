@@ -26,3 +26,8 @@ Design Document Coordinator. This person is responsible for the design process d
 An example from in UCSB Capstone projects:
 - [https://capstone.cs.ucsb.edu/past20.html](https://capstone.cs.ucsb.edu/past20.html)
 - [https://capstone.cs.ucsb.edu/team_docs_20/prd1/alcon.pdf](https://capstone.cs.ucsb.edu/team_docs_20/prd1/alcon.pdf)
+
+# Diagram
+
+![t2-food-bank](https://user-images.githubusercontent.com/72473351/118924482-02975280-b8f2-11eb-8153-485814650541.jpg)
+
