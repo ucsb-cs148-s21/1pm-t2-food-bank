@@ -54,7 +54,6 @@ const ContactForm = () => {
 
   return (
     <div className='ContactForm'>
-      <div className='container'>
       <h1 className='title'> Contact Form </h1>
         <div className='row'>
           <div className='col-12 text-center'>
@@ -139,7 +138,6 @@ const ContactForm = () => {
           </div>
         </div>
       </div>
-    </div>
   );
 };
 
