@@ -21,8 +21,8 @@
 * Try to focus on making sure everyone can share their ideas during the retro, you aren't supposed to fill in the 'content' of the meeting.
 
 ## Retro Outcome
-* TBD (will check back after one week, aka 5/21)
-* A brief description of what your retro 2 experiment was 
-* A brief recap of the metric you planned on using 
-* The outcome according to the metric now that the next Sprint is done (maybe already for a while).
-* Your conclusions based on this outcome. You can decide to cement this change going forward, to modify it (start a new experiment), or to discard it and go back to previous procedures.    
+* Update: 5/20 Thu (a week after the Retro 2)
+* Our Retro2 experiment was clearly assigning the work so that group members know what their duties are.
+* Metric: each member has at least one in-progress goal on kanban.
+* Outcome: We did a thorough sprint-planning in lab06, and concluded all of the tasks we need to complete in the next three weeks for the final project. We clearly disguessed the details of our acceptance criteria for these issues, and each member was assigned at least one task. The kanban reflected our completion of the goal.
+* In general, we've successfully met our goal set during the Retro2, and we'll keep the good habit of clear work distribution in the future.
