@@ -1,7 +1,4 @@
-Deployment Document Coordinator. This person is responsible for the deployment documentation refactored in this lab, chiefly the document pointed to by ./docs/DEPLOY.md. By next week (lab07), they should ensure that there is a first version, and will be responsible for updating it throughout the rest of the quarter.
-
-
-## this is the initial version, please double check.
+# UCSB Food Bank Deploy Document
 
 
 ### Installation Steps
@@ -32,7 +29,7 @@ Deployment Document Coordinator. This person is responsible for the deployment d
 
     Make sure you have run full-stack at least once before doing:
     ```
-    cd React
+    cd 1pm-t2-food-bank/React
     npm start
     ```
 
@@ -40,11 +37,11 @@ Deployment Document Coordinator. This person is responsible for the deployment d
 
     Run in this way when only editing frontend to get realtime update on website:
 
-    1. First terminal:
+    1. First terminal, run in 1pm-t2-food-bank directory:
     ```
     mvn spring-boot:run -Dskip.npm
     ```
-    2. Second termial:
+    2. Second termial, run in React directory:
     ```
     cd React
     npm start

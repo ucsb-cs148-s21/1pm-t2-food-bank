@@ -47,8 +47,8 @@ export default class Inventory extends Component {
     }
     return (
       <div>
-        <label for="search">Search:</label>
-        <input type="text" id="search" value={this.state.q} onChange={(e) => this.setQ(e.target.value)}></input>
+        <label className= 'searchLabel' for="search">Search:</label>
+        <input className= 'searchInput' type="text" id="search" value={this.state.q} onChange={(e) => this.setQ(e.target.value)}></input>
 
         <div name="inventoryTable">
           <Datatable data={this.search(this.state.data)} />

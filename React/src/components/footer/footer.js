@@ -1,6 +1,5 @@
-import React from 'react'
-import Footer from '../components/footer'
-import Icon from '../components/icons'
+import Footer from '.'
+import Icon from '../icons'
 
 export function FooterContainer(){
     return (
