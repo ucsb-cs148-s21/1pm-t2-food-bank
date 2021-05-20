@@ -1,10 +1,10 @@
 # UCSB Food Bank Design Docuement
 
-## Architecture 
+## Diagram
 
-```
-Contribution: modified based on https://capstone.cs.ucsb.edu/team_docs_20/prd1/alcon.pdf
-```
+![t2-food-bank](https://user-images.githubusercontent.com/72473351/118924482-02975280-b8f2-11eb-8153-485814650541.jpg)
+
+## Architecture 
 
 - Frontend:
   - We implemented a login page and staff portal page. Staff need to have an account they can log in to so they will have easy access to staff portal and modify the inventory.
@@ -21,7 +21,6 @@ Contribution: modified based on https://capstone.cs.ucsb.edu/team_docs_20/prd1/a
   - We plan to implement this task with gogle Auth.
   - We give admin role to staff members.
 
-## Diagram
-
-![t2-food-bank](https://user-images.githubusercontent.com/72473351/118924482-02975280-b8f2-11eb-8153-485814650541.jpg)
-
+```
+Contribution: description is modified based on https://capstone.cs.ucsb.edu/team_docs_20/prd1/alcon.pdf
+```
