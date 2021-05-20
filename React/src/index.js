@@ -13,7 +13,9 @@ ReactDOM.render(
         <Router>
             <div className="App">
                 <Navbar />
+                <div className='contents'>
                 <App />
+                </div>
                 <FooterContainer />
             </div>
         </Router>
