@@ -1,7 +1,5 @@
 # UCSB Food Bank Deploy Document
 
-```this is the initial version, please double check.```
-
 
 ### Installation Steps
   
