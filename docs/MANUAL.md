@@ -1,0 +1,2 @@
+
+Graded: (lab07-T) (30 pts) You earn these team points if you started a user manual document that you link to in your Github ./docs/MANUAL.md and that contains at the very least a description of the product purpose, lists the intended user audience, and has section headings (which are allowed to change later on) with placeholder information documenting the various features of your product and how to operate them.
