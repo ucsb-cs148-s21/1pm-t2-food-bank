@@ -35,10 +35,9 @@ export default class Inventory extends Component {
     this.setState({ q: value });
   }
   search(rows){
-    return rows.filter( row => row.catagory.toLowerCase().indexOf(this.state.q) > -1)
+    return rows.filter( row => row.name.toLowerCase().indexOf(this.state.q) > -1 || row.catagory.toLowerCase().indexOf(this.state.q) > -1)
   }
-
-
+  
   render() {
     if (this.state.error) {
       return <p>{this.state.error.message}</p>;
@@ -48,8 +47,8 @@ export default class Inventory extends Component {
     }
     return (
       <div>
-
-        <input type="text" value={this.state.q} onChange={(e) => this.setQ(e.target.value)}></input>
+        <label for="search">Search:</label>
+        <input type="text" id="search" value={this.state.q} onChange={(e) => this.setQ(e.target.value)}></input>
 
         <div name="inventoryTable">
           <Datatable data={this.search(this.state.data)} />
