@@ -3,20 +3,23 @@ package t2foodbank.FoodBank.Components;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RequestHeader;
+//import org.springframework.web.bind.annotation.RequestParam;
+//import org.springframework.web.bind.annotation.RequestHeader;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-import java.util.concurrent.ExecutionException;
 
+import java.util.concurrent.ExecutionException;
+import java.util.List;
+
+
+/*
 import com.google.api.core.ApiFuture;
 import com.google.cloud.firestore.CollectionReference;
 import com.google.cloud.firestore.DocumentReference;
 import com.google.cloud.firestore.DocumentSnapshot;
 import com.google.cloud.firestore.QuerySnapshot;
+*/
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -24,46 +27,55 @@ import org.springframework.web.bind.annotation.RestController;
 //import org.springframework.web.bind.annotation.RequestBody;
 
 import t2foodbank.FoodBank.database.FirebaseInitializer;
-import t2foodbank.FoodBank.objects.Admin;
+import t2foodbank.FoodBank.database.FirebaseService;
+
 import t2foodbank.FoodBank.objects.Food;
 import org.springframework.web.bind.annotation.PathVariable;
+//import t2foodbank.FoodBank.objects.Admin;
 
-//import java.util.concurrent.ExecutionException;
 
 @RestController
+
+@RequestMapping("/api")
 public class HomeController {
+
     @Autowired
-    FirebaseInitializer db;
+    private FirebaseService firebaseService;
 
-    @GetMapping("/api/t2")
-    public String hello() {
-        return "T2 food bank is here";
+
+    @GetMapping("/getInventory/{name}")
+    public Food getInventorybyname(@PathVariable String name) throws ExecutionException, InterruptedException{
+
+        return firebaseService.getInventorybyname(name);
+
     }
 
-    @GetMapping("/api/getInventory")
-    public List<Food> getAllInventory() throws InterruptedException, ExecutionException {
-        List<Food> foodList = new ArrayList<Food>();
-        Iterable<DocumentReference> documentReference = db.getFirebase().collection("inventory").listDocuments();
-        Iterator<DocumentReference> it = documentReference.iterator();
-        while (it.hasNext()) {
-            DocumentReference documentReference1 = it.next();
-            ApiFuture<DocumentSnapshot> future = documentReference1.get();
-            DocumentSnapshot document = future.get();
-            Food f = document.toObject(Food.class);
-            foodList.add(f);
-        }
-        return foodList;
+    @GetMapping("/getInventory")
+    public List<Food> getAllInventory() throws ExecutionException, InterruptedException{
+
+        return firebaseService.getAllInventory();
+
     }
 
-    @GetMapping("/api/getAdmin")
-    public Admin getAdmin() throws InterruptedException, ExecutionException {
-        Iterable<DocumentReference> documentReference = db.getFirebase().collection("admin").listDocuments();
-        Iterator<DocumentReference> it = documentReference.iterator();
-        DocumentReference documentReference1 = it.next();
-        ApiFuture<DocumentSnapshot> future = documentReference1.get();
-        DocumentSnapshot document = future.get();
-        Admin ad = document.toObject(Admin.class);
-        return ad;
+    @PostMapping("/addInventory")
+    public String addInventory(@RequestBody Food food) throws ExecutionException, InterruptedException{
+
+        return firebaseService.addInventory(food);
+        
+    }
+
+    @PutMapping("/updateInventory")
+    public String updateInventory(@RequestBody Food food) throws ExecutionException, InterruptedException{
+
+        return firebaseService.updateInventory(food);
+    
+    }
+
+    @DeleteMapping("/deleteInventory/{name}")
+    public String deleteInventory(@PathVariable String name) throws ExecutionException, InterruptedException{
+
+        return firebaseService.deleteInventory(name);
+
     }
 
 }

@@ -1,13 +1,17 @@
-.inventoryTable{
+/* .inventoryTable{
     margin-top:30px;
     margin-bottom:30px;
     margin-left: 30%;
-}
+} */
 table{
+    margin-top:30px;
+    margin-bottom:30px;
+    margin-left: 10%;
     text-align: left;
-    width:50%;
+    width:80%;
     border: 2px solid;
     border-radius: 1%;
+    border-color: rgb(119, 0, 255);
 }
 
 table th{
@@ -18,4 +22,28 @@ table th{
 }
 table tr{
     font-size: x-large;
+}
+
+label {
+    font-size: x-large;
+    margin-left:10%;
+}
+
+input {
+    margin-top:30px;
+    margin-bottom:10px;
+    margin-left:5px;
+    border: 2px solid;
+    border-radius: 1%;
+    color: rgb(119, 0, 255);
+}
+
+input[type=text] {
+    height: 40px;
+    width: 70px;
+    -webkit-transition: width 0.5s ease-in-out;
+    transition: width 0.5s ease-in-out;
+}
+input[type=text]:focus {
+    width: 70%;
 }
