@@ -21,10 +21,10 @@ Orion:
 - blocker: java jdk
 
 Sunrise:
-- backend; database methods w/ logging feedback;
+- backend: database methods w/ logging feedback;
 - blocker: N/A
 - plan: do timestamp
 
 kaiwen:
-- footer; design diagram; 
+- footer: design diagram; 
 - blcoker: n/a
