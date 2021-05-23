@@ -6,6 +6,7 @@ import './App.css';
 
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Inventory from './components/Inventory/Inventory';
+import Staff from './components/Staff/Staff';
 import { Container } from 'react-bootstrap';
 
 
@@ -16,6 +17,7 @@ function App() {
         <Switch>
           <Route path="/" exact component={Home_Content} />
           <Route path="/inventory"exact component={Inventory} />
+          <Route path="/staff"exact component={Staff} />
           <Route path="/contactus"exact component={Contact_Us} />
           <Route path="/login"exact component={Login} />
         </Switch>
