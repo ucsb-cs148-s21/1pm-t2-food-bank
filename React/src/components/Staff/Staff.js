@@ -7,6 +7,9 @@ import Datatable from "./datatable"
 // https://www.youtube.com/watch?v=d1r0aK5awWk
 // require("es6-promise").polyfill();
 // require("isomorphic-fetch")
+const onCreate = () =>{
+  
+}
 
 export default class Staff extends Component {
 
@@ -53,6 +56,7 @@ export default class Staff extends Component {
         <div name="staffTable">
           <Datatable data={this.search(this.state.data)} />
         </div>
+        <button onClick={onCreate}>Create</button>
       </div>
 
     );
