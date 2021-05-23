@@ -7,12 +7,6 @@ import Datatable from "./datatable"
 // https://www.youtube.com/watch?v=d1r0aK5awWk
 // require("es6-promise").polyfill();
 // require("isomorphic-fetch")
-<<<<<<< HEAD
-const onCreate = () =>{
-  
-}
-=======
->>>>>>> 8493e1a0abd5d8e579c2ad8da50aa322336aa182
 
 export default class Staff extends Component {
 
@@ -59,16 +53,8 @@ export default class Staff extends Component {
         <div name="staffTable">
           <Datatable data={this.search(this.state.data)} />
         </div>
-<<<<<<< HEAD
-        <button onClick={onCreate}>Create</button>
-=======
->>>>>>> 8493e1a0abd5d8e579c2ad8da50aa322336aa182
       </div>
 
     );
   }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 8493e1a0abd5d8e579c2ad8da50aa322336aa182
