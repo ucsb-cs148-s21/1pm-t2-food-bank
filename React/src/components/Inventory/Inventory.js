@@ -1,4 +1,4 @@
-import React, { Component, useState, useEffect } from 'react';
+import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 import './Inventory.css'
 
