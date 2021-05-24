@@ -10,7 +10,18 @@ import Loading from "../../pages/Loading"
 // require("es6-promise").polyfill();
 // require("isomorphic-fetch")
 
-export default class Inventory extends Component {
+import getUser from "../../utils/get-user";
+
+function TempInventory (){
+  const user = getUser();
+  return (
+    <Layout user={user}>
+    <Inventory />
+    </ Layout>
+  )
+}
+
+class Inventory extends Component {
 
   constructor(props) {
     super(props);
@@ -42,13 +53,12 @@ export default class Inventory extends Component {
   
   render() {
     if (this.state.error) {
-      return <Layout><p>{this.state.error.message}</p></Layout>
+      return <p>{this.state.error.message}</p>
     }
     if (this.state.loading) {
       return <Loading></Loading>
     }
     return (
-      <Layout>
         <div>
           <label className= 'searchLabel' for="search">Search:</label>
           <input className= 'searchInput' type="text" id="search" value={this.state.q} onChange={(e) => this.setQ(e.target.value)}></input>
@@ -57,7 +67,8 @@ export default class Inventory extends Component {
             <Datatable data={this.search(this.state.data)} />
           </div>
         </div>
-      </Layout>
     );
   }
 }
+
+export default TempInventory;

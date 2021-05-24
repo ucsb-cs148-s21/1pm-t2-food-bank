@@ -6,8 +6,11 @@ import Layout from "../../pages/Layout"
 
 import './Contact_Us.css';
 import './v4.6.0.css';
+import getUser from "../../utils/get-user";
 
 const ContactForm = () => {
+  const user = getUser();
+
   const { register, formState: { errors }, handleSubmit, reset } = useForm();
 
   const toastifySuccess = () => {
@@ -54,7 +57,7 @@ const ContactForm = () => {
   };
 
   return (
-    <Layout>
+    <Layout user={user}>
       <div className='ContactForm'>
             <h1 className='title'> Contact Form </h1>
               <div className='row'>

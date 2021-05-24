@@ -43,22 +43,25 @@ import{Nav, Navbar, NavDropdown } from "react-bootstrap";
 
 export default function NavBar(props) {
     const user = props.user;
+
     const [clicked, setClicked] = useState(false);
+
 
     const handleClick = () => {
         setClicked(!clicked);
+        console.log(clicked);
     }
 
     return (
             <nav className="NavbarItems">
                 <h1 className="navbar-logo">UCSB Food Bank<i className="fas fa-hamburger"></i></h1>
                 <div className="menu-icon" onClick={handleClick}>
-                    <i className={{clicked} ? 'fas fa-times' : 'fas fa-bars'}></i>
+                    <i className={clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
                 </div>
-                <ul className={{clicked} ? 'nav-menu active' : 'nav-menu'}>
+                <ul className={clicked ? 'nav-menu active' : 'nav-menu'}>
                     <Link to={"/"} className='nav-links'>Home</Link>
                     <Link to={"/inventory"} className='nav-links'>Inventory</Link>
-                    <Link to={"/"} className='nav-links'>Staff Portal</Link>
+                    {user && <Link to={"/"} className='nav-links'>Staff Portal</Link>}
                     <Link to={"/contactus"} className='nav-links'>Contact Us</Link>
                     {!user ? (
                         <div className="nav-links-mobile" id="login-button" />) : (
