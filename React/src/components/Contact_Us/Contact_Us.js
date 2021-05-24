@@ -2,7 +2,7 @@ import { useForm } from 'react-hook-form';
 import emailjs from 'emailjs-com';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.min.css';
-import Layout from "../Layout"
+import Layout from "../../pages/Layout"
 
 import './Contact_Us.css';
 import './v4.6.0.css';

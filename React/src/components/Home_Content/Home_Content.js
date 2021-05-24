@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import './Home_Content.css'
-import Layout from '../Layout'
+import Layout from '../../pages/Layout'
 
 class Home_Content extends Component {
     state = { clicked: false }

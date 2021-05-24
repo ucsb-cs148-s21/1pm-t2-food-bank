@@ -3,7 +3,8 @@ import BootstrapTable from 'react-bootstrap-table-next';
 import './Inventory.css'
 
 import Datatable from "./datatable"
-import Layout from '../Layout'
+import Layout from '../../pages/Layout'
+import Loading from "../../pages/Loading"
 
 // https://www.youtube.com/watch?v=d1r0aK5awWk
 // require("es6-promise").polyfill();
@@ -44,7 +45,7 @@ export default class Inventory extends Component {
       return <Layout><p>{this.state.error.message}</p></Layout>
     }
     if (this.state.loading) {
-      return <Layout><p>Loading ...</p></Layout>
+      return <Loading></Loading>
     }
     return (
       <Layout>
