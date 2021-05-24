@@ -1,11 +1,12 @@
-import React, { Component } from 'react';
-import { MenuItems } from "./MenuItems"
+import React, { useEffect, Component } from 'react';
 
 import './Navbar.css'
 import { Link } from 'react-router-dom';
 
+import Container from "react-bootstrap/Container";
+import{Nav, Navbar, NavDropdown } from "react-bootstrap";
 
-class Navbar extends Component {
+export default class NavBar extends Component {
 
     state = { clicked: false}
 
@@ -23,19 +24,13 @@ class Navbar extends Component {
                     <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
                 </div>
                 <ul className={this.state.clicked ? 'nav-menu active' : 'nav-menu'}>
-                    {MenuItems.map((item, index) => {
-                        return (
-                            <li key={index}>
-                                <Link to={"/"+item.url} className={item.cName}>
-                                {item.title}
-                                </Link>
-                            </li>
-                        )
-                    })}
+                    <Link to={"/"} className='nav-links'>Home</Link>
+                    <Link to={"/inventory"} className='nav-links'>Inventory</Link>
+                    <Link to={"/"} className='nav-links'>Staff Portal</Link>
+                    <Link to={"/contactus"} className='nav-links'>Contact Us</Link>
+                    <Link to={"/login"} className='nav-links-mobile'>Login</Link>
                 </ul>
             </nav>
         )
     }
 }
-
-export default Navbar;
