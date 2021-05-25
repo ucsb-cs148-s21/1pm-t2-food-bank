@@ -6,7 +6,7 @@
 
 ## Action item
 
-* a goal: Perfect current functionalities, move every task on Kanban to the done column. Produce a functional, reliable final product.
+* a goal: Produce a functional, reliable final product. Perfect current functionalities, move every task on Kanban to the done column.
 * a change: Distribute work of different aspects, coding, and paperwork, determine responsibilities.
 * a measurement: Check in with teammates more often; make sure to pull from main. Tell the team if a bug is discovered.
 
