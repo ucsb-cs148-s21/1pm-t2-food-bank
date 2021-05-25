@@ -1,10 +1,13 @@
-import Container from "react-bootstrap/Container";
+import React from "react";
+import loading from "../assets/loading.svg";
 
-export default function CheckingSignedIn() {
+const CheckingSignedIn = () => {
   return (
-    <Container>
-      <div>Checking if you're signed in...</div>
-      <br />
-    </Container>
+      <div className="spinner">
+        <img src={loading} alt="Loading" />
+        <p>Checking if you're signed in...</p>
+      </div>
   );
-}
+};
+
+export default CheckingSignedIn;

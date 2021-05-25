@@ -6,10 +6,6 @@ import Datatable from "./datatable"
 import Layout from '../../pages/Layout'
 import Loading from "../../pages/Loading"
 
-// https://www.youtube.com/watch?v=d1r0aK5awWk
-// require("es6-promise").polyfill();
-// require("isomorphic-fetch")
-
 import getUser from "../../utils/get-user";
 
 function TempInventory (){
