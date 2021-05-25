@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import './Navbar.css'
 import { Link } from 'react-router-dom';
@@ -11,6 +11,15 @@ export default function NavBar(props) {
 
     const [clicked, setClicked] = useState(false);
 
+    useEffect(() => {
+		if (window.gapi) {
+			window.gapi.load("signin2", () => {
+				window.gapi.signin2.render("login-button", {
+				  theme: "light",
+				});
+			});
+		}
+	});
 
     const handleClick = () => {
         setClicked(!clicked);
@@ -23,10 +32,10 @@ export default function NavBar(props) {
                     <i className={clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
                 </div>
                 <ul className={clicked ? 'nav-menu active' : 'nav-menu'}>
-                    <Nav.Link href={"/"} className='nav-links'>Home</Nav.Link>
-                    <Nav.Link href={"/inventory"} className='nav-links'>Inventory</Nav.Link>
-                    {user && <Nav.Link href={"/"} className='nav-links'>Staff Portal</Nav.Link>}
-                    <Nav.Link href={"/contactus"} className='nav-links'>Contact Us</Nav.Link>
+                    <Link to="/" className='nav-links'>Home</Link>
+                    <Link to="/inventory" className='nav-links'>Inventory</Link>
+                    {user && <Link to="/" className='nav-links'>Staff Portal</Link>}
+                    <Link to="/contactus" className='nav-links'>Contact Us</Link>
                     {!user ? (
                         <div className="nav-links-mobile" id="login-button" />) : (
                         <NavDropdown className="nav-links-mobile"
