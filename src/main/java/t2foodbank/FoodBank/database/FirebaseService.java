@@ -102,7 +102,7 @@ public class FirebaseService {
 }
 
 
-    //get time
+//get time
     public Time getTime(String name) throws ExecutionException, InterruptedException{
 
         Firestore dbFirestore = FirestoreClient.getFirestore();
@@ -122,7 +122,7 @@ public class FirebaseService {
         }
     }
 
-    //update time
+//update time
     public String updateTime(Time time) throws ExecutionException, InterruptedException{
 
         Firestore dbFirestore = FirestoreClient.getFirestore();
