@@ -8,14 +8,12 @@ import { FooterContainer } from "./components/footer/footer"
 
 ReactDOM.render(
     <React.StrictMode>
-        <Router>
-            <div className="App">
-                <div className='contents'>
-                <App />
-                </div>
-                <FooterContainer />
-            </div>
-        </Router>
+        <div className="App">
+        <div className='contents'>
+        <App />
+        </div>
+            <FooterContainer />
+        </div>
     </React.StrictMode>,
 document.getElementById('root'));
 

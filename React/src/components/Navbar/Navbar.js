@@ -23,10 +23,10 @@ export default function NavBar(props) {
                     <i className={clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
                 </div>
                 <ul className={clicked ? 'nav-menu active' : 'nav-menu'}>
-                    <Nav.Link to={"/"} className='nav-links'>Home</Nav.Link>
-                    <Nav.Link to={"/inventory"} className='nav-links'>Inventory</Nav.Link>
-                    {user && <Nav.Link to={"/"} className='nav-links'>Staff Portal</Nav.Link>}
-                    <Nav.Link to={"/contactus"} className='nav-links'>Contact Us</Nav.Link>
+                    <Nav.Link href={"/"} className='nav-links'>Home</Nav.Link>
+                    <Nav.Link href={"/inventory"} className='nav-links'>Inventory</Nav.Link>
+                    {user && <Nav.Link href={"/"} className='nav-links'>Staff Portal</Nav.Link>}
+                    <Nav.Link href={"/contactus"} className='nav-links'>Contact Us</Nav.Link>
                     {!user ? (
                         <div className="nav-links-mobile" id="login-button" />) : (
                         <NavDropdown className="nav-links-mobile"
