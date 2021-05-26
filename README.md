@@ -53,38 +53,9 @@ Testing - React Testing Library/JEST + JUnit
 - Firebase
 - Spring
 
-### Installation Steps
+### Deployment instructions
 
-- **Run on Heroku**
-
-    [https://t2-food-banks.herokuapp.com/](https://t2-food-banks.herokuapp.com/)
-
-- **Run full-stack locally** via `localhost:8080`
-    ```
-    mvn spring-boot:run
-    ```
-
-- **Run frontend only** via `localhost:3000` 
-
-    Make sure you have run full-stack at least once before doing:
-    ```
-    cd React
-    npm start
-    ```
-
-- **Run frontend and backend separately** (Developer Mode)
-
-    Run in this way when only editing frontend to get realtime update on website:
-
-    1. First terminal:
-    ```
-    mvn spring-boot:run -Dskip.npm
-    ```
-    2. Second termial:
-    ```
-    cd React
-    npm start
-    ```
+- [DEPLOY.md](https://github.com/ucsb-cs148-s21/1pm-t2-food-bank/blob/c1ab8324b0db62cbbf631f68f1c3d34bf2e944bc/docs/DEPLOY.md)
 
 ## Functionality
 - Go to our [heroku website](https://t2-food-banks.herokuapp.com/), you can see a NavBar item called inventory, where you shall find the availability of food at the food bank.
