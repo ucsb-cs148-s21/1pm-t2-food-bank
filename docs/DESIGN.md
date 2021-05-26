@@ -24,3 +24,25 @@
 ```
 Contribution: description is modified based on https://capstone.cs.ucsb.edu/team_docs_20/prd1/alcon.pdf
 ```
+## User Interface and User Experience
+### UI Design
+- main page: so that users can get started to see the inventory
+![image](https://user-images.githubusercontent.com/72473351/119703180-23d4d300-be0b-11eb-8a47-4ec4535b3dbd.png)
+- inventory page: so that users can see the current inventory in food bank
+![image](https://user-images.githubusercontent.com/72473351/119703323-48c94600-be0b-11eb-842f-7015f8711241.png)
+- contact us page: so that users can contact with staffs
+![image](https://user-images.githubusercontent.com/72473351/119703293-3fd87480-be0b-11eb-9741-7e890ce96465.png)
+- staff portal: so that staffs can edit the inventory
+![image](https://user-images.githubusercontent.com/72473351/119703718-ae1d3700-be0b-11eb-928c-26b0416eea01.png)
+
+### User Experience
+- users can search by name or by category to find the item they want
+![image](https://user-images.githubusercontent.com/72473351/119704395-74006500-be0c-11eb-81eb-c92a1bb20f00.png)
+![image](https://user-images.githubusercontent.com/72473351/119704469-8aa6bc00-be0c-11eb-8fb4-bec9ff4da1eb.png)
+- When user sent an email to staff successfully, they will receive a notification
+![image](https://user-images.githubusercontent.com/72473351/119704636-bcb81e00-be0c-11eb-9ce8-88a009a75919.png)
+- If user click the social media links at the bottom, it will redirect to the social media page of food bank
+![image](https://user-images.githubusercontent.com/72473351/119704919-06086d80-be0d-11eb-8552-a16de7c8868d.png)
+- If the user click the email links at the bottom, it will open the email app installed in their machine so that users can write email to staffs directly<br/>
+![image](https://user-images.githubusercontent.com/72473351/119705037-2a644a00-be0d-11eb-81ca-249d800a9a21.png)
+
