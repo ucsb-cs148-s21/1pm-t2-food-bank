@@ -39,8 +39,11 @@ Contribution: description is modified based on https://capstone.cs.ucsb.edu/team
 - users can search by name or by category to find the item they want
 ![image](https://user-images.githubusercontent.com/72473351/119704395-74006500-be0c-11eb-81eb-c92a1bb20f00.png)
 ![image](https://user-images.githubusercontent.com/72473351/119704469-8aa6bc00-be0c-11eb-8fb4-bec9ff4da1eb.png)
-- When user sent an email to staff successfully, they will receive a notification
+- When user sent an email to staff successfully, they will receive a notification and an auto-reply email
 ![image](https://user-images.githubusercontent.com/72473351/119704636-bcb81e00-be0c-11eb-9ce8-88a009a75919.png)
+![image](https://user-images.githubusercontent.com/72473351/119706697-29341c80-be0f-11eb-9b77-79920b7cbf3d.png)
+- When user trys to send an empty email to staff, it will require user to input messages
+![image](https://user-images.githubusercontent.com/72473351/119706609-102b6b80-be0f-11eb-91b6-1a9aeef8d4a3.png)
 - If user click the social media links at the bottom, it will redirect to the social media page of food bank
 ![image](https://user-images.githubusercontent.com/72473351/119704919-06086d80-be0d-11eb-8552-a16de7c8868d.png)
 - If the user click the email links at the bottom, it will open the email app installed in their machine so that users can write email to staffs directly<br/>
