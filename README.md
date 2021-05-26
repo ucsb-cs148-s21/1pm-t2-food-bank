@@ -42,7 +42,7 @@ Testing - React Testing Library/JEST + JUnit
 
 5. If I am a researcher, I want to know the usage of the UCSB food bank and the popularity of each kind of food among students to better accomodate students' needs. A researcher needs to get admin permission by the staff.
 
-## Deployment instructions
+## Deploy instructions
 
 - [DEPLOY.md](https://github.com/ucsb-cs148-s21/1pm-t2-food-bank/blob/c1ab8324b0db62cbbf631f68f1c3d34bf2e944bc/docs/DEPLOY.md)
 
