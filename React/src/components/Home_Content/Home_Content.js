@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import './Home_Content.css'
+import Layout from '../../pages/Layout';
 
-class Home_Content extends Component {
-    state = { clicked: false }
+import getUser from "../../utils/get-user";
 
-    handleClick = () => {
-        this.setState({ clicked: !this.state.clicked })
-    }
-    render() {
-        return (
+function Home_Content() {
+    const user = getUser();
+
+    return (
+        <Layout user={user}>
             <div>
                 <div class="landing-page">
                     <div class="page-content">
@@ -21,8 +21,8 @@ class Home_Content extends Component {
                     </div>
                 </div>
             </div>
-        )
-    }
+        </Layout>
+    )
 }
 
 export default Home_Content

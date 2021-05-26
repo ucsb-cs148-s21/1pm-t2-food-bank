@@ -3,12 +3,21 @@ import BootstrapTable from 'react-bootstrap-table-next';
 import './Inventory.css'
 
 import Datatable from "./datatable"
+import Layout from '../../pages/Layout'
+import Loading from "../../pages/Loading"
 
-// https://www.youtube.com/watch?v=d1r0aK5awWk
-// require("es6-promise").polyfill();
-// require("isomorphic-fetch")
+import getUser from "../../utils/get-user";
 
-export default class Inventory extends Component {
+function TempInventory (){
+  const user = getUser();
+  return (
+    <Layout user={user}>
+    <Inventory />
+    </ Layout>
+  )
+}
+
+class Inventory extends Component {
 
   constructor(props) {
     super(props);
@@ -40,21 +49,22 @@ export default class Inventory extends Component {
   
   render() {
     if (this.state.error) {
-      return <p>{this.state.error.message}</p>;
+      return <p>{this.state.error.message}</p>
     }
     if (this.state.loading) {
-      return <p>Loading ...</p>;
+      return <Loading></Loading>
     }
     return (
-      <div>
-        <label className= 'searchLabel' for="search">Search:</label>
-        <input className= 'searchInput' type="text" id="search" value={this.state.q} onChange={(e) => this.setQ(e.target.value)}></input>
+        <div>
+          <label className= 'searchLabel' for="search">Search:</label>
+          <input className= 'searchInput' type="text" id="search" value={this.state.q} onChange={(e) => this.setQ(e.target.value)}></input>
 
-        <div name="inventoryTable">
-          <Datatable data={this.search(this.state.data)} />
+          <div name="inventoryTable">
+            <Datatable data={this.search(this.state.data)} />
+          </div>
         </div>
-      </div>
-
     );
   }
 }
+
+export default TempInventory;
