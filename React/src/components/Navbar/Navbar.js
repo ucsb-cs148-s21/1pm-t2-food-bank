@@ -51,7 +51,7 @@ export default function NavBar(props) {
                             }
                             id="basic-nav-dropdown"
                         >
-                            <NavDropdown.Item className="nav-links-mobile" onClick={user.signOut}>
+                            <NavDropdown.Item className="logout" onClick={user.signOut}>
                                 Logout
                             </NavDropdown.Item>
                         </NavDropdown>

@@ -51,8 +51,15 @@
     color: white;
     font-size: large;
     border-radius: 4px;
-    padding: 0.5rem 1rem;   
+    padding: 0.5rem 0.5rem;
     
+}
+.logout {
+    background-color: #4ad9e4;
+    color: white;
+    font-size: large;
+    border-radius: 4px;
+    padding: 0rem 0.5rem;
 }
 
 .menu-icon {
