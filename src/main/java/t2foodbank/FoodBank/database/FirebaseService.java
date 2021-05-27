@@ -98,7 +98,8 @@ public class FirebaseService {
 
         ApiFuture<WriteResult> collectionApiFuture=dbFirestore.collection(COLLECTION_NAME).document(name).delete();
 
-        return "Document with Inventory" + name + "has been deleted successfully";
+        return "Document with Inventory " + name + " has been deleted successfully";
+
 }
 
 

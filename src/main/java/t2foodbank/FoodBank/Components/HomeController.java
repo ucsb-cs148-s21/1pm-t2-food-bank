@@ -26,7 +26,7 @@ import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.RestController;
 //import org.springframework.web.bind.annotation.RequestBody;
 
-import t2foodbank.FoodBank.database.FirebaseInitializer;
+//import t2foodbank.FoodBank.database.FirebaseInitializer;
 import t2foodbank.FoodBank.database.FirebaseService;
 
 import t2foodbank.FoodBank.objects.Food;

@@ -24,11 +24,13 @@ const columns = [{
 export default class Inventory extends Component {
   constructor(props) {
     super(props);
+    
     this.state = {
       inventory: null,
       loading: true,
       error: null
     };
+
   }
 
   async componentDidMount() {
@@ -38,6 +40,10 @@ export default class Inventory extends Component {
       const data = await response.json();
       this.setState({ inventory: data, loading: false });
     } catch (e) { this.setState({ error: e }) }
+
+    fetch ("api/getTime/last update")
+      .then(response => response.json)
+      .then(time => this.setState({ time }));
   }
 
   render() {
@@ -50,6 +56,18 @@ export default class Inventory extends Component {
     return (
       <div className='inventoryTable'>
           <BootstrapTable  keyField='catagory' data={this.state.inventory || []} columns={columns} />
+
+      <div>
+      
+
+        <label className= 'searchLabel' for="search">Search:</label>
+        <input className= 'searchInput' type="text" id="search" value={this.state.q} onChange={(e) => this.setQ(e.target.value)}></input>
+
+        <div className="time">Last updated: {this.state.time}</div>
+
+        <div name="inventoryTable">
+          <Datatable data={this.search(this.state.data)} />
+        </div>
       </div>
     );
   }
