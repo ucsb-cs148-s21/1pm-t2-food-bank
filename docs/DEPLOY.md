@@ -20,7 +20,7 @@ Contribution: [Vincent Tieu](https://github.com/ucsb-cs148-s21/ReactGoogleAuthSt
 
 ## Setting Admin Account
 
-As you've already obtain a ".env" file from the "Adding Google Authentification](https://github.com/ucsb-cs148-s21/1pm-t2-food-bank/blob/main/docs/DEPLOY.md#adding-google-authentification) step. Just simply add emails you want to use as an admin emails sperating by commas (no space). e.g. `REACT_APP_ADMIN_EMAILS=liuhaowu@ucsb.edu,tianchenwang@ucsb.edu,kaiwen_li@ucsb.edu,xu_gao@ucsb.edu,jamesschwellenbach@ucsb.edu` (You want to use your own emails here).
+As you've already obtain a ".env" file from the [Adding Google Authentification](https://github.com/ucsb-cs148-s21/1pm-t2-food-bank/blob/main/docs/DEPLOY.md#adding-google-authentification) step. Just simply add emails you want to use as an admin emails sperating by commas (no space). e.g. `REACT_APP_ADMIN_EMAILS=liuhaowu@ucsb.edu,tianchenwang@ucsb.edu,kaiwen_li@ucsb.edu,xu_gao@ucsb.edu,jamesschwellenbach@ucsb.edu` (You want to use your own emails here).
 
 You might not want to put emails of every member into the file as admin accounts, as you also want to test the web app in an non-admin mode.
 
