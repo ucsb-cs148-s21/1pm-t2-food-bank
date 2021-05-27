@@ -1,6 +1,6 @@
 # UCSB Food Bank Deploy Document
 
-### Library required:
+## Library required:
 - Node.js<br />
   Download here: https://nodejs.org/en/download/
 - maven<br />
@@ -9,7 +9,7 @@
 Installation steps: https://www.oracle.com/java/technologies/javase-jdk11-downloads.html
 
 
-### Installation Steps
+## Installation Steps
 
     git clone git@github.com:ucsb-cs148-s21/1pm-t2-food-bank.git
 
