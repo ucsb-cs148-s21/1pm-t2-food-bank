@@ -18,7 +18,7 @@ function onUpdate(){
             'amount': amount,
             'catagory': category
         }
-        axios.post('api/updateInventory', item)
+        axios.put('api/updateInventory', item)
         .then(function (response) {
             console.log(response);
             window.alert('Item Updated!')
@@ -35,7 +35,7 @@ function onDelete(name){
         window.alert('Invalid item!')
     }
     else {
-        axios.post('api/deleteInventory${name}')
+        axios.delete('api/deleteInventory/'+ name)
         .then(function (response) {
             console.log(response);
             window.alert('Item Deleted!')
@@ -45,7 +45,6 @@ function onDelete(name){
         })
         .catch(function (error) {
             console.log(error);
-            //window.alert('Error with delete!')
         })
     }
 }
