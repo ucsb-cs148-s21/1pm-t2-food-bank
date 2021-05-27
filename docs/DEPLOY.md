@@ -14,7 +14,7 @@ The next step to setup the "client_id" for your app in the ".env". Go to this li
 
 When adding an "OAuth Client ID," add it for a "web application" and remember to set the "Authorized JavaScript origins" and "Authorized redirect URIs" to "http://localhost:3000" , "https://localhost:3000" , "http://localhost:8080" , "https://localhost:8080" , and "https://t2-food-banks.herokuapp.com/".
 
-In your folder, copy a file called ".env.SAMPLE" into ".env". Finally add your "client_id" (e.g. `XXXXXXXXXX.apps.googleusercontent.com`) into your ".env" file as `REACT_APP_AUTH_CLIENT_ID`. (P.S. Please leave the `REACT_APP_ADMIN_EMAILS` here for a second. We will dive into that in "Setting Admin Account" section.)
+In your folder, copy a file called ".env.SAMPLE" into ".env". Finally add your "client_id" (e.g. `XXXXXXXXXX.apps.googleusercontent.com`) into your ".env" file as `REACT_APP_AUTH_CLIENT_ID`. (P.S. Please leave the `REACT_APP_ADMIN_EMAILS` here for a second. We will dive into that in [Setting Admin Account](https://github.com/ucsb-cs148-s21/1pm-t2-food-bank/blob/main/docs/DEPLOY.md#setting-admin-account) section.)
 
 Contribution: [Vincent Tieu](https://github.com/ucsb-cs148-s21/ReactGoogleAuthStarter)
 
