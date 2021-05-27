@@ -24,7 +24,7 @@
 ![image](https://user-images.githubusercontent.com/72473351/119704469-8aa6bc00-be0c-11eb-8fb4-bec9ff4da1eb.png)
 
 ### Contact Us Page
-- This is where you can send an message to staff. 
+- This is where you can send messages to staff. Please fill in the required information in order to send the message successfully.
 ![image](https://user-images.githubusercontent.com/72473351/119703293-3fd87480-be0b-11eb-9741-7e890ce96465.png)
 
 - If a message is sent successfully, you will receive a notification and an auto-reply email.
@@ -35,7 +35,9 @@
 
 ### Staff Portal
 - This is the page where staffs edit the content on the inventory page, if you are a normal user, this page will not be displayed.
+
 ![image](https://user-images.githubusercontent.com/72473351/119703718-ae1d3700-be0b-11eb-928c-26b0416eea01.png)
+#### To Do-- staff portal continue
 
 ### Footer
 - When you click the social media links on the footer, it will redirect you to the social media page of UCSB food bank.
