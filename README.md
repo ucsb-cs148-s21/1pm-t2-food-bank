@@ -15,7 +15,7 @@ Know the availability and quantity of items at the food bank before physically b
 | Name              | GitHub ID   | Email                         |
 |-------------------|-------------|-------------------------------|
 | Jerry Wang      | missmiss20    | tianchenwang@ucsb.edu         |
-| Liuhao Wu  | lwu5        | liuhao.w5@gmail.com           | 
+| Liuhao Wu  | lwu5        | liuhaowu@ucsb.edu         | 
 | Kaiwen Li | kaiwenli1   | kaiwen_li@ucsb.edu            |
 | Sunrise Gao | sunrise0stack    | xu_gao@ucsb.edu               |
 | Orion Schwellenbach | JamesSchwellenbach   | jamesschwellenbach@ucsb.edu   |
