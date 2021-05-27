@@ -3,7 +3,7 @@ Graded: (lab07-T) (30 pts) You earn these team points if you started a user manu
 
 
 ## Product Purpose
-- The application aims to provide those who has permission to use the UCSB food bank(anyone with a valid UCSB ID) information about what items are available at the food bank, so they don't need to come to the food bank and leave empty-handed because the item they want is unavailable.
+- The application aims to provide those who has permission to visit the UCSB food bank(anyone with a valid UCSB ID) information about what items are available at the food bank, so they don't need to come to the food bank and leave empty-handed because the item they want is unavailable.
 - The application also provide a window to contact the food bank staff.
 - The application provides the food bank staff and other administrators, researchers to know what kind and quantity of food are distributed daily at the UCSB food bank.
 
