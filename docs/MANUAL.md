@@ -40,8 +40,8 @@
 #### To Do-- staff portal continue
 
 ### Footer
-- When you click the social media links on the footer, it will redirect you to the social media page of UCSB food bank.
+- By clicking the social media links on the footer, you will redirected to the social media page of UCSB food bank.
 ![image](https://user-images.githubusercontent.com/72473351/119704919-06086d80-be0d-11eb-8552-a16de7c8868d.png)
-- When you click the email link on the footer, it will open the email app installed in your machine, this is another option to email the food bank administrators.</br>
+- By clicking the email link on the footer, you will open the email app installed in your machine, this is another option to email the food bank administrators.</br>
 ![image](https://user-images.githubusercontent.com/72473351/119705037-2a644a00-be0d-11eb-81ca-249d800a9a21.png)
 
