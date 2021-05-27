@@ -59,7 +59,7 @@ Contribution: description is modified based on https://capstone.cs.ucsb.edu/team
 ![image](https://user-images.githubusercontent.com/72473351/119876934-48997b00-bedd-11eb-983f-f5164b6e51d0.png)
 ### Stage II:
 - We have implemented our main page, inventory page, navbar and footer.
-![image](https://user-images.githubusercontent.com/72473351/119703180-23d4d300-be0b-11eb-8a47-4ec4535b3dbd.png)
+![image](https://user-images.githubusercontent.com/72473351/119878924-8dbeac80-bedf-11eb-9a22-9fa271e18953.png)
 - We decided to use firebase instead of mongoDB as our database because:<br/>
   a. Firebase is easier for us to get started<br/>
   b. It is easier for us to maintain the database
