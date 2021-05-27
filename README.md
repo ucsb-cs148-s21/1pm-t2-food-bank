@@ -40,7 +40,7 @@ Testing - React Testing Library/JEST + JUnit
 
 4. If I am a staff, I want to know what kind and quantity of food are distributed today to better arrange tomorrow's orders. The staff will have permission to edit content on the wepapp and give other users admin permissions.
 
-5. If I am a researcher, I want to know the usage of the UCSB food bank and the popularity of each kind of food among students to better accomodate students' needs. A researcher needs to get admin permission by the staff.
+5. As a user, I want to click the contact form on contact us page so that I can submit a message to UCSB food bank staff.
 
 ## Deploy instructions
 
@@ -50,9 +50,10 @@ Testing - React Testing Library/JEST + JUnit
 - Go to our [heroku website](https://t2-food-banks.herokuapp.com/), you can see a NavBar item called inventory, where you shall find the availability of food at the food bank.
 - Go to [login page](https://t2-food-banks.herokuapp.com/login), staff can login (currently the login credentials havent been connected to our database)
 
-## Known Problems
-- Unable to Connect to database (i.e. login, inventory) and update data in real time
-- Inventory webpage not designed
+## Known Issues & Recommendations
+
+- In short 10 weeks of the class, we mainly focused on the implementation of our web app functionality, and thus advanced UI and aesthetics design is required in the future.
+- There's a existing Food Bank web app for introductional info (i.e. history, staff info, etc) and our web app is for intereactable and dynamic inventory data access. Consult with UCSB Food Bank administrators about integrating these two apps is recommended in the future.
 
 ## Contributing
 Fork it!
