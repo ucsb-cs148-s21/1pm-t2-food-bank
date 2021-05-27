@@ -14,15 +14,17 @@ The next step to setup the "client_id" for your app in the ".env". Go to this li
 
 When adding an "OAuth Client ID," add it for a "web application" and remember to set the "Authorized JavaScript origins" and "Authorized redirect URIs" to "http://localhost:3000" , "https://localhost:3000" , "http://localhost:8080" , "https://localhost:8080" , and "https://t2-food-banks.herokuapp.com/".
 
-In your folder, copy a file called ".env.SAMPLE" into ".env". Finally add your "client_id" into your ".env" file as `REACT_APP_AUTH_CLIENT_ID`. (P.S. Please leave the `REACT_APP_ADMIN_EMAILS` here for a second. We will dive into that in "Setting Admin Account" section.)
+In your folder, copy a file called ".env.SAMPLE" into ".env". Finally add your "client_id" (e.g. `XXXXXXXXXX.apps.googleusercontent.com`) into your ".env" file as `REACT_APP_AUTH_CLIENT_ID`. (P.S. Please leave the `REACT_APP_ADMIN_EMAILS` here for a second. We will dive into that in "Setting Admin Account" section.)
 
 Contribution: [Vincent Tieu](https://github.com/ucsb-cs148-s21/ReactGoogleAuthStarter)
 
 ## Setting Admin Account
 
-As you've already obtain a ".env" file from the previous step. Just simply add emails you want to use as an admin emails sperating by commas (no space). e.g. `REACT_APP_ADMIN_EMAILS=liuhaowu@ucsb.edu,tianchenwang@ucsb.edu` (You want to use your own emails here).
+As you've already obtain a ".env" file from the previous step. Just simply add emails you want to use as an admin emails sperating by commas (no space). e.g. `REACT_APP_ADMIN_EMAILS=liuhaowu@ucsb.edu,tianchenwang@ucsb.edu,kaiwen_li@ucsb.edu,xu_gao@ucsb.edu,jamesschwellenbach@ucsb.edu` (You want to use your own emails here).
 
 You might not want to put emails of every member into the file as admin accounts, as you also want to test the web app in an non-admin mode.
+
+P.S. In our web app, we only allow admin accounts to access the staff portal to modify our food bank inventory.
 
 ## Installation Steps
 
