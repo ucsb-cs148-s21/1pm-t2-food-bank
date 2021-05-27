@@ -15,6 +15,7 @@ table th{
     font-family:Arial, Helvetica, sans-serif;
     
 }
+
 table tr{
     font-size: x-large;
 }
@@ -28,7 +29,7 @@ table tr{
     font-size: 20px;
     margin-left: 10%;
     position: relative;
-    top: 10px
+    top: 20px
 }
 
 .searchInput {
@@ -41,3 +42,4 @@ table tr{
     border-radius: 1%;
     color: #6d76f7;
 }
+
