@@ -49,3 +49,35 @@ Contribution: description is modified based on https://capstone.cs.ucsb.edu/team
 - If the user click the email links at the bottom, it will open the email app installed in their machine so that users can write email to staffs directly<br/>
 ![image](https://user-images.githubusercontent.com/72473351/119705037-2a644a00-be0d-11eb-81ca-249d800a9a21.png)
 
+## Stage of design
+### Stage I: The beginning
+- We decided to use React frontend library because:<br/>
+  a. It is easy to get start with<br/>
+  b. React component is really useful for us to develop this app
+- We decided our main page and staff portal page
+![image](https://user-images.githubusercontent.com/72473351/119876915-420b0380-bedd-11eb-8a02-5bcfc7c7d87e.png)
+![image](https://user-images.githubusercontent.com/72473351/119876934-48997b00-bedd-11eb-983f-f5164b6e51d0.png)
+### Stage II:
+- We have implemented our main page, inventory page, navbar and footer.
+![image](https://user-images.githubusercontent.com/72473351/119703180-23d4d300-be0b-11eb-8a47-4ec4535b3dbd.png)
+- We decided to use firebase instead of mongoDB as our database because:<br/>
+  a. Firebase is easier for us to get started<br/>
+  b. It is easier for us to maintain the database
+- Our backend is initialized but it has no functionality yet.
+### Stage III:
+- Backend has implemented get fucntion to retrieve all the items in food bank from firebase
+- Inentory page can now retrive items information and show it on a table
+- Contact us page is implemented so that users can contact staffs by email.<br/>
+  a. But there's no input validation.<br/>
+- Footer now is linked to fook bank social media pages and their email is also clickable.
+### Stage IV:
+- Backend is fully implemented with get, update, add and delete functions.
+- On inventory page, now users can search items by name or by category
+![image](https://user-images.githubusercontent.com/72473351/119878670-433d3000-bedf-11eb-8e7a-38ec60a6977d.png)
+- Add input validation on contact us page
+- staff page is half implemented with only add function
+![image](https://user-images.githubusercontent.com/72473351/119878634-37ea0480-bedf-11eb-8b14-7ea80df4c17b.png)
+- Instead of sign in using the username and password stored in firebase, we decided to change to google auth because:<br/>
+  a. One of the TAs has implemented the code for us<br/>
+  b. It is not easy for us to setup global variables in a short time.
+- We decided to make a timestamp so that users can know when the database is updated.
