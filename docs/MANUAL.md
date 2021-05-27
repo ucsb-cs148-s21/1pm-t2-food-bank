@@ -12,16 +12,12 @@ Graded: (lab07-T) (30 pts) You earn these team points if you started a user manu
 - The potential users of our application are UCSB students, food bank staff, other administrators or researchers.
 
 
-## User Interface and User Experience
+## User Experience
 
-
-
-
-### User Experience
 - Main Page: This is the main page of our application, you can see a navbar on the top, click on "Inventory" to visit the Inventory page. Click on "Contact Us" to visit the Contact Us page. Administrators can log in via google through the log in button, and they will be able to modify the content on the Inventory page in the Staff Portal page by clicking "Staff Portal".
 - In the middle of the page, the "get started" button will also take you to the Inventory page.
 - Scroll down the page, the footer will appear, you can see the address and contact infomation of the UCSB food bank. The same footer is on every page.
-- 
+
 ![image](https://user-images.githubusercontent.com/72473351/119703180-23d4d300-be0b-11eb-8a47-4ec4535b3dbd.png)
 
 - Inventory Page: This is the page to view what kind of items are available at the UCSB food bank, you can also search by name or by category to see if the item you want is available.
