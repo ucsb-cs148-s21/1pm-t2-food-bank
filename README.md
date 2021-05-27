@@ -47,8 +47,9 @@ Testing - React Testing Library/JEST + JUnit
 - [DEPLOY.md](https://github.com/ucsb-cs148-s21/1pm-t2-food-bank/blob/c1ab8324b0db62cbbf631f68f1c3d34bf2e944bc/docs/DEPLOY.md)
 
 ## Functionality
-- Go to our [heroku website](https://t2-food-banks.herokuapp.com/), you can see a NavBar item called inventory, where you shall find the availability of food at the food bank.
-- Go to [login page](https://t2-food-banks.herokuapp.com/login), staff can login (currently the login credentials havent been connected to our database)
+- Going to our web app, user can click a NavBar item called inventory, where they can find the a list of food items with their catagories, quantities, and limitations. User also has access to the search bar to search a food item based on its catagory or name.
+- After logging in, verified staff can login and access the staff portal page to modify food bank inventory.
+- Going to the contact us page, user can submit a contact us form to ucsb food bank staff. After submitting the form, user will receive an auto-reply emails and staff member can receive an email notification listing the form user has submitted. Currently, all incoming contact us forms are directed to liuhaowu@ucsb.edu.
 
 ## Known Issues & Recommendations
 
