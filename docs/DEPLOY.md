@@ -12,7 +12,7 @@ Installation steps: https://www.oracle.com/java/technologies/javase-jdk11-downlo
 
 The next step to setup the "client_id" for your app in the ".env". Go to this link: https://console.cloud.google.com/apis/credentials and create a project. In the OAuth consent screen, you should set the user type to "external." Now go ahead to the "credentials" screen and add a new "OAuth Client ID."
 
-When adding an "OAuth Client ID," add it for a "web application" and remember to set the "Authorized JavaScript origins" and "Authorized redirect URIs" to "http://localhost:3000" and "https://localhost:3000".
+When adding an "OAuth Client ID," add it for a "web application" and remember to set the "Authorized JavaScript origins" and "Authorized redirect URIs" to "http://localhost:3000" , "https://localhost:3000" , "http://localhost:8080" , "https://localhost:8080" , and "https://t2-food-banks.herokuapp.com/".
 
 In your folder, copy a file called ".env.SAMPLE" into ".env". Finally add your "client_id" into your ".env" file as `REACT_APP_AUTH_CLIENT_ID`. (P.S. Please leave the `REACT_APP_ADMIN_EMAILS` here for a second. We will dive into that in "Setting Admin Account" section.)
 
