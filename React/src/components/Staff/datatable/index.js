@@ -31,6 +31,7 @@ function onUpdate(){
 
 // tutorial: https://www.javatpoint.com/react-axios-delete-request-example
 function onDelete(name){
+    console.log(name)
     if (name === ''){
         window.alert('Invalid item!')
     }
@@ -88,8 +89,7 @@ export default function Datatable({data})
                 {
                     columns.map(column => <td>{row[column]}</td>)
                 }
-                {/* <td><button onClick={onUpdate}>Update</button></td> */}
-                <td><button onClick={onDelete(row.name)}>Delete</button></td>
+                <td><button onClick={() => onDelete(row.name)}>Delete</button></td>
             </tr>)}
             <tr>
             <td><input type="text" id="name" name="fname" required/></td>
