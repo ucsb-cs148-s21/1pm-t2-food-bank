@@ -1,6 +1,8 @@
 import React, { Component, useState, useEffect } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 import './Staff.css'
+import getUser from "../../utils/get-user";
+import Layout from '../../pages/Layout'
 
 import Datatable from "./datatable"
 
@@ -8,7 +10,16 @@ import Datatable from "./datatable"
 // require("es6-promise").polyfill();
 // require("isomorphic-fetch")
 
-export default class Staff extends Component {
+function TempStaff (){
+  const user = getUser();
+  return (
+    <Layout user={user}>
+      <Staff />
+    </ Layout>
+  )
+}
+
+class Staff extends Component {
 
   constructor(props) {
     super(props);
@@ -46,15 +57,18 @@ export default class Staff extends Component {
       return <p>Loading ...</p>;
     }
     return (
-      <div>
-        <label className= 'searchLabel' for="search">Search:</label>
-        <input className= 'searchInput' type="text" id="search" value={this.state.q} onChange={(e) => this.setQ(e.target.value)}></input>
 
-        <div name="staffTable">
-          <Datatable data={this.search(this.state.data)} />
+        <div>
+          <label className= 'searchLabel' for="search">Search:</label>
+          <input className= 'searchInput' type="text" id="search" value={this.state.q} onChange={(e) => this.setQ(e.target.value)}></input>
+
+          <div name="staffTable">
+            <Datatable data={this.search(this.state.data)} />
+          </div>
         </div>
-      </div>
 
     );
   }
 }
+
+export default TempStaff;
