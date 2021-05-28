@@ -44,7 +44,7 @@ Testing - React Testing Library/JEST + JUnit
 
 ## Deploy instructions
 
-- [DEPLOY.md](https://github.com/ucsb-cs148-s21/1pm-t2-food-bank/blob/c1ab8324b0db62cbbf631f68f1c3d34bf2e944bc/docs/DEPLOY.md)
+- [DEPLOY.md](https://github.com/ucsb-cs148-s21/1pm-t2-food-bank/blob/main/docs/DEPLOY.md)
 
 ## Functionality
 - Going to our web app, user can click a NavBar item called inventory, where they can find the a list of food items with their catagories, quantities, and limitations. User also has access to the search bar to search a food item based on its catagory or name.
