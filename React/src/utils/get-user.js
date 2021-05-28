@@ -10,6 +10,10 @@ export default function getUser() {
     return null;
   }
 
+  const isAdmin = (userEmail) => {
+    return process.env.REACT_APP_ADMIN_EMAILS.split(',').includes(userEmail);
+  }
+
   const profile = authInstance.currentUser.get().getBasicProfile();
   const user = {
     "ID": profile.getId(),
@@ -19,6 +23,7 @@ export default function getUser() {
     "imageUrl": profile.getImageUrl(),
     "email": profile.getEmail(),
     signOut: authInstance.signOut,
+    "Admin": isAdmin(profile.getEmail())
   };
 
   return user;
