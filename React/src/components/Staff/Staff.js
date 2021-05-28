@@ -7,13 +7,6 @@ import Layout from '../../pages/Layout'
 import Datatable from "./datatable"
 import axios from 'axios'
 
-
-
-
-// end
-
-
-
 // https://www.youtube.com/watch?v=d1r0aK5awWk
 // require("es6-promise").polyfill();
 // require("isomorphic-fetch")
@@ -50,7 +43,25 @@ class Staff extends Component {
       const data = await response.json();
       this.setState({ data: data, loading: false });
     } catch (e) { this.setState({ error: e }) }
-    console.log("update: ", this.state.loading);
+    console.log(this.state.data);
+  }
+
+  async fetchAPI(){
+    const API = "/api/getInventory";                                                          
+    const response = await fetch(API);
+    try {
+      const data = await response.json();
+      return data;
+    } catch (e) { this.setState({ error: e }) }
+  }        
+  
+  timeout(){
+    setTimeout(async() =>{
+      let list = await this.fetchAPI();                                            
+      console.log(list);
+      this.setState({data: list});
+      console.log(this.state.data, "data")
+    }, 1000);
   }
 
   // async componentWillMount() {
@@ -106,9 +117,15 @@ class Staff extends Component {
             console.log(error);
         })
     }
-    this.setState({update: this.state.update});
-    console.log("update state", this.state.update);
+    this.timeout();
+    document.getElementById('name').value = null;
+    document.getElementById('limit').value = null;
+    document.getElementById('amount').value = null;
+    document.getElementById('category').value = null;
   }
+
+
+
 
   // tutorial: https://www.javatpoint.com/react-axios-delete-request-example
   onDelete(name){
@@ -128,8 +145,7 @@ class Staff extends Component {
             console.log(error);
         })
     }
-    this.setState({loading: true});
-    console.log("update state", this.state.loading);
+    this.timeout();
   }
 
   onUpdate(){
@@ -156,11 +172,10 @@ class Staff extends Component {
             console.log(error);
         })
     }
-    this.setState({update: !this.state.update});
-    console.log(this.state.update);
   }
 
   render() {
+    console.log("re-render");
     if (this.state.error) {
       return <p>{this.state.error.message}</p>;
     }
@@ -171,28 +186,27 @@ class Staff extends Component {
         <div>
           <label className= 'searchLabel' for="search">Search:</label>
           <input className= 'searchInput' type="text" id="search" value={this.state.q} onChange={(e) => this.setQ(e.target.value)}></input>
-
           <div name="staffTable">
             <table cellPadding={0} cellSpacing={0}>
               <thead>
-                <tr>{this.state.data[0] && this.state.columns.map(heading => <th>{heading}</th>)}</tr>
+                <tr>{this.state.columns.map(heading => <th>{heading}</th>)}</tr>
               </thead>
-                <tbody>
-                    {this.state.data.map(row => <tr>
-                        {
-                            this.state.columns.map(column => <td>{row[column]}</td>)
-                        }
-                        <td><button onClick={this.onUpdate}>Update</button></td>
-                        <td><button onClick={() => this.onDelete(row.name)}>Delete</button></td>
-                    </tr>)}
-                    <tr>
-                    <td><input type="text" id="name" name="fname" required/></td>
-                    <td><input type="number" id="limit" name="flimit" min="1" required/></td>
-                    <td><input type="number" id="amount" name="famount" min="0" required/></td>
-                    <td><input type="text" id="category" name="fcategory" required/></td>
-                    <td><button onClick={this.onCreate}>Create</button></td>
-                    </tr>
-                </tbody>
+              <tbody>
+                  {this.state.data.map(row => 
+                  <tr>                                      
+                      {row != null? this.state.columns.map(column => <td>{row[column]}</td>) : null}
+                      {row != null? <td><button onClick={this.onUpdate}>Update</button></td> : null}
+                      {row != null? <td><button onClick={() => this.onDelete(row.name)}>Delete</button></td> : null}
+                  </tr>
+                  )}
+                  <tr>
+                  <td><input type="text" id="name" name="fname" required/></td>
+                  <td><input type="number" id="limit" name="flimit" min="1" required/></td>
+                  <td><input type="number" id="amount" name="famount" min="0" required/></td>
+                  <td><input type="text" id="category" name="fcategory" required/></td>
+                  <td><button onClick={() => this.onCreate()}>Create</button></td>
+                  </tr>
+              </tbody>
             </table>
           </div>
         </div>
