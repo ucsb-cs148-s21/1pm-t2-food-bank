@@ -59,6 +59,8 @@ class Inventory extends Component {
           <label className= 'searchLabel' for="search">Search:</label>
           <input className= 'searchInput' type="text" id="search" value={this.state.q} onChange={(e) => this.setQ(e.target.value)}></input>
 
+          <div className="time">Last updated: {this.state.time}</div>
+
           <div name="inventoryTable">
             <Datatable data={this.search(this.state.data)} />
           </div>
