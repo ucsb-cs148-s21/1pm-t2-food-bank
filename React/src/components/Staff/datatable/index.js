@@ -89,6 +89,7 @@ export default function Datatable({data})
                 {
                     columns.map(column => <td>{row[column]}</td>)
                 }
+                <td><button onClick={onUpdate}>Update</button></td>
                 <td><button onClick={() => onDelete(row.name)}>Delete</button></td>
             </tr>)}
             <tr>
@@ -96,7 +97,6 @@ export default function Datatable({data})
             <td><input type="number" id="limit" name="flimit" min="1" required/></td>
             <td><input type="number" id="amount" name="famount" min="0" required/></td>
             <td><input type="text" id="category" name="fcategory" required/></td>
-            <td><button onClick={onUpdate}>Update</button></td>
             <td><button onClick={onCreate}>Create</button></td>
             </tr>
         </tbody>
