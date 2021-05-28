@@ -15,7 +15,7 @@ Know the availability and quantity of items at the food bank before physically b
 | Name              | GitHub ID   | Email                         |
 |-------------------|-------------|-------------------------------|
 | Jerry Wang      | missmiss20    | tianchenwang@ucsb.edu         |
-| Liuhao Wu  | lwu5        | liuhao.w5@gmail.com           | 
+| Liuhao Wu  | lwu5        | liuhaowu@ucsb.edu         | 
 | Kaiwen Li | kaiwenli1   | kaiwen_li@ucsb.edu            |
 | Sunrise Gao | sunrise0stack    | xu_gao@ucsb.edu               |
 | Orion Schwellenbach | JamesSchwellenbach   | jamesschwellenbach@ucsb.edu   |
@@ -40,59 +40,21 @@ Testing - React Testing Library/JEST + JUnit
 
 4. If I am a staff, I want to know what kind and quantity of food are distributed today to better arrange tomorrow's orders. The staff will have permission to edit content on the wepapp and give other users admin permissions.
 
-5. If I am a researcher, I want to know the usage of the UCSB food bank and the popularity of each kind of food among students to better accomodate students' needs. A researcher needs to get admin permission by the staff.
+5. As a user, I want to click the contact form on contact us page so that I can submit a message to UCSB food bank staff.
 
-## Installation
-### Prerequisites
-- Java 11
-- Maven
-- Node.js (`npm install`)
+## Deploy instructions
 
-### Dependencies
-- React
-- Firebase
-- Spring
-
-### Installation Steps
-
-- **Run on Heroku**
-
-    [https://t2-food-banks.herokuapp.com/](https://t2-food-banks.herokuapp.com/)
-
-- **Run full-stack locally** via `localhost:8080`
-    ```
-    mvn spring-boot:run
-    ```
-
-- **Run frontend only** via `localhost:3000` 
-
-    Make sure you have run full-stack at least once before doing:
-    ```
-    cd React
-    npm start
-    ```
-
-- **Run frontend and backend separately** (Developer Mode)
-
-    Run in this way when only editing frontend to get realtime update on website:
-
-    1. First terminal:
-    ```
-    mvn spring-boot:run -Dskip.npm
-    ```
-    2. Second termial:
-    ```
-    cd React
-    npm start
-    ```
+- [DEPLOY.md](https://github.com/ucsb-cs148-s21/1pm-t2-food-bank/blob/main/docs/DEPLOY.md)
 
 ## Functionality
-- Go to our [heroku website](https://t2-food-banks.herokuapp.com/), you can see a NavBar item called inventory, where you shall find the availability of food at the food bank.
-- Go to [login page](https://t2-food-banks.herokuapp.com/login), staff can login (currently the login credentials havent been connected to our database)
+- Going to our web app, user can click a NavBar item called inventory, where they can find the a list of food items with their catagories, quantities, and limitations. User also has access to the search bar to search a food item based on its catagory or name.
+- After logging in, verified staff can login and access the staff portal page to modify food bank inventory.
+- Going to the contact us page, user can submit a contact us form to ucsb food bank staff. After submitting the form, user will receive an auto-reply emails and staff member can receive an email notification listing the form user has submitted. Currently, all incoming contact us forms are directed to liuhaowu@ucsb.edu.
 
-## Known Problems
-- Unable to Connect to database (i.e. login, inventory) and update data in real time
-- Inventory webpage not designed
+## Known Issues & Recommendations
+
+- In short 10 weeks of the class, we mainly focused on the implementation of our web app functionality, and thus advanced UI and aesthetics design is required in the future.
+- There's a existing Food Bank web app for introductional info (i.e. history, staff info, etc) and our web app is for intereactable and dynamic inventory data access. Consult with UCSB Food Bank administrators about integrating these two apps is recommended in the future.
 
 ## Contributing
 Fork it!

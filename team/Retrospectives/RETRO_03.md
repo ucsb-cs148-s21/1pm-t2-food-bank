@@ -1,28 +1,31 @@
-# Date of Retrospective: 05/11/21
+# Date of Retrospective: 05/25/21
 
-* Led by: Orion schwellenbach
+* Led by: Tianchen Wang
 * Present: Kaiwen Li✓, Sunrise Gao✓, Liuhao Wu✓, Tianchen Wang✓, Orion Schwellenbach✓
 * Absent: N/A
 
 ## Action item
 
-* a goal: Distributing clear work assignments
-* a change: Communicate during class, but also out of class when we have questions about what we should be working on.
-* a measurement: Make sure that each memember has at least one in-progress goal on Kanban board.
+* a goal: Produce a functional, reliable final product. Perfect current functionalities, move every task on Kanban to the done column.
+* a change: Distribute work of different aspects, coding, and paperwork, determine responsibilities.
+* a measurement: Check in with teammates more often; make sure to pull from main. Tell the team if a bug is discovered.
 
 ## Optional
 
-* Record anything else you think the team might want to remember from this retro
+* Complete other lab requirements, such as writing the user manual.
+* We see clear improvements in the technical skills we possess compare to the beginning of the project.
 
 ## Retro Assessment
 
 * We used Stop/Continue/Start outline in this retro.
-* The retro went well, we found a change to increase the productivity of the group and be connected better with what others are working towards.
-* Try to focus on making sure everyone can share their ideas during the retro, you aren't supposed to fill in the 'content' of the meeting.
+* Team members continue to check up with each other. We confirmed we are on the right track to complete the project.
+* We continue to double-check our responsibilities; each team member has clear goals to accomplish.
+* We start working on the non-technicals such as the user manual as the product has come to completion.
+* We stop adding new features/adding new items on the Kanban board.
 
 ## Retro Outcome
-* Update: 5/20 Thu (a week after the Retro 2)
-* Our Retro2 experiment was clearly assigning the work so that group members know what their duties are.
-* Metric: each member has at least one in-progress goal on kanban.
-* Outcome: We did a thorough sprint-planning in lab06, and concluded all of the tasks we need to complete in the next three weeks for the final project. We clearly disguessed the details of our acceptance criteria for these issues, and each member was assigned at least one task. The kanban reflected our completion of the goal.
-* In general, we've successfully met our goal set during the Retro2, and we'll keep the good habit of clear work distribution in the future.
+* Update: 6/3 (a week after the Retro 3)
+* Our Retro3 experiment was assigning the work so that group members know what their duties are. Our Retro3 experiment marks the finishing line of our project.
+* Metric: Each member completes their assigned task, check-in with teammates till all in-progress tasks on the Kanban board are finished.
+* Outcome: The Kanban reflected our completion of the goal. Last week, teamwork and interactions between team members drastically increased. We completed implementing the desired functionality for our project and are finishing debugging. The user manual is being polished, and the demonstration video is being recorded.
+* We've successfully met our goal set during the Retro3, and we kept the excellent habit of specific work distribution and cooperation.
