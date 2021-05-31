@@ -16,7 +16,7 @@ function onUpdate(){
             'name': name,
             'limit': limit,
             'amount': amount,
-            'catagory': category
+            'category': category
         }
         axios.put('api/updateInventory', item)
         .then(function (response) {
@@ -64,7 +64,7 @@ function onCreate(){
             'name': name,
             'limit': limit,
             'amount': amount,
-            'catagory': category
+            'category': category
         }
         axios.post('api/addInventory', item)
         .then(function (response) {
