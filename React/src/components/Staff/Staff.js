@@ -245,10 +245,10 @@ class Staff extends Component {
               <TableBody>
                   {this.state.data.map(row => 
                   <StyledTableRow>                                    
-                      {row != null? <StyledTableCell><label id={row.name+"name"} name={row.name+"fname"}>{row.name}</label></StyledTableCell> : null}
+                      {row != null? <StyledTableCell><label id={row.name+"name"} name={row.name+"fname"} value={row.name}>{row.name}</label></StyledTableCell> : null}
                       {row != null? <StyledTableCell><input type="number" id={row.name+"limit"} name={row.name+"flimit"} placeholder={row.limit}/></StyledTableCell> : null}
                       {row != null? <StyledTableCell><input type="number" id={row.name+"amount"} name={row.name+"famount"} placeholder={row.amount}/></StyledTableCell> : null}
-                      {row != null? <StyledTableCell><label id={row.name+"category"} name={row.name+"fcategory"}>{row.catagory}</label></StyledTableCell> : null}
+                      {row != null? <StyledTableCell><label id={row.name+"category"} name={row.name+"fcategory"} value={row.catagory}>{row.catagory}</label></StyledTableCell> : null}
 
                       {row != null? <StyledTableCell>
                         <Button
