@@ -148,12 +148,14 @@ class Staff extends Component {
     this.timeout();
   }
 
-  onUpdate(){
-    var name = document.getElementById('name').value
-    var limit = document.getElementById('limit').value
-    var amount = document.getElementById('amount').value
-    var category = document.getElementById('category').value
-    if (limit === '' || amount === '' || name === '' || category === '' ){
+  onUpdate(name){
+    if (name === ''){
+      window.alert('Invalid input!')
+    }
+    var limit = document.getElementById(name+"limit").value
+    var amount = document.getElementById(name+"amount").value
+    var category = document.getElementById(name+"category").value
+    if (limit === '' || amount === '' || category === '' ){
         window.alert('Invalid input!')
     }
     else {
@@ -172,6 +174,9 @@ class Staff extends Component {
             console.log(error);
         })
     }
+  }
+  loadTable(){
+    window.alert(document.getElementById('name').value)
   }
 
   render() {
@@ -194,8 +199,11 @@ class Staff extends Component {
               <tbody>
                   {this.state.data.map(row => 
                   <tr>                                      
-                      {row != null? this.state.columns.map(column => <td>{row[column]}</td>) : null}
-                      {row != null? <td><button onClick={this.onUpdate}>Update</button></td> : null}
+                      {row != null? <td><label id={row.name+"name"} name={row.name+"fname"} value={row.name}>placeholder name</label></td> : null}
+                      {row != null? <td><input type="number" id={row.name+"limit"} name={row.name+"flimit"} placeholder={row.limit}/></td> : null}
+                      {row != null? <td><input type="number" id={row.name+"amount"} name={row.name+"famount"} placeholder={row.amount}/></td> : null}
+                      {row != null? <td><label id={row.name+"category"} name={row.name+"fcategory"} value={row.catagory}>placeholder category</label></td> : null}
+                      {row != null? <td><button onClick={() => this.onUpdate(row.name)}>Update</button></td> : null}
                       {row != null? <td><button onClick={() => this.onDelete(row.name)}>Delete</button></td> : null}
                   </tr>
                   )}
@@ -205,13 +213,16 @@ class Staff extends Component {
                   <td><input type="number" id="amount" name="famount" min="0" required/></td>
                   <td><input type="text" id="category" name="fcategory" required/></td>
                   <td><button onClick={() => this.onCreate()}>Create</button></td>
+                  
                   </tr>
               </tbody>
             </table>
           </div>
+          
         </div>
-
+        
     );
+    
   }
 }
 

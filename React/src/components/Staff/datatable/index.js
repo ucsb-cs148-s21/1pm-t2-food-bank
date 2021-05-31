@@ -90,6 +90,9 @@ export default function Datatable({data})
                 {
                     columns.map(column => <td>{row[column]}</td>)
                 }
+                <td><label id={row.name+"name"} name="fname"/></td>
+                {window.alert(row.name)}
+                <td><label id={row.name+"category"} name="fname"/></td>
                 <td><button onClick={onUpdate}>Update</button></td>
                 <td><button onClick={() => onDelete(row.name)}>Delete</button></td>
             </tr>)}
