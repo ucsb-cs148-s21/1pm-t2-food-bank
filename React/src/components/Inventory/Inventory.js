@@ -52,7 +52,7 @@ class Inventory extends Component {
       return <p>{this.state.error.message}</p>
     }
     if (this.state.loading) {
-      return <Loading></Loading>
+      return <Loading />
     }
     return (
         <div>
