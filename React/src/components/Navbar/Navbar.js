@@ -34,7 +34,7 @@ export default function NavBar(props) {
                 <ul className={clicked ? 'nav-menu active' : 'nav-menu'}>
                     <Link to="/" className='nav-links'>Home</Link>
                     <Link to="/inventory" className='nav-links'>Inventory</Link>
-                    {user && user.Admin && <Link to="/staff" className='nav-links'>Staff Portal</Link>}
+                    {user && user.Membership && user.Admin && <Link to="/staff" className='nav-links'>Staff Portal</Link>}
                     <Link to="/contactus" className='nav-links'>Contact Us</Link>
                     {!user ? (
                         <div className="nav-links-mobile" id="login-button" />) : (
