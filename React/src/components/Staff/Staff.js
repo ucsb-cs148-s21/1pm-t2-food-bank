@@ -152,9 +152,10 @@ class Staff extends Component {
     if (name === ''){
       window.alert('Invalid input!')
     }
-    var limit = document.getElementById(name+"limit").value
-    var amount = document.getElementById(name+"amount").value
-    var category = document.getElementById(name+"category").value
+    var limit = document.getElementById(name+"limit").value;
+    var amount = document.getElementById(name+"amount").value;
+    var category = document.getElementById(name+"category").value;
+    console.log("category: ", category);
     if (limit === '' || amount === '' || category === '' ){
         window.alert('Invalid input!')
     }
@@ -176,6 +177,7 @@ class Staff extends Component {
     }
     document.getElementById(name+"limit").value = null;
     document.getElementById(name+"amount").value = null;
+    this.timeout();
   }
   loadTable(){
     window.alert(document.getElementById('name').value)
@@ -215,7 +217,6 @@ class Staff extends Component {
                   <td><input type="number" id="amount" name="famount" min="0" required/></td>
                   <td><input type="text" id="category" name="fcategory" required/></td>
                   <td><button onClick={() => this.onCreate()}>Create</button></td>
-                  
                   </tr>
               </tbody>
             </table>
