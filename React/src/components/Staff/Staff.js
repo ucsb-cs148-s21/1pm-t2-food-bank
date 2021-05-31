@@ -186,15 +186,14 @@ class Staff extends Component {
     this.timeout();
   }
 
-  onUpdate(name){
-    if (name === ''){
+  onUpdate(name, category){
+    if (name === '' || category === ''){
       window.alert('Invalid input!')
     }
     var limit = document.getElementById(name+"limit").value;
     var amount = document.getElementById(name+"amount").value;
-    var category = document.getElementById(name+"category").value;
     console.log("category: ", category);
-    if (limit === '' || amount === '' || category === '' ){
+    if (limit === '' || amount === ''){
         window.alert('Invalid input!')
     }
     else {
@@ -255,7 +254,7 @@ class Staff extends Component {
                           variant="contained"
                           color="default"
                           startIcon={<UpdateIcon />}
-                          onClick={() => this.onUpdate(row.name)}
+                          onClick={() => this.onUpdate(row.name,row.category)}
                         >
                           Update
                         </Button>
