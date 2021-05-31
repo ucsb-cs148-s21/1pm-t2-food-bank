@@ -24,7 +24,7 @@ export default function getUser() {
     "email": profile.getEmail(),
     signOut: authInstance.signOut,
     "Admin": isAdmin(profile.getEmail()),
-    "Membership": profile.getEmail().split("@")[1] == "ucsb.edu"
+    "Membership": profile.getEmail().split("@")[1] === "ucsb.edu"
   };
 
   return user;
