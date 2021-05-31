@@ -199,10 +199,10 @@ class Staff extends Component {
               <tbody>
                   {this.state.data.map(row => 
                   <tr>                                      
-                      {row != null? <td><label id={row.name+"name"} name={row.name+"fname"} value={row.name}>placeholder name</label></td> : null}
+                      {row != null? <td><label id={row.name+"name"} name={row.name+"fname"}>{row.name}</label></td> : null}
                       {row != null? <td><input type="number" id={row.name+"limit"} name={row.name+"flimit"} placeholder={row.limit}/></td> : null}
                       {row != null? <td><input type="number" id={row.name+"amount"} name={row.name+"famount"} placeholder={row.amount}/></td> : null}
-                      {row != null? <td><label id={row.name+"category"} name={row.name+"fcategory"} value={row.catagory}>placeholder category</label></td> : null}
+                      {row != null? <td><label id={row.name+"category"} name={row.name+"fcategory"}>{row.catagory}</label></td> : null}
                       {row != null? <td><button onClick={() => this.onUpdate(row.name)}>Update</button></td> : null}
                       {row != null? <td><button onClick={() => this.onDelete(row.name)}>Delete</button></td> : null}
                   </tr>
