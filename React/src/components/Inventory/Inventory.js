@@ -8,6 +8,8 @@ import Loading from "../../pages/Loading"
 
 import getUser from "../../utils/get-user";
 
+import moment from 'moment';
+
 function TempInventory (){
   const user = getUser();
   return (
@@ -24,6 +26,7 @@ class Inventory extends Component {
     // const [data, setData] = useState([]);
     // const [q, setQ] = useState("")
     this.state = {
+      time: null,
       data: null,
       loading: true,
       error: null,
@@ -38,6 +41,7 @@ class Inventory extends Component {
       const data = await response.json();
       this.setState({ data: data, loading: false });
     } catch (e) { this.setState({ error: e }) }
+    
   }
 
   setQ(value){
@@ -54,12 +58,17 @@ class Inventory extends Component {
     if (this.state.loading) {
       return <Loading></Loading>
     }
+
+    var now = '2021-05-31 15:20';
+    var time = moment(now).fromNow();
+
+
     return (
         <div>
           <label className= 'searchLabel' for="search">Search:</label>
           <input className= 'searchInput' type="text" id="search" value={this.state.q} onChange={(e) => this.setQ(e.target.value)}></input>
 
-          <div className="time">Last updated: {this.state.time}</div>
+          <div className="time">Last updated: {this.state.time, time} </div>
 
           <div name="inventoryTable">
             <Datatable data={this.search(this.state.data)} />

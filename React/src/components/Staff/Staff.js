@@ -4,6 +4,8 @@ import './Staff.css'
 import getUser from "../../utils/get-user";
 import Layout from '../../pages/Layout'
 
+import moment from 'moment';
+
 import Datatable from "./datatable"
 import axios from 'axios'
 
@@ -27,6 +29,7 @@ class Staff extends Component {
     // const [data, setData] = useState([]);
     // const [q, setQ] = useState("")
     this.state = {
+      time: null,
       data: null,
       loading: true,
       error: null,
@@ -182,12 +185,16 @@ class Staff extends Component {
     if (this.state.loading) {
       return <p>Loading ...</p>;
     }
+
+    var now = '2021-05-31 15:20';
+    var time = moment(now).fromNow();
+
     return (
         <div>
           <label className= 'searchLabel' for="search">Search:</label>
           <input className= 'searchInput' type="text" id="search" value={this.state.q} onChange={(e) => this.setQ(e.target.value)}></input>
      
-          <div className="time">Last updated: {this.state.time}</div>
+          <div className="time">Last updated: {this.state.time, time}</div>
      
           <div name="staffTable">
             <table cellPadding={0} cellSpacing={0}>

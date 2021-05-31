@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "bootstrap": "^4.6.0",
+    "moment": "^2.29.1",
     "react-bootstrap": "^1.5.2",
     "react-bootstrap-table-next": "^4.0.3",
     "react-router-dom": "^5.2.0"
