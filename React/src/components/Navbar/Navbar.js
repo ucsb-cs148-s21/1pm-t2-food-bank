@@ -55,7 +55,10 @@ export default function NavBar(props) {
                             }
                             id="basic-nav-dropdown"
                         >
-                            <NavDropdown.Item className="dropdown-item">
+                            <NavDropdown.Item>
+                                <p><br /></p>
+                            </NavDropdown.Item>
+                            <NavDropdown.Item>
                                 <Button
                                     variant="contained"
                                     color="secondary"
