@@ -22,7 +22,7 @@
 .nav-menu {
     display: grid;
     grid-template-columns: repeat(5, auto);
-    grid-gap: 10px;
+    grid-gap: 8px;
     list-style: none;
     text-align: center;
     width: 60vw;
@@ -33,10 +33,22 @@
 .nav-links {
     color: white;
     text-decoration: none;
-    padding: 0.5rem 1rem;
+    padding: 0.6rem 1.1rem;
 }
 
 .nav-links:hover {
+    background-color: #6d76f7;
+    border-radius: 4px;
+    transition: all 0.2s ease-out;
+}
+
+.login-button {
+    color: white;
+    text-decoration: none;
+    padding: 4px 0.7rem;
+}
+
+.login-button:hover {
     background-color: #6d76f7;
     border-radius: 4px;
     transition: all 0.2s ease-out;
@@ -101,8 +113,10 @@
     .navbar-logo {
         position: absolute;
         top: 0;
-        left: -15%;
-        transform: translate(22%, 60%);
+        left: -10%;
+        transform: translate(24%, 35%);
+        justify-self: start;
+        cursor: pointer;
     }
 
     .menu-icon {
@@ -118,6 +132,19 @@
     .fa-times {
         color: white;
         font-size: 2rem;
+    }
+
+    .login-button {
+        text-align: center;
+        padding: 2rem;
+        padding-left: 12rem;
+        width: 100%;
+        display: table;
+    }
+
+    .login-button:hover {
+        background-color: #7577fa;
+        border-radius: 0;
     }
 
     .nav-links-mobile {
