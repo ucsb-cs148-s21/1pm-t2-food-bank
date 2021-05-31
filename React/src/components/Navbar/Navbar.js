@@ -69,7 +69,7 @@ export default function NavBar(props) {
                                 </Button>
                             </NavDropdown.Item>
                         </NavDropdown>
-                        )}
+                    )}
                 </ul>
             </nav>
     )

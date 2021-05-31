@@ -22,7 +22,7 @@
     background: white;
     position: relative;
     overflow: hidden;
-
+    z-index: -9999;
 }
 .landing-page::after{
     content: "";
@@ -35,6 +35,7 @@
     background-size: cover;
     opacity: 0.5;
     animation: anim1 25s linear infinite;
+    z-index: -9999;
 }
 @keyframes anim1{
     50%{
