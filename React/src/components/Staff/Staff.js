@@ -174,6 +174,8 @@ class Staff extends Component {
             console.log(error);
         })
     }
+    document.getElementById(name+"limit").value = null;
+    document.getElementById(name+"amount").value = null;
   }
   loadTable(){
     window.alert(document.getElementById('name').value)
