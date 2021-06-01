@@ -43,10 +43,10 @@ class Inventory extends Component {
     } catch (e) { this.setState({ error: e }) }
 
     const timeAPI = "/api/getTime/last update";
-    const timeResponse = await fetch(timeAPI);
+    const res = await fetch(timeAPI);
     try {
-      const time = await timeResponse.json();
-      this.setState({ time: time, loading: false });
+      const date = await res.json();
+      this.setState({ time: moment(date.date).fromNow() });
     } catch (e) { this.setState({ error: e }) }
   }
 
@@ -65,8 +65,6 @@ class Inventory extends Component {
       return <Loading />
     }
 
-    //var now = '2021-05-31 15:20'; 
-    //var time = moment(now).fromNow();
 
     return (
         <div>

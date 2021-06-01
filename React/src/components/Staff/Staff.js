@@ -97,7 +97,12 @@ class Staff extends Component {
       const data = await response.json();
       return data;
     } catch (e) { this.setState({ error: e }) }
-  }        
+  }
+
+  updateTime(){
+    const time = moment().format();
+    console.log(time);
+  }
   
   timeout(){
     setTimeout(async() =>{
@@ -108,27 +113,6 @@ class Staff extends Component {
     }, 1000);
   }
 
-  // async componentWillMount() {
-  //   const API = "/api/getInventory";
-  //   const response = await fetch(API);
-  //   try {
-  //     const data = await response.json();
-  //     this.setState({ data: data, loading: false });
-  //   } catch (e) { this.setState({ error: e }) }
-  //   console.log("update: ", this.state.loading);
-  // }
-
-  // async componentDidUpdate(prevProps, prevState) {
-  //   if (prevState.loading !== this.state.loading) {
-  //       const API = "/api/getInventory";
-  //     const response = await fetch(API);
-  //     try {
-  //       const data = await response.json();
-  //       this.setState({ data: data, loading: false });
-  //     } catch (e) { this.setState({ error: e }) }
-  //     console.log("update: ", this.state.loading);
-  //   }
-  // }
 
   setQ(value){
     this.setState({ q: value });
@@ -166,6 +150,7 @@ class Staff extends Component {
     document.getElementById('limit').value = null;
     document.getElementById('amount').value = null;
     document.getElementById('category').value = null;
+    this.updateTime();
   }
 
   // tutorial: https://www.javatpoint.com/react-axios-delete-request-example
@@ -187,6 +172,7 @@ class Staff extends Component {
         })
     }
     this.timeout();
+    this.updateTime();
   }
 
   onUpdate(name, category){
@@ -218,6 +204,7 @@ class Staff extends Component {
     document.getElementById(name+"limit").value = null;
     document.getElementById(name+"amount").value = null;
     this.timeout();
+    this.updateTime();
   }
   loadTable(){
     window.alert(document.getElementById('name').value)
