@@ -36,7 +36,7 @@ function Home_Content() {
                             }
 
                             {user && user.Membership && !user.Admin && <Link to={"/inventory"}>Get Started</Link>}
-                            {user && user.Membership && user.Admin && <Link to={"/staffportal"}>Staff Portal</Link>}
+                            {user && user.Membership && user.Admin && <Link to={"/staff"}>Staff Portal</Link>}
                             {user && !user.Membership && <Link to={"/contactus"}>Contact Form</Link>}
                             {!user && <p2>Hours: WEDNESDAYS 10AM-2PM <br /> FRIDAYS 9AM-1PM <br /> <br />
                                 Location: UCEN, ENTRANCE FROM ORTEGA SIDE</p2>}

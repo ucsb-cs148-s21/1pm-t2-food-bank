@@ -6,6 +6,9 @@ import { Link } from 'react-router-dom';
 import Container from "react-bootstrap/Container";
 import{Nav, Navbar, NavDropdown } from "react-bootstrap";
 
+import ExitToAppIcon from '@material-ui/icons/ExitToApp';
+import Button from '@material-ui/core/Button';
+
 export default function NavBar(props) {
     const user = props.user;
 
@@ -34,14 +37,15 @@ export default function NavBar(props) {
                 <ul className={clicked ? 'nav-menu active' : 'nav-menu'}>
                     <Link to="/" className='nav-links'>Home</Link>
                     <Link to="/inventory" className='nav-links'>Inventory</Link>
+                    <Link to="/contactus" className='nav-links'>Contact</Link>
                     {user && user.Membership && user.Admin && <Link to="/staff" className='nav-links'>Staff Portal</Link>}
-                    <Link to="/contactus" className='nav-links'>Contact Us</Link>
                     {!user ? (
-                        <div className="nav-links-mobile" id="login-button" />) : (
+                        <div className="login-button" id="login-button" />) : (
+
                         <NavDropdown className="nav-links-mobile"
                             title={
                             <span>
-                                Hello, {user.givenName}{" "}
+                                Hi, {user.givenName}{" "}
                                 <img
                                 src={user.imageUrl}
                                 alt="profile"
@@ -51,11 +55,21 @@ export default function NavBar(props) {
                             }
                             id="basic-nav-dropdown"
                         >
-                            <NavDropdown.Item className="nav-links-mobile" onClick={user.signOut}>
-                                Logout
+                            <NavDropdown.Item>
+                                <p><br /></p>
+                            </NavDropdown.Item>
+                            <NavDropdown.Item>
+                                <Button
+                                    variant="contained"
+                                    color="secondary"
+                                    startIcon={<ExitToAppIcon />}
+                                    onClick={user.signOut}
+                                >
+                                    Logout
+                                </Button>
                             </NavDropdown.Item>
                         </NavDropdown>
-                        )}
+                    )}
                 </ul>
             </nav>
     )
