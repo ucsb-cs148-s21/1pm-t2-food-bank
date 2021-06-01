@@ -49,9 +49,9 @@
 }
 
 .login-button:hover {
-    background-color: #6d76f7;
-    border-radius: 4px;
-    transition: all 0.2s ease-out;
+    color: white;
+    text-decoration: none;
+    padding: 4px 0.7rem;
 }
 
 .fa-bars {
