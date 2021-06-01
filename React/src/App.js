@@ -6,6 +6,7 @@ import './App.css';
 
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Inventory from './components/Inventory/Inventory';
+import Staff from './components/Staff/Staff';
 import { Container } from 'react-bootstrap';
 
 import CheckingSignedIn from "./pages/CheckingSignedIn";
@@ -64,10 +65,11 @@ export default function App()  {
     <div className="App">
       <BrowserRouter>
         <Switch>
-          <Route exact path="/" component={Home_Content} />
-          <Route exact path="/inventory" component={Inventory} />
-          <Route exact path="/contactus" component={Contact_Us} />
-          <Route exact path="/login" component={Login} />
+          <Route path="/" exact component={Home_Content} />
+          <Route path="/inventory"exact component={Inventory} />
+          <Route path="/staff"exact component={Staff} />
+          <Route path="/contactus"exact component={Contact_Us} />
+          {/* <Route path="/login"exact component={Login} /> */}
           <PrivateRoute exact path="/profile" component={Profile} />
           <Route path="/" component={PageNotFound} />
         </Switch>

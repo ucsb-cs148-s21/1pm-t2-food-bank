@@ -1,4 +1,4 @@
-import React, { Component, useState, useEffect } from 'react';
+import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 import './Inventory.css'
 
@@ -44,7 +44,7 @@ class Inventory extends Component {
     this.setState({ q: value });
   }
   search(rows){
-    return rows.filter( row => row.name.toLowerCase().indexOf(this.state.q) > -1 || row.catagory.toLowerCase().indexOf(this.state.q) > -1)
+    return rows.filter( row => row.name.indexOf(this.state.q) > -1 || row.category.indexOf(this.state.q) > -1)
   }
   
   render() {
@@ -52,7 +52,7 @@ class Inventory extends Component {
       return <p>{this.state.error.message}</p>
     }
     if (this.state.loading) {
-      return <Loading></Loading>
+      return <Loading />
     }
     return (
         <div>

@@ -8,26 +8,26 @@ public class Food {
    private String name;
    private int limit;
    private int amount;
-   private String catagory;
+   private String category;
 
    public Food() {
       super();
    }
 
-   public Food(String name, int amount, int limit, String catagory) {
+   public Food(String name, int amount, int limit, String category) {
       super();
       this.name = name;
       this.amount = amount;
       this.limit = limit;
-      this.catagory = catagory;
+      this.category = category;
    }
 
-   public String getCatagory() {
-      return this.catagory;
+   public String getCategory() {
+      return this.category;
    }
 
-   public void setCatagory(String catagory) {
-      this.catagory = catagory;
+   public void setCategory(String category) {
+      this.category = category;
    }
 
    public int getLimit() {
