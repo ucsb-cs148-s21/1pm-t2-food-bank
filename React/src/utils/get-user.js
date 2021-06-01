@@ -23,7 +23,8 @@ export default function getUser() {
     "imageUrl": profile.getImageUrl(),
     "email": profile.getEmail(),
     signOut: authInstance.signOut,
-    "Admin": isAdmin(profile.getEmail())
+    "Admin": isAdmin(profile.getEmail()),
+    "Membership": profile.getEmail().split("@")[1] === "ucsb.edu"
   };
 
   return user;
