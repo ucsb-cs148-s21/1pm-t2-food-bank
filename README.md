@@ -47,7 +47,7 @@ Testing - React Testing Library/JEST + JUnit
 - [DEPLOY.md](https://github.com/ucsb-cs148-s21/1pm-t2-food-bank/blob/main/docs/DEPLOY.md)
 
 ## Functionality
-- Going to our web app, user can click a NavBar item called inventory, where they can find the a list of food items with their catagories, quantities, and limitations. User also has access to the search bar to search a food item based on its catagory or name.
+- Going to our web app, user can click a NavBar item called inventory, where they can find the a list of food items with their categories, quantities, and limitations. User also has access to the search bar to search a food item based on its category or name.
 - After logging in, verified staff can login and access the staff portal page to modify food bank inventory.
 - Going to the contact us page, user can submit a contact us form to ucsb food bank staff. After submitting the form, user will receive an auto-reply emails and staff member can receive an email notification listing the form user has submitted. Currently, all incoming contact us forms are directed to liuhaowu@ucsb.edu.
 

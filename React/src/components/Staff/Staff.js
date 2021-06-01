@@ -72,7 +72,7 @@ class Staff extends Component {
       loading: true,
       error: null,
       q: "",
-      columns: ['name', 'limit', 'amount', 'catagory'],
+      columns: ['name', 'limit', 'amount', 'category'],
       update: 'true'
     };
   }
@@ -131,7 +131,7 @@ class Staff extends Component {
     this.setState({ q: value });
   }
   search(rows){
-    return rows.filter( row => row.name.indexOf(this.state.q) > -1 || row.catagory.indexOf(this.state.q) > -1)
+    return rows.filter( row => row.name.indexOf(this.state.q) > -1 || row.category.indexOf(this.state.q) > -1)
   }
 
   onCreate(){
@@ -147,7 +147,7 @@ class Staff extends Component {
             'name': name,
             'limit': limit,
             'amount': amount,
-            'catagory': category
+            'category': category
         }
         axios.post('api/addInventory', item)
         .then(function (response) {
@@ -186,14 +186,14 @@ class Staff extends Component {
     this.timeout();
   }
 
-  onUpdate(name){
-    if (name === ''){
+  onUpdate(name, category){
+    if (name === '' || category === ''){
       window.alert('Invalid input!')
     }
-    var limit = document.getElementById(name+"limit").value
-    var amount = document.getElementById(name+"amount").value
-    var category = document.getElementById(name+"category").value
-    if (limit === '' || amount === '' || category === '' ){
+    var limit = document.getElementById(name+"limit").value;
+    var amount = document.getElementById(name+"amount").value;
+    console.log("category: ", category);
+    if (limit === '' || amount === ''){
         window.alert('Invalid input!')
     }
     else {
@@ -201,7 +201,7 @@ class Staff extends Component {
             'name': name,
             'limit': limit,
             'amount': amount,
-            'catagory': category
+            'category': category
         }
         axios.put('api/updateInventory', item)
         .then(function (response) {
@@ -214,6 +214,7 @@ class Staff extends Component {
     }
     document.getElementById(name+"limit").value = null;
     document.getElementById(name+"amount").value = null;
+    this.timeout();
   }
   loadTable(){
     window.alert(document.getElementById('name').value)
@@ -246,14 +247,14 @@ class Staff extends Component {
                       {row != null? <StyledTableCell><label id={row.name+"name"} name={row.name+"fname"} value={row.name}>{row.name}</label></StyledTableCell> : null}
                       {row != null? <StyledTableCell><input type="number" id={row.name+"limit"} name={row.name+"flimit"} placeholder={row.limit}/></StyledTableCell> : null}
                       {row != null? <StyledTableCell><input type="number" id={row.name+"amount"} name={row.name+"famount"} placeholder={row.amount}/></StyledTableCell> : null}
-                      {row != null? <StyledTableCell><label id={row.name+"category"} name={row.name+"fcategory"} value={row.catagory}>{row.catagory}</label></StyledTableCell> : null}
+                      {row != null? <StyledTableCell><label id={row.name+"category"} name={row.name+"fcategory"} value={row.category}>{row.category}</label></StyledTableCell> : null}
 
                       {row != null? <StyledTableCell>
                         <Button
                           variant="contained"
                           color="default"
                           startIcon={<UpdateIcon />}
-                          onClick={() => this.onUpdate(row.name)}
+                          onClick={() => this.onUpdate(row.name,row.category)}
                         >
                           Update
                         </Button>
@@ -319,7 +320,7 @@ export default TempStaff;
                       {row != null? <td><label id={row.name+"name"} name={row.name+"fname"}>{row.name}</label></td> : null}
                       {row != null? <td><input type="number" id={row.name+"limit"} name={row.name+"flimit"} placeholder={row.limit}/></td> : null}
                       {row != null? <td><input type="number" id={row.name+"amount"} name={row.name+"famount"} placeholder={row.amount}/></td> : null}
-                      {row != null? <td><label id={row.name+"category"} name={row.name+"fcategory"}>{row.catagory}</label></td> : null}
+                      {row != null? <td><label id={row.name+"category"} name={row.name+"fcategory"}>{row.category}</label></td> : null}
 
                       {row != null? <td>
                         <Button

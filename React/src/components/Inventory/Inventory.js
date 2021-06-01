@@ -44,7 +44,7 @@ class Inventory extends Component {
     this.setState({ q: value });
   }
   search(rows){
-    return rows.filter( row => row.name.indexOf(this.state.q) > -1 || row.catagory.indexOf(this.state.q) > -1)
+    return rows.filter( row => row.name.indexOf(this.state.q) > -1 || row.category.indexOf(this.state.q) > -1)
   }
   
   render() {
