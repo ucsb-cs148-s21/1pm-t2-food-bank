@@ -39,6 +39,10 @@ table tr{
     color: #6d76f7;
 }
 
+.time{
+    font-size: 20px;
+}
+
 /*input[type=text] {
     height: 40px;
     width: 70px;

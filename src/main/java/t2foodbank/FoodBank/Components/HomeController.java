@@ -30,6 +30,7 @@ import t2foodbank.FoodBank.database.FirebaseInitializer;
 import t2foodbank.FoodBank.database.FirebaseService;
 
 import t2foodbank.FoodBank.objects.Food;
+import t2foodbank.FoodBank.objects.Time;
 import org.springframework.web.bind.annotation.PathVariable;
 //import t2foodbank.FoodBank.objects.Admin;
 
@@ -76,6 +77,21 @@ public class HomeController {
 
         return firebaseService.deleteInventory(name);
 
+    }
+
+    //time
+    @GetMapping("/getTime/{name}")
+    public Time getTime(@PathVariable String name) throws ExecutionException, InterruptedException{
+
+        return firebaseService.getTime(name);
+
+    }
+
+    @PutMapping("/updateTime")
+    public String updateTime(@RequestBody Time time) throws ExecutionException, InterruptedException{
+
+        return firebaseService.updateTime(time);
+    
     }
 
 }

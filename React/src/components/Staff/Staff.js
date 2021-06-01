@@ -23,6 +23,8 @@ import Paper from '@material-ui/core/Paper';
 import Datatable from "./datatable"
 import axios from 'axios'
 
+import moment from 'moment';
+
 // https://www.youtube.com/watch?v=d1r0aK5awWk
 // require("es6-promise").polyfill();
 // require("isomorphic-fetch")
@@ -68,6 +70,7 @@ class Staff extends Component {
     // const [data, setData] = useState([]);
     // const [q, setQ] = useState("")
     this.state = {
+      time: null,
       data: null,
       loading: true,
       error: null,
@@ -227,11 +230,18 @@ class Staff extends Component {
     if (this.state.loading) {
       return <Loading/>;
     }
+
+     var now = '06-01-2021 11:00:00'
+    var lastUpdate = moment(now).fromNow();
+
     return (
         <div>
           <label className= 'searchLabel' for="search">Search:</label>
           <input className= 'searchInput' type="text" id="search" value={this.state.q} onChange={(e) => this.setQ(e.target.value)}></input>
           {/* <div name="staffTable"> */}
+
+          <div className="time">Last updated: {this.state.time, lastUpdate} </div>
+
           <TableContainer component={Paper}>
             <Table className={useStyles.table} aria-label="customized table">
               <TableHead>
