@@ -88,6 +88,13 @@ class Staff extends Component {
       this.setState({ data: data, loading: false });
     } catch (e) { this.setState({ error: e }) }
     console.log(this.state.data);
+
+    const timeAPI = "/api/getTime/last update";
+    const res = await fetch(timeAPI);
+    try {
+      const date = await res.json();
+      this.setState({ time: moment(date.date).fromNow() });
+    } catch (e) { this.setState({ error: e }) }
   }
 
   async fetchAPI(){
@@ -99,9 +106,11 @@ class Staff extends Component {
     } catch (e) { this.setState({ error: e }) }
   }
 
-  updateTime(){
+//update timestamp
+  async updateTime(){    //big s/o to kaiwen for helping me - Sunrise
     const time = moment().format();
-    console.log(time);
+    const res = await axios.put('api/updateTime', {time: time});
+    console.log(res);
   }
   
   timeout(){
@@ -218,8 +227,6 @@ class Staff extends Component {
       return <Loading/>;
     }
 
-     var now = '06-01-2021 11:00:00'
-    var lastUpdate = moment(now).fromNow();
 
     return (
         <div>
@@ -227,7 +234,7 @@ class Staff extends Component {
           <input className= 'searchInput' type="text" id="search" value={this.state.q} onChange={(e) => this.setQ(e.target.value)}></input>
           {/* <div name="staffTable"> */}
 
-          <div className="time">Last updated: {this.state.time, lastUpdate} </div>
+          <div className="time">Last updated: {this.state.time} </div>
 
           <TableContainer component={Paper}>
             <Table className={useStyles.table} aria-label="customized table">
