@@ -12,6 +12,7 @@ import com.google.cloud.firestore.Firestore;
 import com.google.cloud.firestore.WriteResult;
 import com.google.firebase.cloud.FirestoreClient;
 import t2foodbank.FoodBank.objects.Food;
+import t2foodbank.FoodBank.objects.Time;
 import org.springframework.stereotype.Service;
 //import t2foodbank.FoodBank.database.FirebaseInitializer;
 
@@ -100,5 +101,35 @@ public class FirebaseService {
         return "Document with Inventory " + name + " has been deleted successfully";
     }
 
+
+//get time
+    public Time getTime(String name) throws ExecutionException, InterruptedException{
+
+        Firestore dbFirestore = FirestoreClient.getFirestore();
+
+        DocumentReference documentReference=dbFirestore.collection("time").document(name);
+
+        ApiFuture<DocumentSnapshot> future=documentReference.get();
+
+        DocumentSnapshot document=future.get();
+
+        if(document.exists()){
+            Time time = document.toObject(Time.class);
+            return time;
+        }
+        else{
+            return null;
+        }
+    }
+
+//update time
+    public String updateTime(Time time) throws ExecutionException, InterruptedException{
+
+        Firestore dbFirestore = FirestoreClient.getFirestore();
+
+        ApiFuture<WriteResult> collectionApiFuture=dbFirestore.collection("time").document("last update").set(time);
+
+    return collectionApiFuture.get().getUpdateTime().toString();
+    }
 
 }

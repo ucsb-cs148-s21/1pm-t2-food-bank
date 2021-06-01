@@ -10,6 +10,7 @@
     "axios": "^0.21.1",
     "bootstrap": "^4.6.0",
     "emailjs-com": "^2.6.4",
+    "moment": "^2.29.1",
     "react": "^17.0.2",
     "react-bootstrap": "^1.6.0",
     "react-bootstrap-table-next": "^4.0.3",

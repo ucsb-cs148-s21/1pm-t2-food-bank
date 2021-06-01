@@ -23,6 +23,8 @@ import Paper from '@material-ui/core/Paper';
 import Datatable from "./datatable"
 import axios from 'axios'
 
+import moment from 'moment';
+
 // https://www.youtube.com/watch?v=d1r0aK5awWk
 // require("es6-promise").polyfill();
 // require("isomorphic-fetch")
@@ -68,6 +70,7 @@ class Staff extends Component {
     // const [data, setData] = useState([]);
     // const [q, setQ] = useState("")
     this.state = {
+      time: null,
       data: null,
       loading: true,
       error: null,
@@ -85,6 +88,13 @@ class Staff extends Component {
       this.setState({ data: data, loading: false });
     } catch (e) { this.setState({ error: e }) }
     console.log(this.state.data);
+
+    const timeAPI = "/api/getTime/last update";
+    const res = await fetch(timeAPI);
+    try {
+      const date = await res.json();
+      this.setState({ time: moment(date.date).fromNow() });
+    } catch (e) { this.setState({ error: e }) }
   }
 
   async fetchAPI(){
@@ -94,7 +104,14 @@ class Staff extends Component {
       const data = await response.json();
       return data;
     } catch (e) { this.setState({ error: e }) }
-  }        
+  }
+
+//update timestamp
+  async updateTime(){    //big s/o to kaiwen for helping me - Sunrise
+    const time = moment().format();
+    const res = await axios.put('api/updateTime', {time: time});
+    this.setState({ time: moment(time).fromNow() });
+  }
   
   timeout(){
     setTimeout(async() =>{
@@ -105,27 +122,6 @@ class Staff extends Component {
     }, 1000);
   }
 
-  // async componentWillMount() {
-  //   const API = "/api/getInventory";
-  //   const response = await fetch(API);
-  //   try {
-  //     const data = await response.json();
-  //     this.setState({ data: data, loading: false });
-  //   } catch (e) { this.setState({ error: e }) }
-  //   console.log("update: ", this.state.loading);
-  // }
-
-  // async componentDidUpdate(prevProps, prevState) {
-  //   if (prevState.loading !== this.state.loading) {
-  //       const API = "/api/getInventory";
-  //     const response = await fetch(API);
-  //     try {
-  //       const data = await response.json();
-  //       this.setState({ data: data, loading: false });
-  //     } catch (e) { this.setState({ error: e }) }
-  //     console.log("update: ", this.state.loading);
-  //   }
-  // }
 
   setQ(value){
     this.setState({ q: value });
@@ -163,6 +159,7 @@ class Staff extends Component {
     document.getElementById('limit').value = null;
     document.getElementById('amount').value = null;
     document.getElementById('category').value = null;
+    this.updateTime();
   }
 
   // tutorial: https://www.javatpoint.com/react-axios-delete-request-example
@@ -184,6 +181,7 @@ class Staff extends Component {
         })
     }
     this.timeout();
+    this.updateTime();
   }
 
   onUpdate(name, category){
@@ -215,6 +213,7 @@ class Staff extends Component {
     document.getElementById(name+"limit").value = null;
     document.getElementById(name+"amount").value = null;
     this.timeout();
+    this.updateTime();
   }
   loadTable(){
     window.alert(document.getElementById('name').value)
@@ -227,11 +226,16 @@ class Staff extends Component {
     if (this.state.loading) {
       return <Loading/>;
     }
+
+
     return (
         <div>
           <label className= 'searchLabel' for="search">Search:</label>
           <input className= 'searchInput' type="text" id="search" value={this.state.q} onChange={(e) => this.setQ(e.target.value)}></input>
           {/* <div name="staffTable"> */}
+
+          <div className="time">Last updated: {this.state.time} </div>
+
           <TableContainer component={Paper}>
             <Table className={useStyles.table} aria-label="customized table">
               <TableHead>
