@@ -161,6 +161,7 @@ class Staff extends Component {
     document.getElementById('amount').value = null;
     document.getElementById('category').value = null;
     this.updateTime();
+    document.getElementById("search").value = '';
   }
 
   // tutorial: https://www.javatpoint.com/react-axios-delete-request-example
@@ -183,6 +184,7 @@ class Staff extends Component {
     }
     this.timeout();
     this.updateTime();
+    document.getElementById("search").value = '';
   }
 
   onUpdate(name, category){
@@ -233,7 +235,7 @@ class Staff extends Component {
     return (
         <div>
           <label className= 'searchLabel' for="search">Search:</label>
-          <input className= 'searchInput' type="text" id="search" value={this.state.q} onChange={(e) => this.setQ(e.target.value)}></input>
+          <input className= 'searchInput' type="text" id="search" onChange={(e) => this.setQ(e.target.value)}></input>
           {/* <div name="staffTable"> */}
 
           <div className="time">Last updated: {this.state.time} </div>
