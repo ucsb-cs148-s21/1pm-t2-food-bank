@@ -190,9 +190,15 @@ class Staff extends Component {
     if (name === '' || category === ''){
       window.alert('Invalid input!')
     }
-    var limit = document.getElementById(name+"limit").value;
-    var amount = document.getElementById(name+"amount").value;
+    var limit = document.getElementById(name+"limit").placeholder;
+    var amount = document.getElementById(name+"amount").placeholder;
     console.log("category: ", category);
+    if(document.getElementById(name+"limit").value !== ''){
+      limit = document.getElementById(name+"limit").value;
+    }
+    if(document.getElementById(name+"amount").value !== ''){
+      amount = document.getElementById(name+"amount").value;
+    }
     if (limit === '' || amount === ''){
         window.alert('Invalid input!')
     }
@@ -245,8 +251,8 @@ class Staff extends Component {
                   {this.state.data.map(row => 
                   <StyledTableRow>                                    
                       {row != null? <StyledTableCell><label id={row.name+"name"} name={row.name+"fname"} value={row.name}>{row.name}</label></StyledTableCell> : null}
-                      {row != null? <StyledTableCell><input type="number" id={row.name+"limit"} name={row.name+"flimit"} placeholder={row.limit}/></StyledTableCell> : null}
-                      {row != null? <StyledTableCell><input type="number" id={row.name+"amount"} name={row.name+"famount"} placeholder={row.amount}/></StyledTableCell> : null}
+                      {row != null? <StyledTableCell><input type="number" id={row.name+"limit"} name={row.name+"flimit"} placeholder={row.limit}></input></StyledTableCell> : null}
+                      {row != null? <StyledTableCell><input type="number" id={row.name+"amount"} name={row.name+"famount"} placeholder={row.amount}></input></StyledTableCell> : null}
                       {row != null? <StyledTableCell><label id={row.name+"category"} name={row.name+"fcategory"} value={row.category}>{row.category}</label></StyledTableCell> : null}
 
                       {row != null? <StyledTableCell>
