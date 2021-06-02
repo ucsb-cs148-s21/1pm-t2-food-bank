@@ -241,7 +241,7 @@ class Staff extends Component {
           <div className="time">Last updated: {this.state.time} </div>
 
           <TableContainer component={Paper}>
-            <Table className={useStyles.table} aria-label="customized table">
+            <Table className={useStyles.table} aria-label="customized table" fixedHeader={false} style={{ width: "auto", tableLayout: "auto" }}>
               <TableHead>
                 <TableRow>
                   {this.state.columns.map(heading => <StyledTableCell>{heading}</StyledTableCell>)}

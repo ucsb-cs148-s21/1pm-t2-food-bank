@@ -39,10 +39,11 @@ const StyledTableCell = withStyles((theme) => ({
 
 export default function Datatable({data})
 {
+    const classes = useStyles();
     const columns = data[0] && Object.keys(data[0]);
     return (
     <TableContainer component={Paper}>
-        <Table className={useStyles.table} aria-label="customized table">
+        <Table className={classes.table} aria-label="customized table" fixedHeader={false} style={{ width: "auto", tableLayout: "auto" }}>
             <TableHead>
                 <TableRow>{data[0] && columns.map(heading => <StyledTableCell>{heading}</StyledTableCell>)}</TableRow>
             </TableHead>
