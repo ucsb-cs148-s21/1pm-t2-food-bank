@@ -107,7 +107,7 @@ class Staff extends Component {
   }
 
 //update timestamp
-  async updateTime(){    //big s/o to kaiwen for helping me - Sunrise
+  async updateTime(){    
     const time = moment().format();
     const res = await axios.put('api/updateTime', {time: time});
     this.setState({ time: moment(time).fromNow() });
