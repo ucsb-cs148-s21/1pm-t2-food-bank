@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
-import './Inventory.css'
+import '../Staff/Table.css' // css same as staff table
 
 import Datatable from "./datatable"
 import Layout from '../../pages/Layout'
@@ -67,7 +67,7 @@ class Inventory extends Component {
 
 
     return (
-        <div>
+      <div>
           <label className= 'searchLabel' for="search">Search:</label>
           <input className= 'searchInput' type="text" id="search" value={this.state.q} onChange={(e) => this.setQ(e.target.value)}></input>
 
@@ -76,7 +76,7 @@ class Inventory extends Component {
           <div name="inventoryTable">
             <Datatable data={this.search(this.state.data)} />
           </div>
-        </div>
+      </div>
     );
   }
 }

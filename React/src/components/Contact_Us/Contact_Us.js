@@ -134,9 +134,11 @@ const ContactForm = () => {
                           {errors.message && <span className='errorMessage'>Please enter a message</span>}
                         </div>
                       </div>
+                      <div className="center-btn">
                       <button className='submit-btn' type='submit'>
                         Submit
                       </button>
+                      </div>
                     </form>
                   </div>
                   <ToastContainer />

@@ -1,6 +1,6 @@
 import React, { Component, useState, useEffect } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
-import './Staff.css'
+import './Table.css'
 import getUser from "../../utils/get-user";
 import Layout from '../../pages/Layout'
 import Loading from "../../pages/Loading"
@@ -238,7 +238,7 @@ class Staff extends Component {
           <input className= 'searchInput' type="text" id="search" onChange={(e) => this.setQ(e.target.value)}></input>
           {/* <div name="staffTable"> */}
 
-          <div className="time">Last updated: {this.state.time} </div>
+          <div className="time">Last update: {this.state.time} </div>
 
           <TableContainer component={Paper}>
             <Table className={useStyles.table} aria-label="customized table">
@@ -252,10 +252,10 @@ class Staff extends Component {
               <TableBody>
                   {this.state.filterdata.map(row => 
                   <StyledTableRow>                                    
-                      {row != null? <StyledTableCell><label id={row.name+"name"} name={row.name+"fname"} value={row.name}>{row.name}</label></StyledTableCell> : null}
-                      {row != null? <StyledTableCell><input type="number" id={row.name+"limit"} name={row.name+"flimit"} placeholder={row.limit}/></StyledTableCell> : null}
-                      {row != null? <StyledTableCell><input type="number" id={row.name+"amount"} name={row.name+"famount"} placeholder={row.amount}/></StyledTableCell> : null}
-                      {row != null? <StyledTableCell><label id={row.name+"category"} name={row.name+"fcategory"} value={row.category}>{row.category}</label></StyledTableCell> : null}
+                      {row != null? <StyledTableCell><label className='table-cell' id={row.name+"name"} name={row.name+"fname"} value={row.name}>{row.name}</label></StyledTableCell> : null}
+                      {row != null? <StyledTableCell><input className='table-cell' type="number" id={row.name+"limit"} name={row.name+"flimit"} placeholder={row.limit}/></StyledTableCell> : null}
+                      {row != null? <StyledTableCell><input className='table-cell' type="number" id={row.name+"amount"} name={row.name+"famount"} placeholder={row.amount}/></StyledTableCell> : null}
+                      {row != null? <StyledTableCell><label className='table-cell' id={row.name+"category"} name={row.name+"fcategory"} value={row.category}>{row.category}</label></StyledTableCell> : null}
 
                       {row != null? <StyledTableCell>
                         <Button
@@ -282,10 +282,10 @@ class Staff extends Component {
                   </StyledTableRow>
                   )}
                   <StyledTableRow>
-                  <StyledTableCell><input type="text" id="name" name="fname" required/></StyledTableCell>
-                  <StyledTableCell><input type="number" id="limit" name="flimit" min="1" required/></StyledTableCell>
-                  <StyledTableCell><input type="number" id="amount" name="famount" min="0" required/></StyledTableCell>
-                  <StyledTableCell><input type="text" id="category" name="fcategory" required/></StyledTableCell>
+                  <StyledTableCell><input className='table-cell' type="text" id="name" name="fname" required/></StyledTableCell>
+                  <StyledTableCell><input className='table-cell' type="number" id="limit" name="flimit" min="1" required/></StyledTableCell>
+                  <StyledTableCell><input className='table-cell' type="number" id="amount" name="famount" min="0" required/></StyledTableCell>
+                  <StyledTableCell><input className='table-cell' type="text" id="category" name="fcategory" required/></StyledTableCell>
 
                   <StyledTableCell>
                     <Button
