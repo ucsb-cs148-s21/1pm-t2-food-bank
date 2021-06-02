@@ -11,9 +11,56 @@
     width: 800px;
     height: 325px;
     border-radius: 25px;
-
     position: absolute;
     transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 900px){
+    .Jambotron{
+        padding: 45px;
+        background-color: rgba(242, 242, 242, .77);
+        width: 650px;
+        height: 350px;
+        border-radius: 25px;
+        position: absolute;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media screen and (max-width: 700px){
+    .Jambotron{
+        padding: 45px;
+        background-color: rgba(242, 242, 242, .77);
+        width: 500px;
+        height: 420px;
+        border-radius: 25px;
+        position: absolute;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media screen and (max-width: 550px){
+    .Jambotron{
+        padding: 45px;
+        background-color: rgba(242, 242, 242, .77);
+        width: 380px;
+        height: 530px;
+        border-radius: 25px;
+        position: absolute;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media screen and (max-width: 420px){
+    .Jambotron{
+        padding: 45px;
+        background-color: rgba(242, 242, 242, .77);
+        width: 300px;
+        height: 600px;
+        border-radius: 25px;
+        position: absolute;
+        transform: translate(-50%, -50%);
+    }
 }
 
 .landing-page{
