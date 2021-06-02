@@ -241,7 +241,7 @@ class Staff extends Component {
           <div className="time">Last updated: {this.state.time} </div>
 
           <TableContainer component={Paper}>
-            <Table className={useStyles.table} aria-label="customized table" fixedHeader={false} style={{ width: "auto", tableLayout: "auto" }}>
+            <Table className={useStyles.table} aria-label="customized table">
               <TableHead>
                 <TableRow>
                   {this.state.columns.map(heading => <StyledTableCell>{heading}</StyledTableCell>)}
@@ -312,68 +312,3 @@ class Staff extends Component {
 }
 
 export default TempStaff;
-
-
-
-
-/*
-          <div name="staffTable">
-            <table cellPadding={0} cellSpacing={0}>
-              <thead>
-                <tr>{this.state.columns.map(heading => <th>{heading}</th>)}</tr>
-              </thead>
-              <tbody>
-                  {this.state.data.map(row => 
-                  <tr>                                      
-                      {row != null? <td><label id={row.name+"name"} name={row.name+"fname"}>{row.name}</label></td> : null}
-                      {row != null? <td><input type="number" id={row.name+"limit"} name={row.name+"flimit"} placeholder={row.limit}/></td> : null}
-                      {row != null? <td><input type="number" id={row.name+"amount"} name={row.name+"famount"} placeholder={row.amount}/></td> : null}
-                      {row != null? <td><label id={row.name+"category"} name={row.name+"fcategory"}>{row.category}</label></td> : null}
-
-                      {row != null? <td>
-                        <Button
-                          variant="contained"
-                          color="default"
-                          startIcon={<UpdateIcon />}
-                          onClick={() => this.onUpdate(row.name)}
-                        >
-                          Update
-                        </Button>
-                      </td> : null}
-
-                      {row != null? <td>
-                        <Button
-                          variant="contained"
-                          color="secondary"
-                          startIcon={<DeleteIcon />}
-                          onClick={() => this.onDelete(row.name)}
-                        >
-                          Delete
-                        </Button>
-                      </td> : null}
-
-                  </tr>
-                  )}
-                  <tr>
-                  <td><input type="text" id="name" name="fname" required/></td>
-                  <td><input type="number" id="limit" name="flimit" min="1" required/></td>
-                  <td><input type="number" id="amount" name="famount" min="0" required/></td>
-                  <td><input type="text" id="category" name="fcategory" required/></td>
-
-                  <td>
-                    <Button
-                      variant="contained"
-                      color="primary"
-                      startIcon={<CreateIcon />}
-                      onClick={() => this.onCreate()}
-                    >
-                      Create
-                    </Button>
-                  </td>
-                  
-                  </tr>
-              </tbody>
-            </table>
-          </div>
-
-*/

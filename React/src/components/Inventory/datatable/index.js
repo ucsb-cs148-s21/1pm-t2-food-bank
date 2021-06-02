@@ -43,7 +43,7 @@ export default function Datatable({data})
     const columns = data[0] && Object.keys(data[0]);
     return (
     <TableContainer component={Paper}>
-        <Table className={classes.table} aria-label="customized table" fixedHeader={false} style={{ width: "auto", tableLayout: "auto" }}>
+        <Table className={classes.table} aria-label="customized table">
             <TableHead>
                 <TableRow>{data[0] && columns.map(heading => <StyledTableCell>{heading}</StyledTableCell>)}</TableRow>
             </TableHead>
