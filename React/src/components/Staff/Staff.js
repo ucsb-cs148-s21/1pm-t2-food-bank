@@ -67,10 +67,10 @@ class Staff extends Component {
 
   constructor(props) {
     super(props);
-    // const [data, setData] = useState([]);
-    // const [q, setQ] = useState("")
+
     this.state = {
       time: null,
+      filterdata: null,
       data: null,
       loading: true,
       error: null,
@@ -85,7 +85,7 @@ class Staff extends Component {
     const response = await fetch(API);
     try {
       const data = await response.json();
-      this.setState({ data: data, loading: false });
+      this.setState({ data: data, filterdata: data, loading: false });
     } catch (e) { this.setState({ error: e }) }
     console.log(this.state.data);
 
@@ -107,7 +107,7 @@ class Staff extends Component {
   }
 
 //update timestamp
-  async updateTime(){    //big s/o to kaiwen for helping me - Sunrise
+  async updateTime(){    
     const time = moment().format();
     const res = await axios.put('api/updateTime', {time: time});
     this.setState({ time: moment(time).fromNow() });
@@ -117,7 +117,7 @@ class Staff extends Component {
     setTimeout(async() =>{
       let list = await this.fetchAPI();                                            
       console.log(list);
-      this.setState({data: list});
+      this.setState({data: list, filterdata: list, q: null});
       console.log(this.state.data, "data")
     }, 1000);
   }
@@ -125,6 +125,7 @@ class Staff extends Component {
 
   setQ(value){
     this.setState({ q: value });
+    this.setState({filterdata: this.search(this.state.data)});
   }
   search(rows){
     return rows.filter( row => row.name.indexOf(this.state.q) > -1 || row.category.indexOf(this.state.q) > -1)
@@ -160,6 +161,7 @@ class Staff extends Component {
     document.getElementById('amount').value = null;
     document.getElementById('category').value = null;
     this.updateTime();
+    document.getElementById("search").value = '';
   }
 
   // tutorial: https://www.javatpoint.com/react-axios-delete-request-example
@@ -182,6 +184,7 @@ class Staff extends Component {
     }
     this.timeout();
     this.updateTime();
+    document.getElementById("search").value = '';
   }
 
   onUpdate(name, category){
@@ -214,6 +217,7 @@ class Staff extends Component {
     document.getElementById(name+"amount").value = null;
     this.timeout();
     this.updateTime();
+    document.getElementById("search").value = '';
   }
   loadTable(){
     window.alert(document.getElementById('name').value)
@@ -231,7 +235,7 @@ class Staff extends Component {
     return (
         <div>
           <label className= 'searchLabel' for="search">Search:</label>
-          <input className= 'searchInput' type="text" id="search" value={this.state.q} onChange={(e) => this.setQ(e.target.value)}></input>
+          <input className= 'searchInput' type="text" id="search" onChange={(e) => this.setQ(e.target.value)}></input>
           {/* <div name="staffTable"> */}
 
           <div className="time">Last updated: {this.state.time} </div>
@@ -246,7 +250,7 @@ class Staff extends Component {
                 </TableRow>
               </TableHead>
               <TableBody>
-                  {this.state.data.map(row => 
+                  {this.state.filterdata.map(row => 
                   <StyledTableRow>                                    
                       {row != null? <StyledTableCell><label id={row.name+"name"} name={row.name+"fname"} value={row.name}>{row.name}</label></StyledTableCell> : null}
                       {row != null? <StyledTableCell><input type="number" id={row.name+"limit"} name={row.name+"flimit"} placeholder={row.limit}/></StyledTableCell> : null}

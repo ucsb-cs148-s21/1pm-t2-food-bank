@@ -14,7 +14,7 @@ import com.google.firebase.cloud.FirestoreClient;
 import t2foodbank.FoodBank.objects.Food;
 import t2foodbank.FoodBank.objects.Time;
 import org.springframework.stereotype.Service;
-//import t2foodbank.FoodBank.database.FirebaseInitializer;
+
 
 
 @Service
@@ -23,7 +23,6 @@ public class FirebaseService {
     private static final String COLLECTION_NAME = "inventory";
 
 //get single inventory
-
     public Food getInventorybyname(String name) throws ExecutionException, InterruptedException{
 
         Firestore dbFirestore = FirestoreClient.getFirestore();
@@ -68,7 +67,7 @@ public class FirebaseService {
     }
     
 
-//add
+//add inventory
     public String addInventory(Food food) throws ExecutionException, InterruptedException{
 
        Firestore dbFirestore = FirestoreClient.getFirestore();
@@ -81,7 +80,7 @@ public class FirebaseService {
     }
 
 
-//update
+//update inventory(amount/limit only)
     public String updateInventory(Food food) throws ExecutionException, InterruptedException{
 
         Firestore dbFirestore = FirestoreClient.getFirestore();
@@ -91,7 +90,7 @@ public class FirebaseService {
         return collectionApiFuture.get().getUpdateTime().toString();
     }
 
-//delete
+//delete inventory
     public String deleteInventory(String name) throws ExecutionException, InterruptedException{
 
         Firestore dbFirestore = FirestoreClient.getFirestore();
@@ -102,7 +101,7 @@ public class FirebaseService {
     }
 
 
-//get time
+//get timestamp
     public Time getTime(String name) throws ExecutionException, InterruptedException{
 
         Firestore dbFirestore = FirestoreClient.getFirestore();
@@ -122,7 +121,7 @@ public class FirebaseService {
         }
     }
 
-//update time
+//update timestampe
     public String updateTime(Time time) throws ExecutionException, InterruptedException{
 
         Firestore dbFirestore = FirestoreClient.getFirestore();
