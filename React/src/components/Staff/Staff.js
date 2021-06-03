@@ -137,7 +137,7 @@ class Staff extends Component {
     var amount = document.getElementById('amount').value
     var category = document.getElementById('category').value
     if (limit === '' || amount === '' || name === '' || category === '' || limit < 0 || amount < 0 ){
-        window.alert('Invalid input!')
+        window.alert('Invalid Input!')
     }
     else {
         const item = {
@@ -149,7 +149,7 @@ class Staff extends Component {
         axios.post('api/addInventory', item)
         .then(function (response) {
             console.log(response);
-            window.alert('Item Created!')
+            window.alert('Item Inserted!')
         })
         .catch(function (error) {
             console.log(error);
@@ -167,7 +167,7 @@ class Staff extends Component {
   // tutorial: https://www.javatpoint.com/react-axios-delete-request-example
   onDelete(name){
     if (name === ''){
-        window.alert('Invalid item!')
+        window.alert('Invalid Item!')
     }
     else {
         axios.delete('api/deleteInventory/'+ name)
@@ -252,12 +252,12 @@ class Staff extends Component {
               <TableBody>
                   {this.state.filterdata.map(row => 
                   <StyledTableRow>                                    
-                      {row != null? <StyledTableCell><label className='table-cell' id={row.name+"name"} name={row.name+"fname"} value={row.name}>{row.name}</label></StyledTableCell> : null}
-                      {row != null? <StyledTableCell><input className='table-cell' type="number" id={row.name+"limit"} name={row.name+"flimit"} placeholder={row.limit}/></StyledTableCell> : null}
-                      {row != null? <StyledTableCell><input className='table-cell' type="number" id={row.name+"amount"} name={row.name+"famount"} placeholder={row.amount}/></StyledTableCell> : null}
-                      {row != null? <StyledTableCell><label className='table-cell' id={row.name+"category"} name={row.name+"fcategory"} value={row.category}>{row.category}</label></StyledTableCell> : null}
+                      {row !== null? <StyledTableCell><label className='table-cell' id={row.name+"name"} name={row.name+"fname"} value={row.name}>{row.name}</label></StyledTableCell> : null}
+                      {row !== null? <StyledTableCell><input className='table-cell' type="number" id={row.name+"limit"} name={row.name+"flimit"} placeholder={row.limit}/></StyledTableCell> : null}
+                      {row !== null? <StyledTableCell><input className='table-cell' type="number" id={row.name+"amount"} name={row.name+"famount"} placeholder={row.amount}/></StyledTableCell> : null}
+                      {row !== null? <StyledTableCell><label className='table-cell' id={row.name+"category"} name={row.name+"fcategory"} value={row.category}>{row.category}</label></StyledTableCell> : null}
 
-                      {row != null? <StyledTableCell>
+                      {row !== null? <StyledTableCell>
                         <Button
                           variant="contained"
                           color="default"
@@ -268,7 +268,7 @@ class Staff extends Component {
                         </Button>
                       </StyledTableCell> : null}
 
-                      {row != null? <StyledTableCell>
+                      {row !== null? <StyledTableCell>
                         <Button
                           variant="contained"
                           color="secondary"
