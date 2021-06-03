@@ -49,3 +49,11 @@ export const Title = styled.p`
     font-weight: bold;
 `
 
+export const Team = styled.a`
+    color: #000;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    margin-left: 60px;
+    font-size: 18px;
+    text-decoration: none;
+`
