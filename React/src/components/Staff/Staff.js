@@ -128,7 +128,7 @@ class Staff extends Component {
     this.setState({filterdata: this.search(this.state.data)});
   }
   search(rows){
-    return rows.filter( row => row.name.indexOf(this.state.q) > -1 || row.category.indexOf(this.state.q) > -1)
+    return rows.filter( row => row.name.indexOf(document.getElementById('search').value) > -1 || row.category.indexOf(document.getElementById('search').value) > -1)
   }
 
   onCreate(){
