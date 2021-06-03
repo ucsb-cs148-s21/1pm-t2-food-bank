@@ -191,11 +191,18 @@ class Staff extends Component {
     if (name === '' || category === ''){
       window.alert('Invalid Input!')
     }
-    var limit = document.getElementById(name+"limit").value;
-    var amount = document.getElementById(name+"amount").value;
+    var limit = document.getElementById(name+"limit").placeholder;
+    var amount = document.getElementById(name+"amount").placeholder;
     console.log("category: ", category);
-    if (limit === '' || amount === '' || limit < 0 || amount < 0 ){
-        window.alert('Invalid Input!')
+    
+    if(document.getElementById(name+"limit").value !== ''){
+      limit = document.getElementById(name+"limit").value;
+    }
+    if(document.getElementById(name+"amount").value !== ''){
+      amount = document.getElementById(name+"amount").value;
+    }
+    if (limit === '' || amount === '' || limit < 0 || amount < 0){
+        window.alert('Invalid input!')
     }
     else {
         const item = {
@@ -252,10 +259,11 @@ class Staff extends Component {
               <TableBody>
                   {this.state.filterdata.map(row => 
                   <StyledTableRow>                                    
-                      {row !== null? <StyledTableCell><label className='table-cell' id={row.name+"name"} name={row.name+"fname"} value={row.name}>{row.name}</label></StyledTableCell> : null}
-                      {row !== null? <StyledTableCell><input className='table-cell' type="number" id={row.name+"limit"} name={row.name+"flimit"} placeholder={row.limit}/></StyledTableCell> : null}
-                      {row !== null? <StyledTableCell><input className='table-cell' type="number" id={row.name+"amount"} name={row.name+"famount"} placeholder={row.amount}/></StyledTableCell> : null}
-                      {row !== null? <StyledTableCell><label className='table-cell' id={row.name+"category"} name={row.name+"fcategory"} value={row.category}>{row.category}</label></StyledTableCell> : null}
+
+                      {row != null? <StyledTableCell><label className='table-cell' id={row.name+"name"} name={row.name+"fname"} value={row.name}>{row.name}</label></StyledTableCell> : null}
+                      {row != null? <StyledTableCell><input className='table-cell' type="number" id={row.name+"limit"} name={row.name+"flimit"} placeholder={row.limit}></input></StyledTableCell> : null}
+                      {row != null? <StyledTableCell><input className='table-cell' type="number" id={row.name+"amount"} name={row.name+"famount"} placeholder={row.amount}></input></StyledTableCell> : null}
+                      {row != null? <StyledTableCell><label className='table-cell' id={row.name+"category"} name={row.name+"fcategory"} value={row.category}>{row.category}</label></StyledTableCell> : null}
 
                       {row !== null? <StyledTableCell>
                         <Button
