@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Wrapper, Row, Column, Link, Title } from'./footer_style'
+import { Container, Wrapper, Row, Column, Link, Title, Team } from'./footer_style'
 
 export default function Footer({ children, ...restProps}){
     return <Container{...restProps}>{children}</Container>
@@ -23,4 +23,8 @@ Footer.Link = function FooterLink({children, ...restProps}) {
 
 Footer.Title = function FooterTitle({children, ...restProps}) {
     return <Title {...restProps}>{children}</Title>
+}
+
+Footer.Team = function FooterTeam({children, ...restProps}) {
+    return <Team {...restProps}>{children}</Team>
 }

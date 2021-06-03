@@ -21,6 +21,8 @@ export function FooterContainer(){
                         <Footer.Link href="mailto: cindyl@as.ucsb.edu">cindyl@as.ucsb.edu</Footer.Link>
                     </Footer.Column>
                 </Footer.Row>
+                <Footer.Row />
+                    <Footer.Team>Dev Team: Jerry, Kaiwen, Liuhao, Orion, Sunrise from UCSB CS148 Spring 2021 <Footer.Link href="https://github.com/ucsb-cs148-s21/1pm-t2-food-bank"><Icon className="fab fa-github" /></Footer.Link></Footer.Team>
             </Footer.Wrapper>
         </Footer>
     )
