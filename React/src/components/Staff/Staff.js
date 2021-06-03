@@ -1,6 +1,6 @@
 import React, { Component, useState, useEffect } from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
-import './Staff.css'
+import './Table.css'
 import getUser from "../../utils/get-user";
 import Layout from '../../pages/Layout'
 import Loading from "../../pages/Loading"
@@ -136,8 +136,8 @@ class Staff extends Component {
     var limit = document.getElementById('limit').value
     var amount = document.getElementById('amount').value
     var category = document.getElementById('category').value
-    if (limit === '' || amount === '' || name === '' || category === '' ){
-        window.alert('Invalid input!')
+    if (limit === '' || amount === '' || name === '' || category === '' || limit < 0 || amount < 0 ){
+        window.alert('Invalid Input!')
     }
     else {
         const item = {
@@ -149,7 +149,7 @@ class Staff extends Component {
         axios.post('api/addInventory', item)
         .then(function (response) {
             console.log(response);
-            window.alert('Item Created!')
+            window.alert('Item Inserted!')
         })
         .catch(function (error) {
             console.log(error);
@@ -167,7 +167,7 @@ class Staff extends Component {
   // tutorial: https://www.javatpoint.com/react-axios-delete-request-example
   onDelete(name){
     if (name === ''){
-        window.alert('Invalid item!')
+        window.alert('Invalid Item!')
     }
     else {
         axios.delete('api/deleteInventory/'+ name)
@@ -189,18 +189,19 @@ class Staff extends Component {
 
   onUpdate(name, category){
     if (name === '' || category === ''){
-      window.alert('Invalid input!')
+      window.alert('Invalid Input!')
     }
     var limit = document.getElementById(name+"limit").placeholder;
     var amount = document.getElementById(name+"amount").placeholder;
     console.log("category: ", category);
+    
     if(document.getElementById(name+"limit").value !== ''){
       limit = document.getElementById(name+"limit").value;
     }
     if(document.getElementById(name+"amount").value !== ''){
       amount = document.getElementById(name+"amount").value;
     }
-    if (limit === '' || amount === ''){
+    if (limit === '' || amount === '' || limit < 0 || amount < 0){
         window.alert('Invalid input!')
     }
     else {
@@ -244,26 +245,27 @@ class Staff extends Component {
           <input className= 'searchInput' type="text" id="search" onChange={(e) => this.setQ(e.target.value)}></input>
           {/* <div name="staffTable"> */}
 
-          <div className="time">Last updated: {this.state.time} </div>
+          <div className="time">Last update: {this.state.time} </div>
 
           <TableContainer component={Paper}>
             <Table className={useStyles.table} aria-label="customized table">
               <TableHead>
                 <TableRow>
                   {this.state.columns.map(heading => <StyledTableCell>{heading}</StyledTableCell>)}
-                  <StyledTableCell>Update</StyledTableCell>
-                  <StyledTableCell>Delete</StyledTableCell>
+                  <StyledTableCell>upsert</StyledTableCell>
+                  <StyledTableCell>delete</StyledTableCell>
                 </TableRow>
               </TableHead>
               <TableBody>
                   {this.state.filterdata.map(row => 
                   <StyledTableRow>                                    
-                      {row != null? <StyledTableCell><label id={row.name+"name"} name={row.name+"fname"} value={row.name}>{row.name}</label></StyledTableCell> : null}
-                      {row != null? <StyledTableCell><input type="number" id={row.name+"limit"} name={row.name+"flimit"} placeholder={row.limit}></input></StyledTableCell> : null}
-                      {row != null? <StyledTableCell><input type="number" id={row.name+"amount"} name={row.name+"famount"} placeholder={row.amount}></input></StyledTableCell> : null}
-                      {row != null? <StyledTableCell><label id={row.name+"category"} name={row.name+"fcategory"} value={row.category}>{row.category}</label></StyledTableCell> : null}
 
-                      {row != null? <StyledTableCell>
+                      {row != null? <StyledTableCell><label className='table-cell' id={row.name+"name"} name={row.name+"fname"} value={row.name}>{row.name}</label></StyledTableCell> : null}
+                      {row != null? <StyledTableCell><input className='table-cell' type="number" id={row.name+"limit"} name={row.name+"flimit"} placeholder={row.limit}></input></StyledTableCell> : null}
+                      {row != null? <StyledTableCell><input className='table-cell' type="number" id={row.name+"amount"} name={row.name+"famount"} placeholder={row.amount}></input></StyledTableCell> : null}
+                      {row != null? <StyledTableCell><label className='table-cell' id={row.name+"category"} name={row.name+"fcategory"} value={row.category}>{row.category}</label></StyledTableCell> : null}
+
+                      {row !== null? <StyledTableCell>
                         <Button
                           variant="contained"
                           color="default"
@@ -274,7 +276,7 @@ class Staff extends Component {
                         </Button>
                       </StyledTableCell> : null}
 
-                      {row != null? <StyledTableCell>
+                      {row !== null? <StyledTableCell>
                         <Button
                           variant="contained"
                           color="secondary"
@@ -288,10 +290,10 @@ class Staff extends Component {
                   </StyledTableRow>
                   )}
                   <StyledTableRow>
-                  <StyledTableCell><input type="text" id="name" name="fname" required/></StyledTableCell>
-                  <StyledTableCell><input type="number" id="limit" name="flimit" min="1" required/></StyledTableCell>
-                  <StyledTableCell><input type="number" id="amount" name="famount" min="0" required/></StyledTableCell>
-                  <StyledTableCell><input type="text" id="category" name="fcategory" required/></StyledTableCell>
+                  <StyledTableCell><input className='table-cell' type="text" id="name" name="fname" required/></StyledTableCell>
+                  <StyledTableCell><input className='table-cell' type="number" id="limit" name="flimit" min="1" required/></StyledTableCell>
+                  <StyledTableCell><input className='table-cell' type="number" id="amount" name="famount" min="0" required/></StyledTableCell>
+                  <StyledTableCell><input className='table-cell' type="text" id="category" name="fcategory" required/></StyledTableCell>
 
                   <StyledTableCell>
                     <Button
@@ -300,7 +302,7 @@ class Staff extends Component {
                       startIcon={<CreateIcon />}
                       onClick={() => this.onCreate()}
                     >
-                      Create
+                      Insert
                     </Button>
                   </StyledTableCell>
 
@@ -318,68 +320,3 @@ class Staff extends Component {
 }
 
 export default TempStaff;
-
-
-
-
-/*
-          <div name="staffTable">
-            <table cellPadding={0} cellSpacing={0}>
-              <thead>
-                <tr>{this.state.columns.map(heading => <th>{heading}</th>)}</tr>
-              </thead>
-              <tbody>
-                  {this.state.data.map(row => 
-                  <tr>                                      
-                      {row != null? <td><label id={row.name+"name"} name={row.name+"fname"}>{row.name}</label></td> : null}
-                      {row != null? <td><input type="number" id={row.name+"limit"} name={row.name+"flimit"} placeholder={row.limit}/></td> : null}
-                      {row != null? <td><input type="number" id={row.name+"amount"} name={row.name+"famount"} placeholder={row.amount}/></td> : null}
-                      {row != null? <td><label id={row.name+"category"} name={row.name+"fcategory"}>{row.category}</label></td> : null}
-
-                      {row != null? <td>
-                        <Button
-                          variant="contained"
-                          color="default"
-                          startIcon={<UpdateIcon />}
-                          onClick={() => this.onUpdate(row.name)}
-                        >
-                          Update
-                        </Button>
-                      </td> : null}
-
-                      {row != null? <td>
-                        <Button
-                          variant="contained"
-                          color="secondary"
-                          startIcon={<DeleteIcon />}
-                          onClick={() => this.onDelete(row.name)}
-                        >
-                          Delete
-                        </Button>
-                      </td> : null}
-
-                  </tr>
-                  )}
-                  <tr>
-                  <td><input type="text" id="name" name="fname" required/></td>
-                  <td><input type="number" id="limit" name="flimit" min="1" required/></td>
-                  <td><input type="number" id="amount" name="famount" min="0" required/></td>
-                  <td><input type="text" id="category" name="fcategory" required/></td>
-
-                  <td>
-                    <Button
-                      variant="contained"
-                      color="primary"
-                      startIcon={<CreateIcon />}
-                      onClick={() => this.onCreate()}
-                    >
-                      Create
-                    </Button>
-                  </td>
-                  
-                  </tr>
-              </tbody>
-            </table>
-          </div>
-
-*/

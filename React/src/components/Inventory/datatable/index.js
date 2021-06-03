@@ -39,22 +39,23 @@ const StyledTableCell = withStyles((theme) => ({
 
 export default function Datatable({data})
 {
+    const classes = useStyles();
     const columns = data[0] && Object.keys(data[0]);
     return (
-    <TableContainer component={Paper}>
-        <Table className={useStyles.table} aria-label="customized table">
-            <TableHead>
-                <TableRow>{data[0] && columns.map(heading => <StyledTableCell>{heading}</StyledTableCell>)}</TableRow>
-            </TableHead>
-            <TableBody>
-                {data.map(row => 
-                <StyledTableRow>
-                    {
-                        columns.map(column => <StyledTableCell><label>{row[column]}</label></StyledTableCell>)
-                    }
-                </StyledTableRow>)}
-            </TableBody>
-        </Table>
-    </TableContainer>
+      <TableContainer component={Paper}>
+      <Table className={classes.table} aria-label="customized table">
+          <TableHead>
+              <TableRow>{data[0] && columns.map(heading => <StyledTableCell className='cell'>{heading}</StyledTableCell>)}</TableRow>
+          </TableHead>
+          <TableBody>
+              {data.map(row => 
+              <StyledTableRow>
+                  {
+                      columns.map(column => <StyledTableCell className='cell'><label>{row[column]}</label></StyledTableCell>)
+                  }
+              </StyledTableRow>)}
+          </TableBody>
+      </Table>
+      </TableContainer>
     )
 }

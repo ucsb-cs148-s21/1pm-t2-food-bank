@@ -71,7 +71,7 @@
     display: none;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1150px) {
     .NavbarItems {
         position: relative;
         font-size: 1.3rem;
@@ -113,7 +113,7 @@
     .navbar-logo {
         position: absolute;
         top: 0;
-        left: -10%;
+        left: -5%;
         transform: translate(24%, 35%);
         justify-self: start;
         cursor: pointer;
@@ -126,6 +126,214 @@
         right: 0;
         transform: translate(-100%, 60%);
         font-size: 1.8rem;
+        cursor: pointer;
+    }
+
+    .fa-times {
+        color: white;
+        font-size: 2rem;
+    }
+
+    .login-button {
+        display: block;
+        padding: 2rem;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 4rem;
+    }
+
+    .login-button:hover {
+        background-color: #6568F4;
+        padding: 2rem;
+        padding-bottom: 4rem;
+        /* width: 100%;
+        border-radius: 0; */
+    }
+
+    .nav-links-mobile {
+        display: block;
+        text-align: center;
+        padding: 1.4rem;
+        margin: 0.5rem auto;
+        border-radius: 4px;
+        width: 60%;
+        margin-bottom: 4rem;
+        background: #4ad9e4;
+        text-decoration: none;
+        font-size: 1.3rem;
+    }
+
+    .nav-links-mobile:hover {
+        background: white;
+        color: #6568F4;
+        transition: 250ms;
+    }
+
+    Button {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .NavbarItems {
+        position: relative;
+        font-size: 1.3rem;
+        z-index: 999;
+    }
+
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        /* height: 390px; */
+        position: absolute;
+        top: 80px;
+        left: -100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+    }
+
+    .nav-menu.active {
+        background: #6668f4;
+        left: 0;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: table;
+    }
+
+    .nav-links {
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+    }
+
+    .nav-links:hover {
+        background-color: #7577fa;
+        border-radius: 0;
+    }
+
+    .navbar-logo {
+        position: absolute;
+        top: 0;
+        left: -12%;
+        transform: translate(24%, 35%);
+        justify-self: start;
+        cursor: pointer;
+    }
+
+    .menu-icon {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-100%, 60%);
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+
+    .fa-times {
+        color: white;
+        font-size: 2rem;
+    }
+
+    .login-button {
+        display: block;
+        padding: 2rem;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 4rem;
+    }
+
+    .login-button:hover {
+        background-color: #6568F4;
+        padding: 2rem;
+        padding-bottom: 4rem;
+        /* width: 100%;
+        border-radius: 0; */
+    }
+
+    .nav-links-mobile {
+        display: block;
+        text-align: center;
+        padding: 1.4rem;
+        margin: 0.5rem auto;
+        border-radius: 4px;
+        width: 60%;
+        margin-bottom: 4rem;
+        background: #4ad9e4;
+        text-decoration: none;
+        font-size: 1.3rem;
+    }
+
+    .nav-links-mobile:hover {
+        background: white;
+        color: #6568F4;
+        transition: 250ms;
+    }
+
+    Button {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .NavbarItems {
+        position: relative;
+        font-size: 1.3rem;
+        z-index: 999;
+        height: 70px;
+    }
+
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        /* height: 390px; */
+        position: absolute;
+        top: 70px;
+        left: -100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+    }
+
+    .nav-menu.active {
+        background: #6668f4;
+        left: 0;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: table;
+    }
+
+    .nav-links {
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+    }
+
+    .nav-links:hover {
+        background-color: #7577fa;
+        border-radius: 0;
+    }
+
+    .navbar-logo {
+        position: absolute;
+        top: 0;
+        left: -20%;
+        transform: translate(24%, 35%);
+        justify-self: start;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
+    .menu-icon {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-100%, 60%);
+        font-size: 1.5rem;
         cursor: pointer;
     }
 

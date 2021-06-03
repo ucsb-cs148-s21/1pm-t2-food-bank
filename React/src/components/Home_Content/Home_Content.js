@@ -34,10 +34,11 @@ function Home_Content() {
                                     : (<p>Sorry! You are ineligible to checkout items at food bank. <br /> If you have any questions, please submit a contact form below.</p>)
                                 )
                             }
-
+                            <div className="home-links">
                             {user && user.Membership && !user.Admin && <Link to={"/inventory"}>Get Started</Link>}
                             {user && user.Membership && user.Admin && <Link to={"/staff"}>Staff Portal</Link>}
                             {user && !user.Membership && <Link to={"/contactus"}>Contact Form</Link>}
+                            </div>
                             {!user && <p2>Hours: WEDNESDAYS 10AM-2PM <br /> FRIDAYS 9AM-1PM <br /> <br />
                                 Location: UCEN, ENTRANCE FROM ORTEGA SIDE</p2>}
                             

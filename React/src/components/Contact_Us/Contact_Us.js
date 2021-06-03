@@ -60,6 +60,7 @@ const ContactForm = () => {
     <Layout user={user}>
       <div className='ContactForm'>
             <h1 className='title'> Contact Form </h1>
+              <p id='contact-msg'>If you have any questions, please submit a contact form below. A staff member will reach out to you soon!</p>
               <div className='row'>
                 <div className='col-12 text-center'>
                   <div className='contactForm'>
@@ -134,9 +135,11 @@ const ContactForm = () => {
                           {errors.message && <span className='errorMessage'>Please enter a message</span>}
                         </div>
                       </div>
+                      <div className="center-btn">
                       <button className='submit-btn' type='submit'>
                         Submit
                       </button>
+                      </div>
                     </form>
                   </div>
                   <ToastContainer />

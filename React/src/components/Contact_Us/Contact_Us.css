@@ -5,6 +5,13 @@
     --purple: #6668f4;
 }
 
+#contact-msg{
+    color: #A52A2A;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
 .title{
   margin-top: 25px;
   display: flex;
@@ -102,16 +109,21 @@
     /* background-color:var(--purple) */
 }
 
+.center-btn{
+    display: flex;
+    justify-content: center !important;
+}
+
 .submit-btn {
+    display: flex;
     background-color: white;
     /* background-color: var(--dark); */
     /* color: #6668f4 !important; */
     color: var(--purple) !important;
     padding: 15px 50px;
     border: 2px solid #6668f4;
-    border: 2px solid var(--purple);
     border-radius: 10px;
-    margin-left: 42%;
+    /* margin-left: 42%; */
     margin-bottom: 25px
 }
 

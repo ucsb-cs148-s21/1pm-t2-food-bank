@@ -1,0 +1,40 @@
+table{
+    margin-top:20px;
+    margin-bottom:50px;
+    width:75% !important;
+}
+
+.table-cell{
+    width: 10rem !important
+}
+
+.searchLabel {
+    font-size: x-large;
+}
+
+.searchInput {
+    height: 40px;
+    width: 68%;
+    margin-top:30px;
+    margin-bottom:30px;
+    margin-left:10px;
+    border: 2px solid;
+    color: #6d76f7;
+    font-size: 25px;
+}
+
+.time{
+    font-size: 20px;
+}
+
+@media screen and (min-width: 1200px){
+    table, .searchLabel, .time{
+        margin-left:10%;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    table, .searchLabel, .time{
+        margin-left:5%;
+    }
+}
