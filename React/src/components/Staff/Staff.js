@@ -245,8 +245,8 @@ class Staff extends Component {
               <TableHead>
                 <TableRow>
                   {this.state.columns.map(heading => <StyledTableCell>{heading}</StyledTableCell>)}
-                  <StyledTableCell>Update</StyledTableCell>
-                  <StyledTableCell>Delete</StyledTableCell>
+                  <StyledTableCell>upsert</StyledTableCell>
+                  <StyledTableCell>delete</StyledTableCell>
                 </TableRow>
               </TableHead>
               <TableBody>
@@ -294,7 +294,7 @@ class Staff extends Component {
                       startIcon={<CreateIcon />}
                       onClick={() => this.onCreate()}
                     >
-                      Create
+                      Insert
                     </Button>
                   </StyledTableCell>
 
