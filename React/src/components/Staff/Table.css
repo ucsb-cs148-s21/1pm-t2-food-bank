@@ -1,7 +1,6 @@
 table{
     margin-top:20px;
-    margin-left:10%;
-    margin-bottom:30px;
+    margin-bottom:50px;
     width:75% !important;
 }
 
@@ -11,7 +10,6 @@ table{
 
 .searchLabel {
     font-size: x-large;
-    margin-left:10%;
 }
 
 .searchInput {
@@ -27,5 +25,16 @@ table{
 
 .time{
     font-size: 20px;
-    margin-left: 10%
+}
+
+@media screen and (min-width: 1200px){
+    table, .searchLabel, .time{
+        margin-left:10%;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    table, .searchLabel, .time{
+        margin-left:5%;
+    }
 }
