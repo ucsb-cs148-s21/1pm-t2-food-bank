@@ -136,7 +136,7 @@ class Staff extends Component {
     var limit = document.getElementById('limit').value
     var amount = document.getElementById('amount').value
     var category = document.getElementById('category').value
-    if (limit === '' || amount === '' || name === '' || category === '' ){
+    if (limit === '' || amount === '' || name === '' || category === '' || limit < 0 || amount < 0 ){
         window.alert('Invalid input!')
     }
     else {
@@ -189,13 +189,13 @@ class Staff extends Component {
 
   onUpdate(name, category){
     if (name === '' || category === ''){
-      window.alert('Invalid input!')
+      window.alert('Invalid Input!')
     }
     var limit = document.getElementById(name+"limit").value;
     var amount = document.getElementById(name+"amount").value;
     console.log("category: ", category);
-    if (limit === '' || amount === ''){
-        window.alert('Invalid input!')
+    if (limit === '' || amount === '' || limit < 0 || amount < 0 ){
+        window.alert('Invalid Input!')
     }
     else {
         const item = {
