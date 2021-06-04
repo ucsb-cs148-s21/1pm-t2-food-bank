@@ -63,14 +63,14 @@ Fork it!
 [MIT](https://choosealicense.com/licenses/mit/)
 
 
-# Final Project
+# Final Project Quickbook
 
 ## Deployment
 
 - On Heroku: [https://t2-food-banks.herokuapp.com](https://t2-food-banks.herokuapp.com)
 - Deployment Instruction: [DEPLOY.md](https://github.com/ucsb-cs148-s21/1pm-t2-food-bank/blob/main/docs/DEPLOY.md)
 
-## Final Presentation
+## Final Presentation 
 
 - TBD
 
