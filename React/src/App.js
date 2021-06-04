@@ -69,9 +69,6 @@ export default function App()  {
           <Route path="/inventory"exact component={Inventory} />
           <Route path="/staff"exact component={Staff} />
           <Route path="/contactus"exact component={Contact_Us} />
-          {/* <Route path="/login"exact component={Login} /> */}
-          <PrivateRoute exact path="/profile" component={Profile} />
-          <Route path="/" component={PageNotFound} />
         </Switch>
       </BrowserRouter>
     </div>
