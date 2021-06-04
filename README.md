@@ -32,15 +32,11 @@ Testing - React Testing Library/JEST + JUnit
 
 ## User Roles
 
-1. If I am a student, I can check the app so that I know what is in the food bank.
-
-2. If I am a student, I can check the app for “what's the daily special menu", avaliavity for food that I want, or looking for a restock of specific food that I have been wanting.
-
-3. If I am a student, I can also check the app for the people's review of food before I order mine.
-
-4. If I am a staff, I want to know what kind and quantity of food are distributed today to better arrange tomorrow's orders. The staff will have permission to edit content on the wepapp and give other users admin permissions.
-
-5. As a user, I want to click the contact form on contact us page so that I can submit a message to UCSB food bank staff.
+1. If I am a student, I can tell know what items are in the food bank and their corresponding quantities.
+2. If I am a student, I can looking for a restock of specific food that I have been wanting.
+3. If I am a staff, I can know what kind and quantity of food are distributed today to better arrange tomorrow's orders.
+4. If I am a staff, I will have permission to edit content on the wepapp, insert, modify, and delete items and give other users admin permissions.
+4. As a user, I can use the contact form on contact us page to submit a message to UCSB food bank staff.
 
 ## Functionality
 - Going to our web app, user can click a NavBar item called inventory, where they can find the a list of food items with their categories, quantities, and limitations. User also has access to the search bar to search a food item based on its category or name.
