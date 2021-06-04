@@ -3,7 +3,7 @@
 
 
 1. Initial webpage outlook planning and design.
-2. Homepage background and welcoming message, two versions, Liuhao later modified the welcoming message so it is displayed differently by visitors, students, and administrators.
+2. Homepage background and welcoming message, two versions, later modified the welcoming message so it is displayed differently by visitors, students, and administrators.
 3. Page content display reoganizing: footer present at proper location.
 4. Inventory / staff portal display items, frontend. Loading screen before displaying items, beautifying display.
 5. Inventory / staff portal search function, each by name and category, ignore capical letters.
