@@ -28,6 +28,7 @@
     width: 60vw;
     justify-content: end;
     margin-right: 10px;
+    z-index: 999 !important;
 }
 
 .nav-links {
@@ -88,6 +89,7 @@
         left: -100%;
         opacity: 1;
         transition: all 0.5s ease;
+        z-index: 999 !important;
     }
 
     .nav-menu.active {
@@ -95,7 +97,7 @@
         left: 0;
         opacity: 1;
         transition: all 0.5s ease;
-        z-index: table;
+        z-index: 999 !important;
     }
 
     .nav-links {
@@ -191,6 +193,7 @@
         left: -100%;
         opacity: 1;
         transition: all 0.5s ease;
+        z-index: 999 !important;
     }
 
     .nav-menu.active {
@@ -198,7 +201,7 @@
         left: 0;
         opacity: 1;
         transition: all 0.5s ease;
-        z-index: table;
+        z-index: 999 !important;
     }
 
     .nav-links {
@@ -295,6 +298,7 @@
         left: -100%;
         opacity: 1;
         transition: all 0.5s ease;
+        z-index: 999 !important;
     }
 
     .nav-menu.active {
@@ -302,7 +306,7 @@
         left: 0;
         opacity: 1;
         transition: all 0.5s ease;
-        z-index: table;
+        z-index: 999 !important;
     }
 
     .nav-links {
