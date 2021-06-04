@@ -9,5 +9,5 @@
 5. Inventory / staff portal search function, each by name and category, ignore capical letters.
 6. Staff portal insert and delete buttons and their corresponding functionality, later beautified and re-implemented.
 7. MVP demo script writing, recording and uploading, write the user manual and deploy document.
-
+8. Some other lab paperwork.
 
