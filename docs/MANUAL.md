@@ -39,6 +39,17 @@ Our application's potential users are UCSB students, food bank staff, other admi
 ![image](https://user-images.githubusercontent.com/72473351/119703718-ae1d3700-be0b-11eb-928c-26b0416eea01.png)
 #### To Do-- staff portal continue
 
+- Similar to the inventory page, the staff protal also has a search bar.
+
+
+- To insert a new item to the inventory, input the name, limit, amount, and category at the bottom of the page and click the insert button.
+
+- To update a existing item, input the new limit and/or amount of the item and click the update button.
+
+- To delete an item, click the delete button on the right of the item.
+
+
+
 ### Footer
 - By clicking the social media links on the footer, you will be redirected to the social media page of UCSB food bank.
 ![image](https://user-images.githubusercontent.com/72473351/119704919-06086d80-be0d-11eb-8552-a16de7c8868d.png)
