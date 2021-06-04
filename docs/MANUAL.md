@@ -40,11 +40,12 @@ Our application's potential users are UCSB students, food bank staff, other admi
 #### To Do-- staff portal continue
 
 - Similar to the inventory page, the staff protal also has a search bar.
+- Below the search bar, the administrator can know when the inventory was last updated.
 
 
 - To insert a new item to the inventory, input the name, limit, amount, and category at the bottom of the page and click the insert button.
 
-- To update a existing item, input the new limit and/or amount of the item and click the update button.
+- To update a existing item, input the new limit AND amount of the item and click the update button.
 
 - To delete an item, click the delete button on the right of the item.
 
