@@ -65,21 +65,18 @@ Fork it!
 
 # Final Project
 
-## Heroku Link
+## Deployment
 
-- [https://t2-food-banks.herokuapp.com](https://t2-food-banks.herokuapp.com)
+- On Heroku: [https://t2-food-banks.herokuapp.com](https://t2-food-banks.herokuapp.com)
+- Deployment Instruction: [DEPLOY.md](https://github.com/ucsb-cs148-s21/1pm-t2-food-bank/blob/main/docs/DEPLOY.md)
 
 ## Final Presentation
 
-- [Final Presentation]()
+- TBD
 
 ## User Manual
 
 - [MANUAL.md](https://github.com/ucsb-cs148-s21/1pm-t2-food-bank/blob/main/docs/MANUAL.md)
-
-## Deploy Instructions
-
-- [DEPLOY.md](https://github.com/ucsb-cs148-s21/1pm-t2-food-bank/blob/main/docs/DEPLOY.md)
 
 ## Design Document
 
