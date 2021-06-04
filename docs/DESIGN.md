@@ -87,5 +87,16 @@ Contribution: description is modified based on https://capstone.cs.ucsb.edu/team
   - d. Users can use the timestamp as a reference prior to last inventory update, so they will have a sense of whether the food they want is still available before they decide to go to the food bank.
 ![image](https://user-images.githubusercontent.com/54722175/120694492-22d12080-c45f-11eb-81a6-03392301f169.png)
 ![image](https://user-images.githubusercontent.com/54722175/120694620-4c8a4780-c45f-11eb-9f48-53d978176fc2.png)
+### Stage V:
+- We create different welcome message for users who don't login, who login as student and who login as staffs
+![image](https://user-images.githubusercontent.com/72473351/120740860-e62a1700-c4a8-11eb-9258-26cf57e98e0c.png)
+![image](https://user-images.githubusercontent.com/72473351/120740871-ec1ff800-c4a8-11eb-8a59-05711965f0a7.png)
+![image](https://user-images.githubusercontent.com/72473351/120740901-f510c980-c4a8-11eb-83e8-a10ae31c26ce.png)
+- Students can see when the inventory was updated
+![image](https://user-images.githubusercontent.com/72473351/120741006-212c4a80-c4a9-11eb-977e-e1be564ddb3b.png)
+- Develop team added at the footer
+![image](https://user-images.githubusercontent.com/72473351/120741085-3dc88280-c4a9-11eb-9ef1-19283764d799.png)
+
+
 
 
