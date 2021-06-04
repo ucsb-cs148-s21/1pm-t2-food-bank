@@ -18,7 +18,7 @@
   - We used Firebase.
 - User authentication:
   - Along with a login page, we implemented user authentication.
-  - We plan to implement this task with gogle Auth.
+  - We plan to implement this task with google Auth.
   - We give admin role to staff members.
 
 ```
@@ -95,6 +95,12 @@ Contribution: description is modified based on https://capstone.cs.ucsb.edu/team
 ![image](https://user-images.githubusercontent.com/54722175/120694620-4c8a4780-c45f-11eb-9f48-53d978176fc2.png)
 - Develop team added at the footer
 ![image](https://user-images.githubusercontent.com/72473351/120741085-3dc88280-c4a9-11eb-9ef1-19283764d799.png)
+- Google Auth
+  - The first step is to Login. After logging in with their google account, users will be assigned different roles based on their accounts status:<br/>
+    1.Staff: who has the privilege to modify the inventory<br/>
+    2.Regular member: who has the access to UCSB Food Bank services<br/> 
+    3.Visitor: who is ineligible to checkout items at UCSB Food Bank<br/>
+  - Note: Currently, anyone logged in with a UCSB account is assigned with the role Regular Member; Staff accounts can be determined during the deployment stage and only emails associated with UCSB domain can be promoted as staff accounts. 
 
 
 
