@@ -82,9 +82,9 @@ Contribution: description is modified based on https://capstone.cs.ucsb.edu/team
   b. It is not easy for us to setup global variables in a short time.
 - We decided to make a timestamp so that users can know when the database is updated.
   - a. Both inventory page and staff portal page will have a timestamp on top-left under the search bar. 
-  - b. The timestamp diplays as relative time to the most recent time of inventory change, showed as xx second ago/xx minutes ago/xx hours ago etc.
-  - c. The timestamp will be automatically refresh once there is a change in the inventory.
-  - d. Users can use the timestamp as a reference prior to last inventoy updated, so they will have a sense where the food they want is still avaviable before they decide to go to        the foodbank.
+  - b. The timestamp displays as relative time to the most recent time of inventory change, showed as xx second ago/xx minutes ago/xx hours ago etc.
+  - c. The timestamp will be automatically refreshed once there is a change in the inventory.
+  - d. Users can use the timestamp as a reference prior to last inventoy updated, so they will have a sense whether the food they want is still avaviable before they decide to go        to the foodbank.
 ![image](https://user-images.githubusercontent.com/54722175/120694492-22d12080-c45f-11eb-81a6-03392301f169.png)
 ![image](https://user-images.githubusercontent.com/54722175/120694620-4c8a4780-c45f-11eb-9f48-53d978176fc2.png)
 
