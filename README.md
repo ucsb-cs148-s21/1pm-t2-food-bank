@@ -42,10 +42,6 @@ Testing - React Testing Library/JEST + JUnit
 
 5. As a user, I want to click the contact form on contact us page so that I can submit a message to UCSB food bank staff.
 
-## Deploy instructions
-
-- [DEPLOY.md](https://github.com/ucsb-cs148-s21/1pm-t2-food-bank/blob/main/docs/DEPLOY.md)
-
 ## Functionality
 - Going to our web app, user can click a NavBar item called inventory, where they can find the a list of food items with their categories, quantities, and limitations. User also has access to the search bar to search a food item based on its category or name.
 - After logging in, verified staff can login and access the staff portal page to modify food bank inventory.
@@ -65,3 +61,28 @@ Fork it!
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
+
+
+# Final Project
+
+## Heroku Link
+
+- [https://t2-food-banks.herokuapp.com](https://t2-food-banks.herokuapp.com)
+
+## Final Presentation
+
+- [Final Presentation]()
+
+## User Manual
+
+- [MANUAL.md](https://github.com/ucsb-cs148-s21/1pm-t2-food-bank/blob/main/docs/MANUAL.md)
+
+## Deploy Instructions
+
+- [DEPLOY.md](https://github.com/ucsb-cs148-s21/1pm-t2-food-bank/blob/main/docs/DEPLOY.md)
+
+## Design Document
+
+- [DESIGN.md](https://github.com/ucsb-cs148-s21/1pm-t2-food-bank/blob/main/docs/DESIGN.md)
+
+
