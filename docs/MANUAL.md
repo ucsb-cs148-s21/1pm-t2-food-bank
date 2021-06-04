@@ -19,7 +19,7 @@ Our application's potential users are UCSB students, food bank staff, other admi
 - This is the page to view what kind of items are available at the UCSB food bank
 ![image](https://user-images.githubusercontent.com/72473351/119703323-48c94600-be0b-11eb-842f-7015f8711241.png)
 
-- You can also search by name or by category to see if the item you want is available.
+- You can also search by name or by category to see if the item you want is available. Below the search bar, the administrator can know when the inventory was last updated.
 ![image](https://user-images.githubusercontent.com/72473351/119704395-74006500-be0c-11eb-81eb-c92a1bb20f00.png)
 ![image](https://user-images.githubusercontent.com/72473351/119704469-8aa6bc00-be0c-11eb-8fb4-bec9ff4da1eb.png)
 
