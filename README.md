@@ -83,3 +83,6 @@ Fork it!
 - [DESIGN.md](https://github.com/ucsb-cs148-s21/1pm-t2-food-bank/blob/main/docs/DESIGN.md)
 
 
+## Deployment
+
+- Heroku: [https://t2-food-banks.herokuapp.com/](https://t2-food-banks.herokuapp.com/)
