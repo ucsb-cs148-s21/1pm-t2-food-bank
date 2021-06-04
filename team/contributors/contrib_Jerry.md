@@ -10,5 +10,5 @@
 6. Staff portal insert and delete buttons and their corresponding functionality, later beautified and re-implemented.
 7. MVP demo script writing, recording and uploading, write the user manual and deploy document.
 8. Final presentation script writing nad coordiator.
-9. Some other lab paperwork, checks and enrichment.
+9. Some other lab paperwork checks and enrichment.
 
