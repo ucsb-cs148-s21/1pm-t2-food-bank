@@ -9,12 +9,19 @@
 | Thu 04/22 | Orion      | Redid first retro for sprint01 (w/ given template) | 
 | Thu 04/22 | Kaiwen      | led daily scrum  | 
 | Thu 04/22 | Liuhao      | led lab03 discussion on MVP sprint planning note  | 
-| Thu 04/27 | Sunrise      | led daily scrum  | 
+| Tue 04/27 | Sunrise      | led daily scrum  | 
 | Thu 04/29 | Liuhao      | lab03 final check  | 
 | Thu 05/06 | Liuhao      | lab04 final check & sprint03 | 
-| Thu 05/11 | Orion      | Led second retro  for sprint02 |
+| Tue 05/11 | Orion      | Led second retro for sprint02 |
 | Thu 05/13 | Liuhao      | lab05 final check & roadmap/prototype|
 
+
+| Tue 05/18 | Liuhao      | lab04 final check & sprint03 | 
+| Thu 05/20 | Orion      | Led second retro  for sprint02 |
+| Tue 05/25 | Liuhao      | lab05 final check & roadmap/prototype|
+| Thu 05/27 | Liuhao      | lab05 final check & roadmap/prototype|
+| Tue 06/01 | Liuhao      | lab05 final check & roadmap/prototype|
+| Thu 06/03 | Liuhao      | lab05 final check & roadmap/prototype|
 
 # Roles to assign
 
