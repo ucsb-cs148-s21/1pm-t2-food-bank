@@ -61,11 +61,6 @@ Fork it!
 
 # Final Project Quickbook
 
-## Deployment
-
-- On Heroku: [https://t2-food-banks.herokuapp.com](https://t2-food-banks.herokuapp.com)
-- Deployment Instruction: [DEPLOY.md](https://github.com/ucsb-cs148-s21/1pm-t2-food-bank/blob/main/docs/DEPLOY.md)
-
 ## Final Presentation 
 
 - TBD
@@ -81,4 +76,5 @@ Fork it!
 
 ## Deployment
 
-- Heroku: [https://t2-food-banks.herokuapp.com/](https://t2-food-banks.herokuapp.com/)
+- On Heroku: [https://t2-food-banks.herokuapp.com](https://t2-food-banks.herokuapp.com)
+- Deployment Instruction: [DEPLOY.md](https://github.com/ucsb-cs148-s21/1pm-t2-food-bank/blob/main/docs/DEPLOY.md)
