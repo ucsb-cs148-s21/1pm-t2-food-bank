@@ -63,7 +63,7 @@ Fork it!
 
 ## Final Presentation 
 
-- [Demostration](https://www.youtube.com/watch?v=27yUtuTXwd8) 
+- [Demostration](https://youtu.be/27yUtuTXwd8) 
 
 ## User Manual
 
