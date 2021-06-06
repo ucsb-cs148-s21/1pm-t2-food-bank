@@ -14,12 +14,10 @@
 | Thu 05/06 | Liuhao      | lab04 final check & sprint03 | 
 | Tue 05/11 | Orion      | Led second retro for sprint02 |
 | Thu 05/13 | Liuhao      | lab05 final check & roadmap/prototype|
-| Tue 05/18 |       | | 
-| Thu 05/20 |       | |
+| Thu 05/20 | Liuhao | lab06 final check |
 | Tue 05/25 | Jerry      | Led third retro for sprint03|
-| Thu 05/27 |       | |
-| Tue 06/01 |       | |
-| Thu 06/03 |       | |
+| Thu 05/27 | Liuhao | lab07 final check|
+| Thu 06/03 | Liuhao | last Todo lists |
 
 # Roles to assign
 
@@ -30,7 +28,7 @@
 | Testing/QA Coordinator       | Orion  |
 | Retro 3 leader    | Jerry  | 
 | UX Coordinator      | Liuhao | 
-| Design Document Coordinator      | Kaiwen  | 
+| Design Document Coordinator      | Kaiwen / Liuhao | 
 | Deployment Document Coordinator      |Kaiwen| 
-| User Manual Coordinator      | Sunrise  | 
+| User Manual Coordinator      | Sunrise / Liuhao | 
 | Final presentation leader (week 9/10)      | Jerry  | 
