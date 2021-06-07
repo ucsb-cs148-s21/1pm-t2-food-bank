@@ -1,1 +1,1 @@
-- [User Manual](https://docs.google.com/document/d/13EFGUQ4-X6neqiezNT37ncMQQvzkxdG-otQQURJ_sGE/edit?usp=sharing)
+- [User Manual](https://docs.google.com/document/d/13EFGUQ4-X6neqiezNT37ncMQQvzkxdG-otQQURJ_sGE/edit?usp=sharing) on Google Docs
