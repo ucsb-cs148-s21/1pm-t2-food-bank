@@ -59,7 +59,7 @@ Fork it!
 [MIT](https://choosealicense.com/licenses/mit/)
 
 
-# Final Project Quickbook
+# Final Project Quick Reference Guide
 
 ## Final Presentation 
 
