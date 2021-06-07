@@ -1,6 +1,6 @@
 1. Initialized backend framework.
 2. Help Sunrise when he was connecting firebase to spring boot(debug)
-3. Help 
+3. Help Liuhao when he got stuck on integrating google auth
 4. Connect the inventory page to backend so that invnetory can be shown.
 5. Create update function on staff page.
 6. Make the search bar working on staff page(debug)
