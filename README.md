@@ -63,7 +63,7 @@ Fork it!
 
 ## Final Presentation 
 
-- [Demostration](https://youtu.be/u13vAfpuGvs) 
+- [PRESENTATION.md](https://github.com/ucsb-cs148-s21/1pm-t2-food-bank/blob/main/docs/PRESENTATION.md) 
 
 ## User Manual
 
@@ -73,6 +73,16 @@ Fork it!
 
 - [DESIGN.md](https://github.com/ucsb-cs148-s21/1pm-t2-food-bank/blob/main/docs/DESIGN.md)
 
+## Meeting Logs
+
+- [sprint01](https://github.com/ucsb-cs148-s21/1pm-t2-food-bank/tree/main/team/sprint01)
+- [sprint02](https://github.com/ucsb-cs148-s21/1pm-t2-food-bank/tree/main/team/sprint02)
+- [sprint03](https://github.com/ucsb-cs148-s21/1pm-t2-food-bank/tree/main/team/sprint03)
+- [Retrospectives](https://github.com/ucsb-cs148-s21/1pm-t2-food-bank/tree/main/team/Retrospectives)
+
+## Contributions
+
+- [CONTRIB.md](https://github.com/ucsb-cs148-s21/1pm-t2-food-bank/blob/main/team/contributions/CONTRIB.md)
 
 ## Deployment
 
