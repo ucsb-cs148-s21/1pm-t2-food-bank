@@ -1,4 +1,4 @@
-1. led the daily scrums and did the final check for lab requiremnts and project requirements
+1. led the daily scrums and did the final check for lab, project, and final presentation requirements.
 2. led the discussions for sprint planning and built a roadmap towards final project by adding backlog items on kanban
 3. built some major features of our web app:
    - Nav Bar
