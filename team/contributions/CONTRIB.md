@@ -1,3 +1,5 @@
+## t2-food-bank team members' contributions.
+
 # Jerry's work
 
 1. Initial webpage outlook planning and design.
