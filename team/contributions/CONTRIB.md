@@ -1,6 +1,6 @@
-## t2-food-bank team members' contributions.
+# t2-food-bank team members' contributions.
 
-# Jerry's work
+## Jerry's work
 
 1. Initial webpage outlook planning and design.
 2. Page background, welcoming message, and link, two initial versions.
@@ -13,7 +13,7 @@
 9. Some other lab paperwork checks and enrichment.
 
 
-# Kaiwen's work
+## Kaiwen's work
 
 1. Initialized backend framework.
 2. Helped Sunrise when he was connecting firebase to spring boot(debug)
@@ -28,7 +28,7 @@
 11. Made navbar link to the correct page without showing error
 
 
-# Liuhao's work
+## Liuhao's work
 
 1. led the daily scrums and did the final check for lab, project, and final presentation requirements.
 2. led the discussions for sprint planning and built a roadmap towards final project by adding backlog items on kanban
@@ -49,7 +49,7 @@
 9. offered general design ideas and shared useful YouTube tutorials and tools such as material-ui, momentJS, etc.
 
 
-# Orion's work
+## Orion's work
 
 1. Creation and implementation of the footer.
     - Creation of footer
@@ -62,7 +62,7 @@
 4. Final presentation script writing and participation.
 
 
-# Sunrise's work
+## Sunrise's work
 
 1. Initializing and setup firebase as our database.
 2. Connecting firebase to our backend spring framework. (Kaiwen helped me debugging)
