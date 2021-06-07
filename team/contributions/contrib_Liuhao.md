@@ -9,6 +9,7 @@
    - introduced the responsive web design (i.e. mobile version, toast notification)
    - beautified the UI of our inventory table and buttons
    - designed the UI/UX of navbar
+   - solved issues related to css files (i.e. css files for one input features accidentally applied to all input features) 
 5. integrated component testing using JEST/React Testing Library and unit testing using JUnit to our project
 6. co-led the design document and user manual of our project
 7. contributed to procedual paperwork including deployment, readme, retrospectives, etc. 
