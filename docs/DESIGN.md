@@ -1,1 +1,1 @@
-- [Design Document](https://docs.google.com/document/d/1GFk_oNBeWIq0kRktFrIBkgUqeaBp9Y2meicG5RZ9o7g/edit?usp=sharing)
+- [Design Document](https://docs.google.com/document/d/1GFk_oNBeWIq0kRktFrIBkgUqeaBp9Y2meicG5RZ9o7g/edit?usp=sharing) on Google Docs
