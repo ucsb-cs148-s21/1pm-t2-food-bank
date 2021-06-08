@@ -14,7 +14,7 @@
 -------
 (1). Please notice that because of cooperation, some of the final merge is done my Orion or Liuhao, which means the "code modified" display in insights might not show some codes as my contribution.
 (2). Although the staff page was created by Orion, the search function and display item function was a direct copy from the inventory page. 
-(3). Some important commits, the inventory search/ add filter/ display items on inventory/ implement main page content contain large amount of code modification, but somehow they are not "unvarified" ones, these commits are created and the content written by me.
+(3). Some important commits done by me, the inventory search/ add filter/ display items on inventory/ implement main page content contain large amount of code modification, but somehow they are not "unvarified" ones.
 
 ## Kaiwen's work
 
