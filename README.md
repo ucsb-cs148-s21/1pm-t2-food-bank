@@ -28,7 +28,13 @@ Backend - Spring Node.js
 
 Database - Firebase
 
-Testing - React Testing Library/JEST + JUnit
+Testing - React Testing Library/JEST + JUnit + Postman
+
+## External Resources
+
+- UI design: Material-UI, Font Awesome, Google Fonts
+- Third-party APIs: Google Auth, EmailJS, MomentJS
+- Numerous Youtube tutorials videos (linked in codebase and PR descriptions)
 
 ## User Roles
 
